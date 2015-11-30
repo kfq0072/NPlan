@@ -1,0 +1,77 @@
+\hypertarget{protocol_b_m_k_geo_code_search_delegate-p}{}\section{$<$B\+M\+K\+Geo\+Code\+Search\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_geo_code_search_delegate-p}\index{$<$\+B\+M\+K\+Geo\+Code\+Search\+Delegate$>$@{$<$\+B\+M\+K\+Geo\+Code\+Search\+Delegate$>$}}
+
+
+搜索delegate，用于获取搜索结果  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Geocode\+Search.\+h$>$}
+
+类 $<$B\+M\+K\+Geo\+Code\+Search\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_geo_code_search_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_geo_code_search_delegate-p_ac50237b58058d88d46ad0a4c99208382}{on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_geo_code_search_delegate-p_a8b9139623a45d9366e38bd000c1369c0}{on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+搜索delegate，用于获取搜索结果 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_geo_code_search_delegate-p_ac50237b58058d88d46ad0a4c99208382}{}\index{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p@{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p}!on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:@{on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:}}
+\index{on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:@{on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:}!B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p@{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Geo\+Code\+Result\+:result\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Geo\+Code\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Geo\+Code\+Search} $\ast$)}]{searcher}
+\item[{result:({\bf B\+M\+K\+Geo\+Code\+Result} $\ast$)}]{result}
+\item[{errorCode:(B\+M\+K\+Search\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_geo_code_search_delegate-p_ac50237b58058d88d46ad0a4c99208382}
+返回地址信息搜索结果 
+\begin{DoxyParams}{参数}
+{\em searcher} & 搜索对象 \\
+\hline
+{\em result} & 搜索结\+B\+M\+K\+Geo\+Code\+Search果 \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Search\+Error\+Code 
+\end{DoxySeeAlso}
+\hypertarget{protocol_b_m_k_geo_code_search_delegate-p_a8b9139623a45d9366e38bd000c1369c0}{}\index{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p@{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p}!on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:@{on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:}}
+\index{on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:@{on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:}!B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p@{B\+M\+K\+Geo\+Code\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Reverse\+Geo\+Code\+Result\+:result\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Reverse\+Geo\+Code\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Geo\+Code\+Search} $\ast$)}]{searcher}
+\item[{result:({\bf B\+M\+K\+Reverse\+Geo\+Code\+Result} $\ast$)}]{result}
+\item[{errorCode:(B\+M\+K\+Search\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_geo_code_search_delegate-p_a8b9139623a45d9366e38bd000c1369c0}
+返回反地理编码搜索结果 
+\begin{DoxyParams}{参数}
+{\em searcher} & 搜索对象 \\
+\hline
+{\em result} & 搜索结果 \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Search\+Error\+Code 
+\end{DoxySeeAlso}
+
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Geocode\+Search.\+h\end{DoxyCompactItemize}

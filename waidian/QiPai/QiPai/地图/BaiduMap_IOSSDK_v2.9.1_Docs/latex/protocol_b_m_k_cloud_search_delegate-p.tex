@@ -1,0 +1,77 @@
+\hypertarget{protocol_b_m_k_cloud_search_delegate-p}{}\section{$<$B\+M\+K\+Cloud\+Search\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_cloud_search_delegate-p}\index{$<$\+B\+M\+K\+Cloud\+Search\+Delegate$>$@{$<$\+B\+M\+K\+Cloud\+Search\+Delegate$>$}}
+
+
+云检索delegate，用于获取云检索结果  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Cloud\+Search.\+h$>$}
+
+类 $<$B\+M\+K\+Cloud\+Search\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_cloud_search_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_cloud_search_delegate-p_aadc90dad37954d8527d4aca657c802f4}{on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_cloud_search_delegate-p_a5abcb777d4533baa036beb635268b60d}{on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+云检索delegate，用于获取云检索结果 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_cloud_search_delegate-p_a5abcb777d4533baa036beb635268b60d}{}\index{B\+M\+K\+Cloud\+Search\+Delegate-\/p@{B\+M\+K\+Cloud\+Search\+Delegate-\/p}!on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:@{on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:}}
+\index{on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:@{on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:}!B\+M\+K\+Cloud\+Search\+Delegate-\/p@{B\+M\+K\+Cloud\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Cloud\+Poi\+Detail\+Result\+:search\+Type\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Cloud\+Poi\+Detail\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Cloud\+P\+O\+I\+Info} $\ast$)}]{poi\+Detail\+Result}
+\item[{searchType:(int)}]{type}
+\item[{errorCode:(int)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_cloud_search_delegate-p_a5abcb777d4533baa036beb635268b60d}
+返回云检索\+P\+O\+I详情 
+\begin{DoxyParams}{参数}
+{\em poi\+Detail\+Result} & 类型为\+B\+M\+K\+Cloud\+P\+O\+I\+Info \\
+\hline
+{\em type} & 返回结果类型： B\+M\+K\+\_\+\+C\+L\+O\+U\+D\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+S\+E\+A\+R\+C\+H \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Cloud\+Error\+Code 
+\end{DoxySeeAlso}
+\hypertarget{protocol_b_m_k_cloud_search_delegate-p_aadc90dad37954d8527d4aca657c802f4}{}\index{B\+M\+K\+Cloud\+Search\+Delegate-\/p@{B\+M\+K\+Cloud\+Search\+Delegate-\/p}!on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:@{on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:}}
+\index{on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:@{on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:}!B\+M\+K\+Cloud\+Search\+Delegate-\/p@{B\+M\+K\+Cloud\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Cloud\+Poi\+Result\+:search\+Type\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Cloud\+Poi\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{poi\+Result\+List}
+\item[{searchType:(int)}]{type}
+\item[{errorCode:(int)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_cloud_search_delegate-p_aadc90dad37954d8527d4aca657c802f4}
+返回云检索\+P\+O\+I列表结果 
+\begin{DoxyParams}{参数}
+{\em poi\+Result\+List} & 云检索结果列表，成员类型为\+B\+M\+K\+Cloud\+P\+O\+I\+List \\
+\hline
+{\em type} & 返回结果类型： B\+M\+K\+\_\+\+C\+L\+O\+U\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+S\+E\+A\+R\+C\+H,B\+M\+K\+\_\+\+C\+L\+O\+U\+D\+\_\+\+N\+E\+A\+R\+B\+Y\+\_\+\+S\+E\+A\+R\+C\+H,B\+M\+K\+\_\+\+C\+L\+O\+U\+D\+\_\+\+B\+O\+U\+N\+D\+\_\+\+S\+E\+A\+R\+C\+H \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Cloud\+Error\+Code 
+\end{DoxySeeAlso}
+
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Cloud\+Search.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{protocol_b_m_k_share_u_r_l_search_delegate-p}{}\section{$<$B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_share_u_r_l_search_delegate-p}\index{$<$\+B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate$>$@{$<$\+B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate$>$}}
+
+
+搜索delegate，用于获取搜索结果  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Share\+U\+R\+L\+Search.\+h$>$}
+
+类 $<$B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_share_u_r_l_search_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_share_u_r_l_search_delegate-p_a585f4e1aa26bb11f59bd624c0e513cd6}{on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_share_u_r_l_search_delegate-p_a856efc4ec1a61f942bd5c025f29fc83c}{on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+搜索delegate，用于获取搜索结果 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_share_u_r_l_search_delegate-p_a856efc4ec1a61f942bd5c025f29fc83c}{}\index{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p@{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p}!on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:@{on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}}
+\index{on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:@{on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}!B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p@{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Location\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Location\+Share\+U\+R\+L\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Share\+U\+R\+L\+Search} $\ast$)}]{searcher}
+\item[{result:({\bf B\+M\+K\+Share\+U\+R\+L\+Result} $\ast$)}]{result}
+\item[{errorCode:(B\+M\+K\+Search\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_share_u_r_l_search_delegate-p_a856efc4ec1a61f942bd5c025f29fc83c}
+返回位置信息分享url 
+\begin{DoxyParams}{参数}
+{\em searcher} & 搜索对象 \\
+\hline
+{\em result} & 返回结果 \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Search\+Error\+Code 
+\end{DoxySeeAlso}
+\hypertarget{protocol_b_m_k_share_u_r_l_search_delegate-p_a585f4e1aa26bb11f59bd624c0e513cd6}{}\index{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p@{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p}!on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:@{on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}}
+\index{on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:@{on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}!B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p@{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+:result\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Share\+U\+R\+L\+Search} $\ast$)}]{searcher}
+\item[{result:({\bf B\+M\+K\+Share\+U\+R\+L\+Result} $\ast$)}]{result}
+\item[{errorCode:(B\+M\+K\+Search\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_share_u_r_l_search_delegate-p_a585f4e1aa26bb11f59bd624c0e513cd6}
+返回poi详情分享url 
+\begin{DoxyParams}{参数}
+{\em searcher} & 搜索对象 \\
+\hline
+{\em result} & 返回结果 \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Search\+Error\+Code 
+\end{DoxySeeAlso}
+
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Share\+U\+R\+L\+Search.\+h\end{DoxyCompactItemize}

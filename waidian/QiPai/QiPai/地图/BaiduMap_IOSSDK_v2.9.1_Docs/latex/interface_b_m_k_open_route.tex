@@ -1,0 +1,77 @@
+\hypertarget{interface_b_m_k_open_route}{}\section{B\+M\+K\+Open\+Route类 参考}
+\label{interface_b_m_k_open_route}\index{B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}}
+
+
+{\ttfamily \#import $<$B\+M\+K\+Open\+Route.\+h$>$}
+
+类 B\+M\+K\+Open\+Route 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_open_route}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+M\+K\+Open\+Error\+Code) + \hyperlink{interface_b_m_k_open_route_a84f8e2bed0d6c42d2c9ab4de5de640c7}{open\+Baidu\+Map\+Walking\+Route\+:}
+\item 
+(B\+M\+K\+Open\+Error\+Code) + \hyperlink{interface_b_m_k_open_route_a85fba23fb552d31d38aba094f87a1c06}{open\+Baidu\+Map\+Transit\+Route\+:}
+\item 
+(B\+M\+K\+Open\+Error\+Code) + \hyperlink{interface_b_m_k_open_route_a57b8eccc1ab7f7fc73959aadbba525a4}{open\+Baidu\+Map\+Driving\+Route\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+调起百度地图 -- 路线 注：从iphone百度地图 8.\+2.\+0版本开始支持 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_open_route_a57b8eccc1ab7f7fc73959aadbba525a4}{}\index{B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}!open\+Baidu\+Map\+Driving\+Route\+:@{open\+Baidu\+Map\+Driving\+Route\+:}}
+\index{open\+Baidu\+Map\+Driving\+Route\+:@{open\+Baidu\+Map\+Driving\+Route\+:}!B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}}
+\subsubsection[{open\+Baidu\+Map\+Driving\+Route\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+M\+K\+Open\+Error\+Code) open\+Baidu\+Map\+Driving\+Route\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Open\+Driving\+Route\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_open_route_a57b8eccc1ab7f7fc73959aadbba525a4}
+调起百度地图驾车路线检索页面 注：从iphone百度地图 8.\+2.\+0版本开始支持 
+\begin{DoxyParams}{参数}
+{\em option} & 驾车路线参数类（\+B\+M\+K\+Open\+Driving\+Route\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调起结果 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_open_route_a85fba23fb552d31d38aba094f87a1c06}{}\index{B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}!open\+Baidu\+Map\+Transit\+Route\+:@{open\+Baidu\+Map\+Transit\+Route\+:}}
+\index{open\+Baidu\+Map\+Transit\+Route\+:@{open\+Baidu\+Map\+Transit\+Route\+:}!B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}}
+\subsubsection[{open\+Baidu\+Map\+Transit\+Route\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+M\+K\+Open\+Error\+Code) open\+Baidu\+Map\+Transit\+Route\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Open\+Transit\+Route\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_open_route_a85fba23fb552d31d38aba094f87a1c06}
+调起百度地图公交路线页面 注：从iphone百度地图 8.\+2.\+0版本开始支持 
+\begin{DoxyParams}{参数}
+{\em option} & 公交路线参数类（\+B\+M\+K\+Open\+Transit\+Route\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调起结果 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_open_route_a84f8e2bed0d6c42d2c9ab4de5de640c7}{}\index{B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}!open\+Baidu\+Map\+Walking\+Route\+:@{open\+Baidu\+Map\+Walking\+Route\+:}}
+\index{open\+Baidu\+Map\+Walking\+Route\+:@{open\+Baidu\+Map\+Walking\+Route\+:}!B\+M\+K\+Open\+Route@{B\+M\+K\+Open\+Route}}
+\subsubsection[{open\+Baidu\+Map\+Walking\+Route\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+M\+K\+Open\+Error\+Code) open\+Baidu\+Map\+Walking\+Route\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Open\+Walking\+Route\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_open_route_a84f8e2bed0d6c42d2c9ab4de5de640c7}
+调起百度地图步行路线页面 注：从iphone百度地图 8.\+2.\+0版本开始支持 
+\begin{DoxyParams}{参数}
+{\em option} & 步行路线参数类（\+B\+M\+K\+Open\+Walking\+Route\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调起结果 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Open\+Route.\+h\end{DoxyCompactItemize}

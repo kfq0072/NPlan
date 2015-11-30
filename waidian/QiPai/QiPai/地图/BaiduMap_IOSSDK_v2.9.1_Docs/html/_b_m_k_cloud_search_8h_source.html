@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKCloudSearch.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKCloudSearch.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKCloudSearch.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2013 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKCloudSearchInfo.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;BMKCloudPOIList.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_cloud_search_delegate-p.html">BMKCloudSearchDelegate</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">enum</span> BMKCloudSearchType</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BMK_NONE_SEARCH                 = 0,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BMK_CLOUD_LOCAL_SEARCH          = 1,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BMK_CLOUD_NEARBY_SEARCH         = 2,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BMK_CLOUD_BOUND_SEARCH          = 3,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    BMK_CLOUD_DETAIL_SEARCH         = 4</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//云检索结果状态码</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BMK_CLOUD_NETWOKR_ERROR = -3,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    BMK_CLOUD_NETWOKR_TIMEOUT = -2,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BMK_CLOUD_RESULT_NOT_FOUND = -1,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BMK_CLOUD_NO_ERROR = 0,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *更多云检索状态码请参考：</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     *http://developer.baidu.com/map/index.php?title=lbscloud/api/appendix</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}BMKCloudErrorCode;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_b_m_k_cloud_search.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_cloud_search.html">BMKCloudSearch</a> : NSObject</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_b_m_k_cloud_search.html#ac35ac10ba735ab371814e2d69c27af23">   39</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;BMKCloudSearchDelegate&gt; <a class="code" href="interface_b_m_k_cloud_search.html#ac35ac10ba735ab371814e2d69c27af23">delegate</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;- (BOOL)localSearchWithSearchInfo:(<a class="code" href="interface_b_m_k_cloud_local_search_info.html">BMKCloudLocalSearchInfo</a> *)searchInfo;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (BOOL)nearbySearchWithSearchInfo:(<a class="code" href="interface_b_m_k_cloud_nearby_search_info.html">BMKCloudNearbySearchInfo</a> *)searchInfo;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;- (BOOL)boundSearchWithSearchInfo:(<a class="code" href="interface_b_m_k_cloud_bound_search_info.html">BMKCloudBoundSearchInfo</a> *)searchInfo;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (BOOL)detailSearchWithSearchInfo:(<a class="code" href="interface_b_m_k_cloud_detail_search_info.html">BMKCloudDetailSearchInfo</a> *)searchInfo;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="protocol_b_m_k_cloud_search_delegate-p.html">   73</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_cloud_search_delegate-p.html">BMKCloudSearchDelegate</a>&lt;NSObject&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;- (void)onGetCloudPoiResult:(NSArray*)poiResultList searchType:(<span class="keywordtype">int</span>)type errorCode:(<span class="keywordtype">int</span>)error;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)onGetCloudPoiDetailResult:(<a class="code" href="interface_b_m_k_cloud_p_o_i_info.html">BMKCloudPOIInfo</a>*)poiDetailResult searchType:(<span class="keywordtype">int</span>)type errorCode:(<span class="keywordtype">int</span>)error;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="ttc" id="interface_b_m_k_cloud_search_html"><div class="ttname"><a href="interface_b_m_k_cloud_search.html">BMKCloudSearch</a></div><div class="ttdoc">云检索服务 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearch.h:37</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_p_o_i_info_html"><div class="ttname"><a href="interface_b_m_k_cloud_p_o_i_info.html">BMKCloudPOIInfo</a></div><div class="ttdoc">云检索结果信息类 </div><div class="ttdef"><b>Definition:</b> BMKCloudPOIList.h:33</div></div>
+<div class="ttc" id="protocol_b_m_k_cloud_search_delegate-p_html"><div class="ttname"><a href="protocol_b_m_k_cloud_search_delegate-p.html">BMKCloudSearchDelegate-p</a></div><div class="ttdoc">云检索delegate，用于获取云检索结果 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearch.h:73</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_local_search_info_html"><div class="ttname"><a href="interface_b_m_k_cloud_local_search_info.html">BMKCloudLocalSearchInfo</a></div><div class="ttdoc">本地云检索参数信息类 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearchInfo.h:68</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_bound_search_info_html"><div class="ttname"><a href="interface_b_m_k_cloud_bound_search_info.html">BMKCloudBoundSearchInfo</a></div><div class="ttdoc">矩形云检索参数信息类 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearchInfo.h:87</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_search_html_ac35ac10ba735ab371814e2d69c27af23"><div class="ttname"><a href="interface_b_m_k_cloud_search.html#ac35ac10ba735ab371814e2d69c27af23">BMKCloudSearch::delegate</a></div><div class="ttdeci">id&lt; BMKCloudSearchDelegate &gt; delegate</div><div class="ttdoc">检索模块的Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearch.h:39</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_detail_search_info_html"><div class="ttname"><a href="interface_b_m_k_cloud_detail_search_info.html">BMKCloudDetailSearchInfo</a></div><div class="ttdoc">详情云检索参数信息类 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearchInfo.h:95</div></div>
+<div class="ttc" id="interface_b_m_k_cloud_nearby_search_info_html"><div class="ttname"><a href="interface_b_m_k_cloud_nearby_search_info.html">BMKCloudNearbySearchInfo</a></div><div class="ttdoc">周边云检索参数信息类 </div><div class="ttdef"><b>Definition:</b> BMKCloudSearchInfo.h:76</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:29 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

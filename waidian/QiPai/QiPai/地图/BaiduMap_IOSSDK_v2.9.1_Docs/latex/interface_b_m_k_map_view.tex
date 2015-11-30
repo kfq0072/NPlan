@@ -1,0 +1,1009 @@
+\hypertarget{interface_b_m_k_map_view}{}\section{B\+M\+K\+Map\+View类 参考}
+\label{interface_b_m_k_map_view}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+
+
+地图\+View类，使用此\+View可以显示地图窗口，并且对地图进行相关的操作  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Map\+View.\+h$>$}
+
+类 B\+M\+K\+Map\+View 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_map_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a6ce8ac560bd901b93b3e15d6996a409a}{view\+Will\+Appear}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a0cfbfc217062e84de41ddb04dcad7e67}{view\+Will\+Disappear}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a952993ae3b36628c1e16acf78f3b0b4a}{map\+Force\+Refresh}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_map_view_a349f7c74871a389d73955edd7bcd9fdf}{zoom\+In}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_map_view_a1806c818757917ef674ebe5ba24fe5a2}{zoom\+Out}
+\item 
+(\hyperlink{struct_b_m_k_coordinate_region}{B\+M\+K\+Coordinate\+Region}) -\/ \hyperlink{interface_b_m_k_map_view_a5a1387f64868bf341cbf743063a91d28}{region\+That\+Fits\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_af182240990fe7ad8ff8b709456200fed}{set\+Region\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a02c0933bb56354f30695a6634e416e26}{set\+Center\+Coordinate\+:animated\+:}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_af2af641b86f327aa9f2a16050d380db2}{take\+Snapshot}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_a09fa7c95a30d88f468bcd3492772d63f}{take\+Snapshot\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_ad90d3e9ceabed218dcb90d9fc8247902}{set\+Visible\+Map\+Rect\+:animated\+:}
+\item 
+(\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect}) -\/ \hyperlink{interface_b_m_k_map_view_a58f9c0d783d39cd0d028ae94ca408de8}{map\+Rect\+That\+Fits\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a1e5a69629b90ac2f571284e2e6c32397}{set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:}
+\item 
+(\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect}) -\/ \hyperlink{interface_b_m_k_map_view_a93e07fbbe602a9a493650158babd2349}{map\+Rect\+That\+Fits\+:edge\+Padding\+:}
+\item 
+(C\+G\+Point) -\/ \hyperlink{interface_b_m_k_map_view_a46ec1b9f485f41a04ffe76300624f5b4}{convert\+Coordinate\+:to\+Point\+To\+View\+:}
+\item 
+(C\+L\+Location\+Coordinate2\+D) -\/ \hyperlink{interface_b_m_k_map_view_a6ab0dbfdf28bf2ab29174d9a70ce2e9c}{convert\+Point\+:to\+Coordinate\+From\+View\+:}
+\item 
+(C\+G\+Rect) -\/ \hyperlink{interface_b_m_k_map_view_a952023c2e24a13c993977d276745f329}{convert\+Region\+:to\+Rect\+To\+View\+:}
+\item 
+(\hyperlink{struct_b_m_k_coordinate_region}{B\+M\+K\+Coordinate\+Region}) -\/ \hyperlink{interface_b_m_k_map_view_ae99130c0eceabae6c9e202699ba375d1}{convert\+Rect\+:to\+Region\+From\+View\+:}
+\item 
+(C\+G\+Rect) -\/ \hyperlink{interface_b_m_k_map_view_a4a802244887690c7238bd5c8e18918ae}{convert\+Map\+Rect\+:to\+Rect\+To\+View\+:}
+\item 
+(\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect}) -\/ \hyperlink{interface_b_m_k_map_view_afa77dab84c13620c4ce0dee46df87b46}{convert\+Rect\+:to\+Map\+Rect\+From\+View\+:}
+\item 
+(C\+G\+Point) -\/ \hyperlink{interface_b_m_k_map_view_ad2ae70da77b6ba304cd37413fe5a5c78}{gl\+Point\+For\+Map\+Point\+:}
+\item 
+(C\+G\+Point $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_a56625ec8600403ba03d20cfa0715ee61}{gl\+Points\+For\+Map\+Points\+:count\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_afc552204ea098d293a4f0d7ebf35b8ac}{set\+Map\+Center\+To\+Screen\+Pt\+:}
+\item 
+(\hyperlink{interface_b_m_k_map_status}{B\+M\+K\+Map\+Status} $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_a419f8ac73742ccf9ef7fb921b349bca4}{get\+Map\+Status}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a595b3baaa42f35fd5fa3b778011a59d7}{set\+Map\+Status\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_abf8e2308ae62e367f8b1271a9918060f}{set\+Map\+Status\+:with\+Animation\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a9668d8aa419c7a9140c79846fabc3598}{set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_map_view_a2256a65857b14f9cd56655663a966e14}{is\+Surpport\+Baidu\+Heat\+Map}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a2af9ed45c3a7fd530dd414dc573327b3}{add\+Annotation\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_affd032313c55ae27814430b760e4aea0}{add\+Annotations\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a6b6b75a5bf8b02854767f782a38d2009}{remove\+Annotation\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a37fbe2b5db750affb4e0234cbf24a3c7}{remove\+Annotations\+:}
+\item 
+(\hyperlink{interface_b_m_k_annotation_view}{B\+M\+K\+Annotation\+View} $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_a0fb885234188aef28df944d5f636c70c}{view\+For\+Annotation\+:}
+\item 
+(\hyperlink{interface_b_m_k_annotation_view}{B\+M\+K\+Annotation\+View} $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_a4d4aa7a171876f3f66add8f86cca1e8c}{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a92dbf00c3eff2ede4d4ffd485c4059e0}{select\+Annotation\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a3d6bbc91bc3b66463ee97b3c909e4999}{deselect\+Annotation\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a62093e51bd52b357d909b75b4447b415}{show\+Annotations\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a5945dec15b2d38ecf4b8efd4ce6b49e2}{add\+Heat\+Map\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a1337cb03abdb9ae730a2410f0fbd2f2f}{remove\+Heat\+Map}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_afc9842b45a41341b3ea5d2e632344382}{update\+Location\+View\+With\+Param\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a72c1c3b690379ecf804cc20ddf5840e9}{update\+Location\+Data\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_af85ad6091568df29d9e7c3dea82a1a2b}{add\+Overlay\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_ab7d29d948515cc6d947d6aa63f904168}{add\+Overlays\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a3be1f2a019df3ff971f6a36f142e55be}{remove\+Overlay\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a3eb7909fb1adce117c1de432fd5d816a}{remove\+Overlays\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_adc0775a2651c1e4099f93d9c1bbffe3d}{insert\+Overlay\+:at\+Index\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a62c1c29b8e5b408ba0c40411a3c1f50f}{exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_ad94b45c4df7978e3a6095918323496d3}{insert\+Overlay\+:above\+Overlay\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_map_view_a73dfe9f74d722b7b1fc477e791f34653}{insert\+Overlay\+:below\+Overlay\+:}
+\item 
+(\hyperlink{interface_b_m_k_overlay_view}{B\+M\+K\+Overlay\+View} $\ast$) -\/ \hyperlink{interface_b_m_k_map_view_aa88093440ad22f7af9cf9a36051f662d}{view\+For\+Overlay\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_b_m_k_map_view_a2f7752221a3c2ba2682cddbcd351f0fc}{will\+Back\+Ground}
+\item 
+(void) + \hyperlink{interface_b_m_k_map_view_ae9e5519e547a14d2fc5479c28f724560}{did\+Fore\+Ground}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_map_view_a80806d05b9f82dcf5630110b5d20dc2c}{}id$<$ \hyperlink{protocol_b_m_k_map_view_delegate-p}{B\+M\+K\+Map\+View\+Delegate} $>$ \hyperlink{interface_b_m_k_map_view_a80806d05b9f82dcf5630110b5d20dc2c}{delegate}\label{interface_b_m_k_map_view_a80806d05b9f82dcf5630110b5d20dc2c}
+
+\begin{DoxyCompactList}\small\item\em 地图\+View的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_add5778e2d3c080b0ae2ce63538082fea}{}B\+M\+K\+Map\+Type \hyperlink{interface_b_m_k_map_view_add5778e2d3c080b0ae2ce63538082fea}{map\+Type}\label{interface_b_m_k_map_view_add5778e2d3c080b0ae2ce63538082fea}
+
+\begin{DoxyCompactList}\small\item\em 当前地图类型，可设定为标准地图、卫星地图 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_ae54e847bb82b4e087ced8dc399a2d020}{}\hyperlink{struct_b_m_k_coordinate_region}{B\+M\+K\+Coordinate\+Region} \hyperlink{interface_b_m_k_map_view_ae54e847bb82b4e087ced8dc399a2d020}{region}\label{interface_b_m_k_map_view_ae54e847bb82b4e087ced8dc399a2d020}
+
+\begin{DoxyCompactList}\small\item\em 当前地图的经纬度范围，设定的该范围可能会被调整为适合地图窗口显示的范围 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_adad44db2dcfaa2d92e5eabef40f32bd8}{}C\+G\+Point \hyperlink{interface_b_m_k_map_view_adad44db2dcfaa2d92e5eabef40f32bd8}{compass\+Position}\label{interface_b_m_k_map_view_adad44db2dcfaa2d92e5eabef40f32bd8}
+
+\begin{DoxyCompactList}\small\item\em 指南针的位置，设定坐标以\+B\+M\+K\+Map\+View左上角为原点，向右向下增长 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_aa19c4d034a7861589044326107985632}{}C\+L\+Location\+Coordinate2\+D \hyperlink{interface_b_m_k_map_view_aa19c4d034a7861589044326107985632}{center\+Coordinate}\label{interface_b_m_k_map_view_aa19c4d034a7861589044326107985632}
+
+\begin{DoxyCompactList}\small\item\em 当前地图的中心点，改变该值时，地图的比例尺级别不会发生变化 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a5e6c1e21fddd4d6a24194be53f14c27e}{}float \hyperlink{interface_b_m_k_map_view_a5e6c1e21fddd4d6a24194be53f14c27e}{zoom\+Level}\label{interface_b_m_k_map_view_a5e6c1e21fddd4d6a24194be53f14c27e}
+
+\begin{DoxyCompactList}\small\item\em 地图比例尺级别，在手机上当前可使用的级别为3-\/20级 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_ab504b39a0a908c811a258e058be7eeb9}{}float \hyperlink{interface_b_m_k_map_view_ab504b39a0a908c811a258e058be7eeb9}{min\+Zoom\+Level}\label{interface_b_m_k_map_view_ab504b39a0a908c811a258e058be7eeb9}
+
+\begin{DoxyCompactList}\small\item\em 地图的自定义最小比例尺级别 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_ae9fce90bc3332cdf0dc477c3959e5e79}{}float \hyperlink{interface_b_m_k_map_view_ae9fce90bc3332cdf0dc477c3959e5e79}{max\+Zoom\+Level}\label{interface_b_m_k_map_view_ae9fce90bc3332cdf0dc477c3959e5e79}
+
+\begin{DoxyCompactList}\small\item\em 地图的自定义最大比例尺级别 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a344d3d4be5d00adfc22feaa2ab6869c4}{}int \hyperlink{interface_b_m_k_map_view_a344d3d4be5d00adfc22feaa2ab6869c4}{rotation}\label{interface_b_m_k_map_view_a344d3d4be5d00adfc22feaa2ab6869c4}
+
+\begin{DoxyCompactList}\small\item\em 地图旋转角度，在手机上当前可使用的范围为－180～180度 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a8ae6f6cf221ea4f14923150d8974f997}{}int \hyperlink{interface_b_m_k_map_view_a8ae6f6cf221ea4f14923150d8974f997}{overlooking}\label{interface_b_m_k_map_view_a8ae6f6cf221ea4f14923150d8974f997}
+
+\begin{DoxyCompactList}\small\item\em 地图俯视角度，在手机上当前可使用的范围为－45～0度 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_abccbae8b8f7182769b8e0b69a4383ceb}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_abccbae8b8f7182769b8e0b69a4383ceb}{buildings\+Enabled}\label{interface_b_m_k_map_view_abccbae8b8f7182769b8e0b69a4383ceb}
+
+\begin{DoxyCompactList}\small\item\em 设定地图是否现显示3\+D楼块效果 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a26be634d93e06efd2d7268a99bcca52f}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a26be634d93e06efd2d7268a99bcca52f}{show\+Map\+Poi}\label{interface_b_m_k_map_view_a26be634d93e06efd2d7268a99bcca52f}
+
+\begin{DoxyCompactList}\small\item\em 设定地图是否显示底图poi标注，默认\+Y\+E\+S \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a513d0877fb66681b10ad7a4ed1346cb7}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a513d0877fb66681b10ad7a4ed1346cb7}{traffic\+Enabled}\label{interface_b_m_k_map_view_a513d0877fb66681b10ad7a4ed1346cb7}
+
+\begin{DoxyCompactList}\small\item\em 设定地图是否打开路况图层 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a9bc2c71421081064f9dbbd2a656172ff}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a9bc2c71421081064f9dbbd2a656172ff}{baidu\+Heat\+Map\+Enabled}\label{interface_b_m_k_map_view_a9bc2c71421081064f9dbbd2a656172ff}
+
+\begin{DoxyCompactList}\small\item\em 设定地图是否打开百度城市热力图图层（百度自有数据）,注：地图层级大于11时，可显示热力图 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_acf8472da994b76cef21a40673a41f774}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_acf8472da994b76cef21a40673a41f774}{zoom\+Enabled}\label{interface_b_m_k_map_view_acf8472da994b76cef21a40673a41f774}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持用户多点缩放(双指) \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a11368ac9a8b66b2bc1c3e552e368939e}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a11368ac9a8b66b2bc1c3e552e368939e}{zoom\+Enabled\+With\+Tap}\label{interface_b_m_k_map_view_a11368ac9a8b66b2bc1c3e552e368939e}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持用户缩放(双击或双指单击) \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_adc7ae3120b0edf096ac0eb42f13ed93a}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_adc7ae3120b0edf096ac0eb42f13ed93a}{scroll\+Enabled}\label{interface_b_m_k_map_view_adc7ae3120b0edf096ac0eb42f13ed93a}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持用户移动地图 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a8ab1315eb7dadb7db33f2ac568340dec}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a8ab1315eb7dadb7db33f2ac568340dec}{overlook\+Enabled}\label{interface_b_m_k_map_view_a8ab1315eb7dadb7db33f2ac568340dec}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持俯仰角 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_acfd7b4dc9bb05e46ffe477b527c61ce0}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_acfd7b4dc9bb05e46ffe477b527c61ce0}{rotate\+Enabled}\label{interface_b_m_k_map_view_acfd7b4dc9bb05e46ffe477b527c61ce0}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持旋转 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_ad8768aef899c970e88a4cba6f4f7a1bd}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_ad8768aef899c970e88a4cba6f4f7a1bd}{show\+Map\+Scale\+Bar}\label{interface_b_m_k_map_view_ad8768aef899c970e88a4cba6f4f7a1bd}
+
+\begin{DoxyCompactList}\small\item\em 设定是否显式比例尺 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a5eeee2f88682636f7e6f891246b03730}{}C\+G\+Point \hyperlink{interface_b_m_k_map_view_a5eeee2f88682636f7e6f891246b03730}{map\+Scale\+Bar\+Position}\label{interface_b_m_k_map_view_a5eeee2f88682636f7e6f891246b03730}
+
+\begin{DoxyCompactList}\small\item\em 比例尺的位置，设定坐标以\+B\+M\+K\+Map\+View左上角为原点，向右向下增长 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a35576ab39592ef50d1190c2b672c0923}{}\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect} \hyperlink{interface_b_m_k_map_view_a35576ab39592ef50d1190c2b672c0923}{visible\+Map\+Rect}\label{interface_b_m_k_map_view_a35576ab39592ef50d1190c2b672c0923}
+
+\begin{DoxyCompactList}\small\item\em 当前地图范围，采用直角坐标系表示，向右向下增长 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_aa1868ea167edc68fe4b15ad982968ade}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_aa1868ea167edc68fe4b15ad982968ade}{Change\+With\+Touch\+Point\+Center\+Enabled}\label{interface_b_m_k_map_view_aa1868ea167edc68fe4b15ad982968ade}
+
+\begin{DoxyCompactList}\small\item\em 设定地图\+View能否支持以手势中心点为轴进行旋转和缩放 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a61bc5de820abcf06bf3792c933f3e618}{}N\+S\+Array $\ast$ \hyperlink{interface_b_m_k_map_view_a61bc5de820abcf06bf3792c933f3e618}{annotations}\label{interface_b_m_k_map_view_a61bc5de820abcf06bf3792c933f3e618}
+
+\begin{DoxyCompactList}\small\item\em 当前地图\+View的已经添加的标注数组 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a5907ada55d984353e2af6c510a334810}{}B\+O\+O\+L {\bfseries is\+Selected\+Annotation\+View\+Front}\label{interface_b_m_k_map_view_a5907ada55d984353e2af6c510a334810}
+
+\item 
+\hypertarget{interface_b_m_k_map_view_a6e18e9532c42e940eca7739378348af4}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_a6e18e9532c42e940eca7739378348af4}{shows\+User\+Location}\label{interface_b_m_k_map_view_a6e18e9532c42e940eca7739378348af4}
+
+\begin{DoxyCompactList}\small\item\em 设定是否显示定位图层 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_aac0adfff30441312452cef6844ef818b}{}B\+M\+K\+User\+Tracking\+Mode \hyperlink{interface_b_m_k_map_view_aac0adfff30441312452cef6844ef818b}{user\+Tracking\+Mode}\label{interface_b_m_k_map_view_aac0adfff30441312452cef6844ef818b}
+
+\begin{DoxyCompactList}\small\item\em 设定定位模式，取值为：\+B\+M\+K\+User\+Tracking\+Mode \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_ada9feb9e53eb9611b57a596c572bb280}{}B\+O\+O\+L \hyperlink{interface_b_m_k_map_view_ada9feb9e53eb9611b57a596c572bb280}{user\+Location\+Visible}\label{interface_b_m_k_map_view_ada9feb9e53eb9611b57a596c572bb280}
+
+\begin{DoxyCompactList}\small\item\em 返回定位坐标点是否在当前地图可视区域内 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_map_view_a6c673c46ad9f146f80e48d82ebcf934b}{}N\+S\+Array $\ast$ \hyperlink{interface_b_m_k_map_view_a6c673c46ad9f146f80e48d82ebcf934b}{overlays}\label{interface_b_m_k_map_view_a6c673c46ad9f146f80e48d82ebcf934b}
+
+\begin{DoxyCompactList}\small\item\em 当前map\+View中已经添加的\+Overlay数组 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+地图\+View类，使用此\+View可以显示地图窗口，并且对地图进行相关的操作 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_map_view_a2af9ed45c3a7fd530dd414dc573327b3}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!add\+Annotation\+:@{add\+Annotation\+:}}
+\index{add\+Annotation\+:@{add\+Annotation\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{add\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a2af9ed45c3a7fd530dd414dc573327b3}
+向地图窗口添加标注，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Annotation\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要添加的标注 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a2af9ed45c3a7fd530dd414dc573327b3}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_affd032313c55ae27814430b760e4aea0}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!add\+Annotations\+:@{add\+Annotations\+:}}
+\index{add\+Annotations\+:@{add\+Annotations\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{add\+Annotations\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_affd032313c55ae27814430b760e4aea0}
+向地图窗口添加一组标注，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Annotation\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em annotations} & 要添加的标注数组 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_affd032313c55ae27814430b760e4aea0}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a5945dec15b2d38ecf4b8efd4ce6b49e2}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!add\+Heat\+Map\+:@{add\+Heat\+Map\+:}}
+\index{add\+Heat\+Map\+:@{add\+Heat\+Map\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{add\+Heat\+Map\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Heat\+Map\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Heat\+Map} $\ast$)}]{heat\+Map}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a5945dec15b2d38ecf4b8efd4ce6b49e2}
+添加热力图 
+\begin{DoxyParams}{参数}
+{\em \mbox{[}\+B\+M\+K\+Heat\+Map$\ast$\mbox{]}} & heat\+Map 热力图绘制和显示数据 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_heat_map_a_p_i_08_a5945dec15b2d38ecf4b8efd4ce6b49e2}{B\+M\+K\+Map\+View(\+Heat\+Map\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_af85ad6091568df29d9e7c3dea82a1a2b}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!add\+Overlay\+:@{add\+Overlay\+:}}
+\index{add\+Overlay\+:@{add\+Overlay\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{add\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_af85ad6091568df29d9e7c3dea82a1a2b}
+向地图窗口添加\+Overlay，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Overlay\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em overlay} & 要添加的overlay \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_af85ad6091568df29d9e7c3dea82a1a2b}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_ab7d29d948515cc6d947d6aa63f904168}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!add\+Overlays\+:@{add\+Overlays\+:}}
+\index{add\+Overlays\+:@{add\+Overlays\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{add\+Overlays\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Overlays\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{overlays}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ab7d29d948515cc6d947d6aa63f904168}
+向地图窗口添加一组\+Overlay，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Overlay\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em overlays} & 要添加的overlay数组 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_ab7d29d948515cc6d947d6aa63f904168}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a46ec1b9f485f41a04ffe76300624f5b4}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Coordinate\+:to\+Point\+To\+View\+:@{convert\+Coordinate\+:to\+Point\+To\+View\+:}}
+\index{convert\+Coordinate\+:to\+Point\+To\+View\+:@{convert\+Coordinate\+:to\+Point\+To\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Coordinate\+:to\+Point\+To\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Point) convert\+Coordinate\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D)}]{coordinate}
+\item[{toPointToView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a46ec1b9f485f41a04ffe76300624f5b4}
+将经纬度坐标转换为\+View坐标 
+\begin{DoxyParams}{参数}
+{\em coordinate} & 待转换的经纬度坐标 \\
+\hline
+{\em view} & 指定相对的\+View \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的\+View坐标 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a4a802244887690c7238bd5c8e18918ae}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Map\+Rect\+:to\+Rect\+To\+View\+:@{convert\+Map\+Rect\+:to\+Rect\+To\+View\+:}}
+\index{convert\+Map\+Rect\+:to\+Rect\+To\+View\+:@{convert\+Map\+Rect\+:to\+Rect\+To\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Map\+Rect\+:to\+Rect\+To\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Rect) convert\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{toRectToView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a4a802244887690c7238bd5c8e18918ae}
+将直角地理坐标矩形区域转换为\+View矩形区域 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 待转换的直角地理坐标矩形 \\
+\hline
+{\em view} & 指定相对的\+View \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的\+View矩形区域 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a6ab0dbfdf28bf2ab29174d9a70ce2e9c}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Point\+:to\+Coordinate\+From\+View\+:@{convert\+Point\+:to\+Coordinate\+From\+View\+:}}
+\index{convert\+Point\+:to\+Coordinate\+From\+View\+:@{convert\+Point\+:to\+Coordinate\+From\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Point\+:to\+Coordinate\+From\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+L\+Location\+Coordinate2\+D) convert\+Point\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Point)}]{point}
+\item[{toCoordinateFromView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a6ab0dbfdf28bf2ab29174d9a70ce2e9c}
+将\+View坐标转换成经纬度坐标 
+\begin{DoxyParams}{参数}
+{\em point} & 待转换的\+View坐标 \\
+\hline
+{\em view} & point坐标所在的view \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的经纬度坐标 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_afa77dab84c13620c4ce0dee46df87b46}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Rect\+:to\+Map\+Rect\+From\+View\+:@{convert\+Rect\+:to\+Map\+Rect\+From\+View\+:}}
+\index{convert\+Rect\+:to\+Map\+Rect\+From\+View\+:@{convert\+Rect\+:to\+Map\+Rect\+From\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Rect\+:to\+Map\+Rect\+From\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Rect}) convert\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{rect}
+\item[{toMapRectFromView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_afa77dab84c13620c4ce0dee46df87b46}
+将\+View矩形区域转换成直角地理坐标矩形区域 
+\begin{DoxyParams}{参数}
+{\em rect} & 待转换的\+View矩形区域 \\
+\hline
+{\em view} & rect坐标所在的view \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的直角地理坐标矩形区域 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_ae99130c0eceabae6c9e202699ba375d1}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Rect\+:to\+Region\+From\+View\+:@{convert\+Rect\+:to\+Region\+From\+View\+:}}
+\index{convert\+Rect\+:to\+Region\+From\+View\+:@{convert\+Rect\+:to\+Region\+From\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Rect\+:to\+Region\+From\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Coordinate\+Region}) convert\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{rect}
+\item[{toRegionFromView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ae99130c0eceabae6c9e202699ba375d1}
+将\+View矩形区域转换成经纬度矩形区域 
+\begin{DoxyParams}{参数}
+{\em rect} & 待转换的\+View矩形区域 \\
+\hline
+{\em view} & rect坐标所在的view \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的经纬度矩形区域 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a952023c2e24a13c993977d276745f329}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!convert\+Region\+:to\+Rect\+To\+View\+:@{convert\+Region\+:to\+Rect\+To\+View\+:}}
+\index{convert\+Region\+:to\+Rect\+To\+View\+:@{convert\+Region\+:to\+Rect\+To\+View\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{convert\+Region\+:to\+Rect\+To\+View\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Rect) convert\+Region\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Coordinate\+Region})}]{region}
+\item[{toRectToView:(U\+I\+View $\ast$)}]{view}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a952023c2e24a13c993977d276745f329}
+将经纬度矩形区域转换为\+View矩形区域 
+\begin{DoxyParams}{参数}
+{\em region} & 待转换的经纬度矩形 \\
+\hline
+{\em view} & 指定相对的\+View \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+转换后的\+View矩形区域 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a4d4aa7a171876f3f66add8f86cca1e8c}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:@{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}}
+\index{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:@{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Annotation\+View} $\ast$) dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{identifier}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a4d4aa7a171876f3f66add8f86cca1e8c}
+根据指定标识查找一个可被复用的标注\+View，一般在delegate中使用，用此函数来代替新申请一个\+View 
+\begin{DoxyParams}{参数}
+{\em identifier} & 指定标识 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回可被复用的标注\+View 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a4d4aa7a171876f3f66add8f86cca1e8c}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a3d6bbc91bc3b66463ee97b3c909e4999}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!deselect\+Annotation\+:animated\+:@{deselect\+Annotation\+:animated\+:}}
+\index{deselect\+Annotation\+:animated\+:@{deselect\+Annotation\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{deselect\+Annotation\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deselect\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a3d6bbc91bc3b66463ee97b3c909e4999}
+取消指定的标注的选中状态，本版暂不支持animate效果 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 本版暂不支持 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a3d6bbc91bc3b66463ee97b3c909e4999}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_ae9e5519e547a14d2fc5479c28f724560}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!did\+Fore\+Ground@{did\+Fore\+Ground}}
+\index{did\+Fore\+Ground@{did\+Fore\+Ground}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{did\+Fore\+Ground}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) did\+Fore\+Ground 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ae9e5519e547a14d2fc5479c28f724560}
+当应用恢复前台状态时调用。 \hypertarget{interface_b_m_k_map_view_a62c1c29b8e5b408ba0c40411a3c1f50f}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:@{exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:}}
+\index{exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:@{exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{exchange\+Overlay\+At\+Index\+:with\+Overlay\+At\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) exchange\+Overlay\+At\+Index\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+U\+Integer)}]{index1}
+\item[{withOverlayAtIndex:(N\+S\+U\+Integer)}]{index2}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a62c1c29b8e5b408ba0c40411a3c1f50f}
+在交换指定索引处的\+Overlay 
+\begin{DoxyParams}{参数}
+{\em index1} & 索引1 \\
+\hline
+{\em index2} & 索引2 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_a62c1c29b8e5b408ba0c40411a3c1f50f}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a419f8ac73742ccf9ef7fb921b349bca4}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!get\+Map\+Status@{get\+Map\+Status}}
+\index{get\+Map\+Status@{get\+Map\+Status}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{get\+Map\+Status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Status}$\ast$) get\+Map\+Status 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a419f8ac73742ccf9ef7fb921b349bca4}
+获取地图状态 \begin{DoxyReturn}{返回}
+返回地图状态信息 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_ad2ae70da77b6ba304cd37413fe5a5c78}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!gl\+Point\+For\+Map\+Point\+:@{gl\+Point\+For\+Map\+Point\+:}}
+\index{gl\+Point\+For\+Map\+Point\+:@{gl\+Point\+For\+Map\+Point\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{gl\+Point\+For\+Map\+Point\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Point) gl\+Point\+For\+Map\+Point\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point})}]{map\+Point}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ad2ae70da77b6ba304cd37413fe5a5c78}
+将\+B\+M\+K\+Map\+Point转换为opengles可以直接使用的坐标 
+\begin{DoxyParams}{参数}
+{\em map\+Point} & B\+M\+K\+Map\+Point坐标 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+opengles 直接支持的坐标 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a56625ec8600403ba03d20cfa0715ee61}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!gl\+Points\+For\+Map\+Points\+:count\+:@{gl\+Points\+For\+Map\+Points\+:count\+:}}
+\index{gl\+Points\+For\+Map\+Points\+:count\+:@{gl\+Points\+For\+Map\+Points\+:count\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{gl\+Points\+For\+Map\+Points\+:count\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Point $\ast$) gl\+Points\+For\+Map\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{map\+Points}
+\item[{count:(N\+S\+U\+Integer)}]{count}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a56625ec8600403ba03d20cfa0715ee61}
+批量将\+B\+M\+K\+Map\+Point转换为opengles可以直接使用的坐标 
+\begin{DoxyParams}{参数}
+{\em map\+Points} & B\+M\+K\+Map\+Point坐标数据指针 \\
+\hline
+{\em count} & 个数,count不能大于数组长度 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+opengles 直接支持的坐标数据指针(需要调用者手动释放) 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_ad94b45c4df7978e3a6095918323496d3}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!insert\+Overlay\+:above\+Overlay\+:@{insert\+Overlay\+:above\+Overlay\+:}}
+\index{insert\+Overlay\+:above\+Overlay\+:@{insert\+Overlay\+:above\+Overlay\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{insert\+Overlay\+:above\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\item[{aboveOverlay:(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{sibling}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ad94b45c4df7978e3a6095918323496d3}
+在指定的\+Overlay之上插入一个overlay 
+\begin{DoxyParams}{参数}
+{\em overlay} & 带添加的\+Overlay \\
+\hline
+{\em sibling} & 用于指定相对位置的\+Overlay \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_ad94b45c4df7978e3a6095918323496d3}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_adc0775a2651c1e4099f93d9c1bbffe3d}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!insert\+Overlay\+:at\+Index\+:@{insert\+Overlay\+:at\+Index\+:}}
+\index{insert\+Overlay\+:at\+Index\+:@{insert\+Overlay\+:at\+Index\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{insert\+Overlay\+:at\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\item[{atIndex:(N\+S\+U\+Integer)}]{index}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_adc0775a2651c1e4099f93d9c1bbffe3d}
+在指定的索引处添加一个\+Overlay 
+\begin{DoxyParams}{参数}
+{\em overlay} & 要添加的overlay \\
+\hline
+{\em index} & 指定的索引 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_adc0775a2651c1e4099f93d9c1bbffe3d}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a73dfe9f74d722b7b1fc477e791f34653}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!insert\+Overlay\+:below\+Overlay\+:@{insert\+Overlay\+:below\+Overlay\+:}}
+\index{insert\+Overlay\+:below\+Overlay\+:@{insert\+Overlay\+:below\+Overlay\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{insert\+Overlay\+:below\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) insert\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\item[{belowOverlay:(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{sibling}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a73dfe9f74d722b7b1fc477e791f34653}
+在指定的\+Overlay之下插入一个overlay 
+\begin{DoxyParams}{参数}
+{\em overlay} & 带添加的\+Overlay \\
+\hline
+{\em sibling} & 用于指定相对位置的\+Overlay \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_a73dfe9f74d722b7b1fc477e791f34653}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a2256a65857b14f9cd56655663a966e14}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!is\+Surpport\+Baidu\+Heat\+Map@{is\+Surpport\+Baidu\+Heat\+Map}}
+\index{is\+Surpport\+Baidu\+Heat\+Map@{is\+Surpport\+Baidu\+Heat\+Map}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{is\+Surpport\+Baidu\+Heat\+Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Surpport\+Baidu\+Heat\+Map 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a2256a65857b14f9cd56655663a966e14}
+判断当前图区是否支持百度热力图（百度自有数据） \begin{DoxyReturn}{返回}
+支持返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a952993ae3b36628c1e16acf78f3b0b4a}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!map\+Force\+Refresh@{map\+Force\+Refresh}}
+\index{map\+Force\+Refresh@{map\+Force\+Refresh}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{map\+Force\+Refresh}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) map\+Force\+Refresh 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a952993ae3b36628c1e16acf78f3b0b4a}
+强制刷新mapview \hypertarget{interface_b_m_k_map_view_a58f9c0d783d39cd0d028ae94ca408de8}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!map\+Rect\+That\+Fits\+:@{map\+Rect\+That\+Fits\+:}}
+\index{map\+Rect\+That\+Fits\+:@{map\+Rect\+That\+Fits\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{map\+Rect\+That\+Fits\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Rect}) map\+Rect\+That\+Fits\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a58f9c0d783d39cd0d028ae94ca408de8}
+根据当前地图\+View的窗口大小调整传入的map\+Rect，返回适合当前地图窗口显示的map\+Rect，调整过程会保证中心点不改变 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 待调整的地理范围，采用直角坐标系表示 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调整后适合当前地图窗口显示的地理范围，采用直角坐标系 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a93e07fbbe602a9a493650158babd2349}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!map\+Rect\+That\+Fits\+:edge\+Padding\+:@{map\+Rect\+That\+Fits\+:edge\+Padding\+:}}
+\index{map\+Rect\+That\+Fits\+:edge\+Padding\+:@{map\+Rect\+That\+Fits\+:edge\+Padding\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{map\+Rect\+That\+Fits\+:edge\+Padding\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Rect}) {\bf map\+Rect\+That\+Fits\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{edgePadding:(U\+I\+Edge\+Insets)}]{insets}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a93e07fbbe602a9a493650158babd2349}
+根据当前地图\+View的窗口大小调整传入的map\+Rect，返回适合当前地图窗口显示的map\+Rect，并且在该map\+Rect四周保留insets指定的边界区域 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 待调整的地理范围，采用直角坐标系表示 ×\\
+\hline
+{\em insets} & map\+Rect四周要预留的边界大小 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调整后适合当前地图窗口显示的地理范围，采用直角坐标系 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a5a1387f64868bf341cbf743063a91d28}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!region\+That\+Fits\+:@{region\+That\+Fits\+:}}
+\index{region\+That\+Fits\+:@{region\+That\+Fits\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{region\+That\+Fits\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Coordinate\+Region}) region\+That\+Fits\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Coordinate\+Region})}]{region}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a5a1387f64868bf341cbf743063a91d28}
+根据当前地图\+View的窗口大小调整传入的region，返回适合当前地图窗口显示的region，调整过程会保证中心点不改变 
+\begin{DoxyParams}{参数}
+{\em region} & 待调整的经纬度范围 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+调整后适合当前地图窗口显示的经纬度范围 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a6b6b75a5bf8b02854767f782a38d2009}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!remove\+Annotation\+:@{remove\+Annotation\+:}}
+\index{remove\+Annotation\+:@{remove\+Annotation\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{remove\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a6b6b75a5bf8b02854767f782a38d2009}
+移除标注 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要移除的标注 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a6b6b75a5bf8b02854767f782a38d2009}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a37fbe2b5db750affb4e0234cbf24a3c7}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!remove\+Annotations\+:@{remove\+Annotations\+:}}
+\index{remove\+Annotations\+:@{remove\+Annotations\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{remove\+Annotations\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a37fbe2b5db750affb4e0234cbf24a3c7}
+移除一组标注 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要移除的标注数组 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a37fbe2b5db750affb4e0234cbf24a3c7}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a1337cb03abdb9ae730a2410f0fbd2f2f}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!remove\+Heat\+Map@{remove\+Heat\+Map}}
+\index{remove\+Heat\+Map@{remove\+Heat\+Map}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{remove\+Heat\+Map}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Heat\+Map 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a1337cb03abdb9ae730a2410f0fbd2f2f}
+移除热力图 
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_heat_map_a_p_i_08_a1337cb03abdb9ae730a2410f0fbd2f2f}{B\+M\+K\+Map\+View(\+Heat\+Map\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a3be1f2a019df3ff971f6a36f142e55be}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!remove\+Overlay\+:@{remove\+Overlay\+:}}
+\index{remove\+Overlay\+:@{remove\+Overlay\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{remove\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a3be1f2a019df3ff971f6a36f142e55be}
+移除\+Overlay 
+\begin{DoxyParams}{参数}
+{\em overlay} & 要移除的overlay \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_a3be1f2a019df3ff971f6a36f142e55be}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a3eb7909fb1adce117c1de432fd5d816a}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!remove\+Overlays\+:@{remove\+Overlays\+:}}
+\index{remove\+Overlays\+:@{remove\+Overlays\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{remove\+Overlays\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Overlays\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{overlays}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a3eb7909fb1adce117c1de432fd5d816a}
+移除一组\+Overlay 
+\begin{DoxyParams}{参数}
+{\em overlays} & 要移除的overlay数组 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_a3eb7909fb1adce117c1de432fd5d816a}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a92dbf00c3eff2ede4d4ffd485c4059e0}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!select\+Annotation\+:animated\+:@{select\+Annotation\+:animated\+:}}
+\index{select\+Annotation\+:animated\+:@{select\+Annotation\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{select\+Annotation\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) select\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a92dbf00c3eff2ede4d4ffd485c4059e0}
+选中指定的标注，本版暂不支持animate效果 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 本版暂不支持 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a92dbf00c3eff2ede4d4ffd485c4059e0}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a02c0933bb56354f30695a6634e416e26}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Center\+Coordinate\+:animated\+:@{set\+Center\+Coordinate\+:animated\+:}}
+\index{set\+Center\+Coordinate\+:animated\+:@{set\+Center\+Coordinate\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Center\+Coordinate\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Center\+Coordinate\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D)}]{coordinate}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a02c0933bb56354f30695a6634e416e26}
+设定地图中心点坐标 
+\begin{DoxyParams}{参数}
+{\em coordinate} & 要设定的地图中心点坐标，用经纬度表示 \\
+\hline
+{\em animated} & 是否采用动画效果 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_afc552204ea098d293a4f0d7ebf35b8ac}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Map\+Center\+To\+Screen\+Pt\+:@{set\+Map\+Center\+To\+Screen\+Pt\+:}}
+\index{set\+Map\+Center\+To\+Screen\+Pt\+:@{set\+Map\+Center\+To\+Screen\+Pt\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Map\+Center\+To\+Screen\+Pt\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Map\+Center\+To\+Screen\+Pt\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Point)}]{pt\+In\+Screen}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_afc552204ea098d293a4f0d7ebf35b8ac}
+设置地图中心点在地图中的屏幕坐标位置 
+\begin{DoxyParams}{参数}
+{\em pt\+In\+Screen} & 要设定的地图中心点位置，为屏幕坐标，设置的中心点不能超过屏幕范围，否则无效 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_a595b3baaa42f35fd5fa3b778011a59d7}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Map\+Status\+:@{set\+Map\+Status\+:}}
+\index{set\+Map\+Status\+:@{set\+Map\+Status\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Map\+Status\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Map\+Status\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Status} $\ast$)}]{map\+Status}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a595b3baaa42f35fd5fa3b778011a59d7}
+设置地图状态 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em map\+Status} & 地图状态信息 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_abf8e2308ae62e367f8b1271a9918060f}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Map\+Status\+:with\+Animation\+:@{set\+Map\+Status\+:with\+Animation\+:}}
+\index{set\+Map\+Status\+:with\+Animation\+:@{set\+Map\+Status\+:with\+Animation\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Map\+Status\+:with\+Animation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\+Map\+Status\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Status} $\ast$)}]{map\+Status}
+\item[{withAnimation:(B\+O\+O\+L)}]{b\+Animation}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_abf8e2308ae62e367f8b1271a9918060f}
+设置地图状态 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em map\+Status} & 地图状态信息 \\
+\hline
+\mbox{\tt in}  & {\em b\+Animation} & 是否需要动画效果，true\+:需要做动画 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_a9668d8aa419c7a9140c79846fabc3598}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:@{set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:}}
+\index{set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:@{set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Map\+Status\+:with\+Animation\+:with\+Animation\+Time\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf set\+Map\+Status\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Status} $\ast$)}]{map\+Status}
+\item[{withAnimation:(B\+O\+O\+L)}]{b\+Animation}
+\item[{withAnimationTime:(int)}]{ul\+Duration}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a9668d8aa419c7a9140c79846fabc3598}
+设置地图状态 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em map\+Status} & 地图状态信息 \\
+\hline
+\mbox{\tt in}  & {\em b\+Animation} & 是否需要动画效果，true\+:需要做动画 \\
+\hline
+\mbox{\tt in}  & {\em ul\+Duration} & 指定动画时间，单位：ms \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_af182240990fe7ad8ff8b709456200fed}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Region\+:animated\+:@{set\+Region\+:animated\+:}}
+\index{set\+Region\+:animated\+:@{set\+Region\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Region\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Region\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Coordinate\+Region})}]{region}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_af182240990fe7ad8ff8b709456200fed}
+设定当前地图的显示范围 
+\begin{DoxyParams}{参数}
+{\em region} & 要设定的地图范围，用经纬度的方式表示 \\
+\hline
+{\em animated} & 是否采用动画效果 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_ad90d3e9ceabed218dcb90d9fc8247902}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Visible\+Map\+Rect\+:animated\+:@{set\+Visible\+Map\+Rect\+:animated\+:}}
+\index{set\+Visible\+Map\+Rect\+:animated\+:@{set\+Visible\+Map\+Rect\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Visible\+Map\+Rect\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Visible\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{animated:(B\+O\+O\+L)}]{animate}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_ad90d3e9ceabed218dcb90d9fc8247902}
+设定当前地图的显示范围,采用直角坐标系表示 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 要设定的地图范围，用直角坐标系表示 \\
+\hline
+{\em animate} & 是否采用动画效果 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_a1e5a69629b90ac2f571284e2e6c32397}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:@{set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:}}
+\index{set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:@{set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{set\+Visible\+Map\+Rect\+:edge\+Padding\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Visible\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{edgePadding:(U\+I\+Edge\+Insets)}]{insets}
+\item[{animated:(B\+O\+O\+L)}]{animate}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a1e5a69629b90ac2f571284e2e6c32397}
+设定地图的显示范围,并使map\+Rect四周保留insets指定的边界区域 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 要设定的地图范围，用直角坐标系表示 \\
+\hline
+{\em insets} & 指定的四周边界大小 \\
+\hline
+{\em animate} & 是否采用动画效果 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_map_view_a62093e51bd52b357d909b75b4447b415}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!show\+Annotations\+:animated\+:@{show\+Annotations\+:animated\+:}}
+\index{show\+Annotations\+:animated\+:@{show\+Annotations\+:animated\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{show\+Annotations\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a62093e51bd52b357d909b75b4447b415}
+设置地图使显示区域显示所有annotations 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 是否启动动画 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a62093e51bd52b357d909b75b4447b415}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_af2af641b86f327aa9f2a16050d380db2}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!take\+Snapshot@{take\+Snapshot}}
+\index{take\+Snapshot@{take\+Snapshot}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{take\+Snapshot}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) take\+Snapshot 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_af2af641b86f327aa9f2a16050d380db2}
+获得地图当前可视区域截图 \begin{DoxyReturn}{返回}
+返回view范围内的截取的\+U\+I\+Image 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a09fa7c95a30d88f468bcd3492772d63f}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!take\+Snapshot\+:@{take\+Snapshot\+:}}
+\index{take\+Snapshot\+:@{take\+Snapshot\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{take\+Snapshot\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image$\ast$) take\+Snapshot\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{rect}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a09fa7c95a30d88f468bcd3492772d63f}
+获得地图区域区域截图 \begin{DoxyReturn}{返回}
+返回指定区域的截取的\+U\+I\+Image 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a72c1c3b690379ecf804cc20ddf5840e9}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!update\+Location\+Data\+:@{update\+Location\+Data\+:}}
+\index{update\+Location\+Data\+:@{update\+Location\+Data\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{update\+Location\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Location\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+User\+Location} $\ast$)}]{user\+Location}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a72c1c3b690379ecf804cc20ddf5840e9}
+动态更新我的位置数据 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em user\+Location} & 定位数据 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_location_view_a_p_i_08_a72c1c3b690379ecf804cc20ddf5840e9}{B\+M\+K\+Map\+View(\+Location\+View\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_afc9842b45a41341b3ea5d2e632344382}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!update\+Location\+View\+With\+Param\+:@{update\+Location\+View\+With\+Param\+:}}
+\index{update\+Location\+View\+With\+Param\+:@{update\+Location\+View\+With\+Param\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{update\+Location\+View\+With\+Param\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\+Location\+View\+With\+Param\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Location\+View\+Display\+Param} $\ast$)}]{location\+View\+Display\+Param}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_afc9842b45a41341b3ea5d2e632344382}
+动态定制我的位置样式 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em location\+View\+Display\+Param} & 样式参数 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_location_view_a_p_i_08_afc9842b45a41341b3ea5d2e632344382}{B\+M\+K\+Map\+View(\+Location\+View\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a0fb885234188aef28df944d5f636c70c}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!view\+For\+Annotation\+:@{view\+For\+Annotation\+:}}
+\index{view\+For\+Annotation\+:@{view\+For\+Annotation\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{view\+For\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Annotation\+View} $\ast$) view\+For\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a0fb885234188aef28df944d5f636c70c}
+查找指定标注对应的\+View，如果该标注尚未显示，返回nil 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+指定标注对应的\+View 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a0fb885234188aef28df944d5f636c70c}{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_aa88093440ad22f7af9cf9a36051f662d}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!view\+For\+Overlay\+:@{view\+For\+Overlay\+:}}
+\index{view\+For\+Overlay\+:@{view\+For\+Overlay\+:}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{view\+For\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Overlay\+View} $\ast$) view\+For\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_aa88093440ad22f7af9cf9a36051f662d}
+查找指定overlay对应的\+View，如果该\+View尚未创建，返回nil 
+\begin{DoxyParams}{参数}
+{\em overlay} & 指定的overlay \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+指定overlay对应的\+View 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_b_m_k_map_view_07_overlays_a_p_i_08_aa88093440ad22f7af9cf9a36051f662d}{B\+M\+K\+Map\+View(\+Overlays\+A\+P\+I)}.
+
+\hypertarget{interface_b_m_k_map_view_a6ce8ac560bd901b93b3e15d6996a409a}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!view\+Will\+Appear@{view\+Will\+Appear}}
+\index{view\+Will\+Appear@{view\+Will\+Appear}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{view\+Will\+Appear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) view\+Will\+Appear 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a6ce8ac560bd901b93b3e15d6996a409a}
+当mapview即将被显式的时候调用，恢复之前存储的mapview状态。 \hypertarget{interface_b_m_k_map_view_a0cfbfc217062e84de41ddb04dcad7e67}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!view\+Will\+Disappear@{view\+Will\+Disappear}}
+\index{view\+Will\+Disappear@{view\+Will\+Disappear}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{view\+Will\+Disappear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) view\+Will\+Disappear 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a0cfbfc217062e84de41ddb04dcad7e67}
+当mapview即将被隐藏的时候调用，存储当前mapview的状态。 \hypertarget{interface_b_m_k_map_view_a2f7752221a3c2ba2682cddbcd351f0fc}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!will\+Back\+Ground@{will\+Back\+Ground}}
+\index{will\+Back\+Ground@{will\+Back\+Ground}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{will\+Back\+Ground}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) will\+Back\+Ground 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a2f7752221a3c2ba2682cddbcd351f0fc}
+当应用即将后台时调用，停止一切调用opengl相关的操作。 \hypertarget{interface_b_m_k_map_view_a349f7c74871a389d73955edd7bcd9fdf}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!zoom\+In@{zoom\+In}}
+\index{zoom\+In@{zoom\+In}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{zoom\+In}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) zoom\+In 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a349f7c74871a389d73955edd7bcd9fdf}
+放大一级比例尺 \begin{DoxyReturn}{返回}
+是否成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_map_view_a1806c818757917ef674ebe5ba24fe5a2}{}\index{B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}!zoom\+Out@{zoom\+Out}}
+\index{zoom\+Out@{zoom\+Out}!B\+M\+K\+Map\+View@{B\+M\+K\+Map\+View}}
+\subsubsection[{zoom\+Out}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) zoom\+Out 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_map_view_a1806c818757917ef674ebe5ba24fe5a2}
+缩小一级比例尺 \begin{DoxyReturn}{返回}
+是否成功 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Map\+View.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKLocationService.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKLocationService.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  BMKLocationService.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  LocationComponent</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Baidu on 3/28/14.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014 baidu. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKUserLocation.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@class</span> CLLocation;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="protocol_b_m_k_location_service_delegate-p.html">   13</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_location_service_delegate-p.html">BMKLocationServiceDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;- (void)<a class="code" href="protocol_b_m_k_location_service_delegate-p.html#a787a16ba232723b8c9594b468ce6714c">willStartLocatingUser</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)<a class="code" href="protocol_b_m_k_location_service_delegate-p.html#a03d0086502462319e2a007b837dc7e26">didStopLocatingUser</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (void)didUpdateUserHeading:(<a class="code" href="interface_b_m_k_user_location.html">BMKUserLocation</a> *)userLocation;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;- (void)didUpdateBMKUserLocation:(<a class="code" href="interface_b_m_k_user_location.html">BMKUserLocation</a> *)userLocation;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (void)didFailToLocateUserWithError:(NSError *)error;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html">   44</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_location_service.html">BMKLocationService</a> : NSObject</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#a19c6477dc79e94c8e20d7ddf1e52b0c2">   47</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) <a class="code" href="interface_b_m_k_user_location.html">BMKUserLocation</a> *userLocation;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#a6a3767cb278c4dba0a59950586b5e37d">   50</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;BMKLocationServiceDelegate&gt; <a class="code" href="interface_b_m_k_location_service.html#a6a3767cb278c4dba0a59950586b5e37d">delegate</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;-(void)<a class="code" href="interface_b_m_k_location_service.html#a3b49abd4104d23a114b7a7a632ff3722">startUserLocationService</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;-(void)<a class="code" href="interface_b_m_k_location_service.html#a1aece8fbe579debdd0984147e036e947">stopUserLocationService</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#pragma mark - 定位参数，具体含义可参考CLLocationManager相关属性的注释</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#acb15b8ebda25899c2859a3d403a3425d">   67</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) CLLocationDistance <a class="code" href="interface_b_m_k_location_service.html#acb15b8ebda25899c2859a3d403a3425d">distanceFilter</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#a2af9a5961b0553dd49e40e1fcc6feb3d">   70</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) CLLocationAccuracy <a class="code" href="interface_b_m_k_location_service.html#a2af9a5961b0553dd49e40e1fcc6feb3d">desiredAccuracy</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#af9da37d0c21e23368b0cfb06ea0dddea">   73</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) CLLocationDegrees <a class="code" href="interface_b_m_k_location_service.html#af9da37d0c21e23368b0cfb06ea0dddea">headingFilter</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#a8d90fc1bb5cc5b96a248d7145beee045">   76</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code" href="interface_b_m_k_location_service.html#a8d90fc1bb5cc5b96a248d7145beee045">pausesLocationUpdatesAutomatically</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="interface_b_m_k_location_service.html#aaa9c73f4cc2d604022cd0dd6b7128921">   79</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code" href="interface_b_m_k_location_service.html#aaa9c73f4cc2d604022cd0dd6b7128921">allowsBackgroundLocationUpdates</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#pragma mark - 废弃接口</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;+ (void)setLocationDistanceFilter:(CLLocationDistance) distanceFilter __deprecated_msg(&quot;废弃方法（空实现），使用distanceFilter属性替换&quot;);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;+ (CLLocationDistance)getCurrentLocationDistanceFilter <a class="code" href="interface_b_m_k_location_service.html#a978bac65e039cf58117e9a69ea259c59">__deprecated_msg</a>(&quot;废弃方法（空实现），使用distanceFilter属性替换&quot;);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;+ (void)setLocationDesiredAccuracy:(CLLocationAccuracy) desiredAccuracy __deprecated_msg(&quot;废弃方法（空实现），使用desiredAccuracy属性替换&quot;);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;+ (CLLocationAccuracy)getCurrentLocationDesiredAccuracy <a class="code" href="interface_b_m_k_location_service.html#a978bac65e039cf58117e9a69ea259c59">__deprecated_msg</a>(&quot;废弃方法（空实现），使用desiredAccuracy属性替换&quot;);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a8d90fc1bb5cc5b96a248d7145beee045"><div class="ttname"><a href="interface_b_m_k_location_service.html#a8d90fc1bb5cc5b96a248d7145beee045">BMKLocationService::pausesLocationUpdatesAutomatically</a></div><div class="ttdeci">BOOL pausesLocationUpdatesAutomatically</div><div class="ttdoc">指定定位是否会被系统自动暂停。默认为YES。只在iOS 6.0之后起作用。 </div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:76</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a978bac65e039cf58117e9a69ea259c59"><div class="ttname"><a href="interface_b_m_k_location_service.html#a978bac65e039cf58117e9a69ea259c59">+[BMKLocationService __deprecated_msg]</a></div><div class="ttdeci">&quot;废弃方法（空实现），使用distanceFilter属性替换&quot; __deprecated_msg()</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a6a3767cb278c4dba0a59950586b5e37d"><div class="ttname"><a href="interface_b_m_k_location_service.html#a6a3767cb278c4dba0a59950586b5e37d">BMKLocationService::delegate</a></div><div class="ttdeci">id&lt; BMKLocationServiceDelegate &gt; delegate</div><div class="ttdoc">定位服务Delegate,调用startUserLocationService定位成功后，用此Delegate来获取定位数据 ...</div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:50</div></div>
+<div class="ttc" id="protocol_b_m_k_location_service_delegate-p_html_a787a16ba232723b8c9594b468ce6714c"><div class="ttname"><a href="protocol_b_m_k_location_service_delegate-p.html#a787a16ba232723b8c9594b468ce6714c">-[BMKLocationServiceDelegate-p willStartLocatingUser]</a></div><div class="ttdeci">void willStartLocatingUser()</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a3b49abd4104d23a114b7a7a632ff3722"><div class="ttname"><a href="interface_b_m_k_location_service.html#a3b49abd4104d23a114b7a7a632ff3722">-[BMKLocationService startUserLocationService]</a></div><div class="ttdeci">void startUserLocationService()</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_af9da37d0c21e23368b0cfb06ea0dddea"><div class="ttname"><a href="interface_b_m_k_location_service.html#af9da37d0c21e23368b0cfb06ea0dddea">BMKLocationService::headingFilter</a></div><div class="ttdeci">CLLocationDegrees headingFilter</div><div class="ttdoc">设定最小更新角度。默认为1度，设定为kCLHeadingFilterNone会提示任何角度改变。 </div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:73</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html"><div class="ttname"><a href="interface_b_m_k_location_service.html">BMKLocationService</a></div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:44</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_acb15b8ebda25899c2859a3d403a3425d"><div class="ttname"><a href="interface_b_m_k_location_service.html#acb15b8ebda25899c2859a3d403a3425d">BMKLocationService::distanceFilter</a></div><div class="ttdeci">CLLocationDistance distanceFilter</div><div class="ttdoc">设定定位的最小更新距离。默认为kCLDistanceFilterNone </div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:67</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a2af9a5961b0553dd49e40e1fcc6feb3d"><div class="ttname"><a href="interface_b_m_k_location_service.html#a2af9a5961b0553dd49e40e1fcc6feb3d">BMKLocationService::desiredAccuracy</a></div><div class="ttdeci">CLLocationAccuracy desiredAccuracy</div><div class="ttdoc">设定定位精度。默认为kCLLocationAccuracyBest。 </div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:70</div></div>
+<div class="ttc" id="protocol_b_m_k_location_service_delegate-p_html_a03d0086502462319e2a007b837dc7e26"><div class="ttname"><a href="protocol_b_m_k_location_service_delegate-p.html#a03d0086502462319e2a007b837dc7e26">-[BMKLocationServiceDelegate-p didStopLocatingUser]</a></div><div class="ttdeci">void didStopLocatingUser()</div></div>
+<div class="ttc" id="protocol_b_m_k_location_service_delegate-p_html"><div class="ttname"><a href="protocol_b_m_k_location_service_delegate-p.html">BMKLocationServiceDelegate-p</a></div><div class="ttdoc">定位服务Delegate,调用startUserLocationService定位成功后，用此Delegate来获取定位数据 ...</div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_a1aece8fbe579debdd0984147e036e947"><div class="ttname"><a href="interface_b_m_k_location_service.html#a1aece8fbe579debdd0984147e036e947">-[BMKLocationService stopUserLocationService]</a></div><div class="ttdeci">void stopUserLocationService()</div></div>
+<div class="ttc" id="interface_b_m_k_user_location_html"><div class="ttname"><a href="interface_b_m_k_user_location.html">BMKUserLocation</a></div><div class="ttdef"><b>Definition:</b> BMKUserLocation.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_location_service_html_aaa9c73f4cc2d604022cd0dd6b7128921"><div class="ttname"><a href="interface_b_m_k_location_service.html#aaa9c73f4cc2d604022cd0dd6b7128921">BMKLocationService::allowsBackgroundLocationUpdates</a></div><div class="ttdeci">BOOL allowsBackgroundLocationUpdates</div><div class="ttdoc">指定定位：是否允许后台定位更新。默认为NO。只在iOS 9.0之后起作用。设为YES时，Info.plist中 UIBackground...</div><div class="ttdef"><b>Definition:</b> BMKLocationService.h:79</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

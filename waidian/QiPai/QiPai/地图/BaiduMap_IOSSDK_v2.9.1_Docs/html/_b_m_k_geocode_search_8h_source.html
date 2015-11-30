@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKGeocodeSearch.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKGeocodeSearch.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKGeocodeSearch.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;BMKGeocodeSearchOption.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKGeocodeType.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;BMKSearchBase.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_geo_code_search_delegate-p.html">BMKGeoCodeSearchDelegate</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_b_m_k_geo_code_search.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_geo_code_search.html">BMKGeoCodeSearch</a> : <a class="code" href="interface_b_m_k_search_base.html">BMKSearchBase</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_b_m_k_geo_code_search.html#a7a816dcf6d4f679ad3287948ad9427d2">   17</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;BMKGeoCodeSearchDelegate&gt; <a class="code" href="interface_b_m_k_geo_code_search.html#a7a816dcf6d4f679ad3287948ad9427d2">delegate</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (BOOL)geoCode:(<a class="code" href="interface_b_m_k_geo_code_search_option.html">BMKGeoCodeSearchOption</a>*)geoCodeOption;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (BOOL)reverseGeoCode:(<a class="code" href="interface_b_m_k_reverse_geo_code_option.html">BMKReverseGeoCodeOption</a>*)reverseGeoCodeOption;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="protocol_b_m_k_geo_code_search_delegate-p.html">   38</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_geo_code_search_delegate-p.html">BMKGeoCodeSearchDelegate</a>&lt;NSObject&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;- (void)onGetGeoCodeResult:(<a class="code" href="interface_b_m_k_geo_code_search.html">BMKGeoCodeSearch</a> *)searcher result:(<a class="code" href="interface_b_m_k_geo_code_result.html">BMKGeoCodeResult</a> *)result errorCode:(BMKSearchErrorCode)error;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;- (void)onGetReverseGeoCodeResult:(<a class="code" href="interface_b_m_k_geo_code_search.html">BMKGeoCodeSearch</a> *)searcher result:(<a class="code" href="interface_b_m_k_reverse_geo_code_result.html">BMKReverseGeoCodeResult</a> *)result errorCode:(BMKSearchErrorCode)error;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="ttc" id="interface_b_m_k_geo_code_search_html"><div class="ttname"><a href="interface_b_m_k_geo_code_search.html">BMKGeoCodeSearch</a></div><div class="ttdoc">geo搜索服务 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeSearch.h:15</div></div>
+<div class="ttc" id="interface_b_m_k_geo_code_result_html"><div class="ttname"><a href="interface_b_m_k_geo_code_result.html">BMKGeoCodeResult</a></div><div class="ttdoc">地址编码结果 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeType.h:60</div></div>
+<div class="ttc" id="interface_b_m_k_geo_code_search_html_a7a816dcf6d4f679ad3287948ad9427d2"><div class="ttname"><a href="interface_b_m_k_geo_code_search.html#a7a816dcf6d4f679ad3287948ad9427d2">BMKGeoCodeSearch::delegate</a></div><div class="ttdeci">id&lt; BMKGeoCodeSearchDelegate &gt; delegate</div><div class="ttdoc">检索模块的Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeSearch.h:17</div></div>
+<div class="ttc" id="protocol_b_m_k_geo_code_search_delegate-p_html"><div class="ttname"><a href="protocol_b_m_k_geo_code_search_delegate-p.html">BMKGeoCodeSearchDelegate-p</a></div><div class="ttdoc">搜索delegate，用于获取搜索结果 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeSearch.h:38</div></div>
+<div class="ttc" id="interface_b_m_k_geo_code_search_option_html"><div class="ttname"><a href="interface_b_m_k_geo_code_search_option.html">BMKGeoCodeSearchOption</a></div><div class="ttdoc">geo检索信息类 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeSearchOption.h:11</div></div>
+<div class="ttc" id="interface_b_m_k_reverse_geo_code_result_html"><div class="ttname"><a href="interface_b_m_k_reverse_geo_code_result.html">BMKReverseGeoCodeResult</a></div><div class="ttdoc">反地址编码结果 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeType.h:39</div></div>
+<div class="ttc" id="interface_b_m_k_search_base_html"><div class="ttname"><a href="interface_b_m_k_search_base.html">BMKSearchBase</a></div><div class="ttdoc">检索服务基类 </div><div class="ttdef"><b>Definition:</b> BMKSearchBase.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_reverse_geo_code_option_html"><div class="ttname"><a href="interface_b_m_k_reverse_geo_code_option.html">BMKReverseGeoCodeOption</a></div><div class="ttdoc">反geo检索信息类 </div><div class="ttdef"><b>Definition:</b> BMKGeocodeSearchOption.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:29 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKGroundOverlay.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKGroundOverlay.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKGroundOverlay.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &quot;BMKMultiPoint.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;BMKOverlay.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html">   11</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_ground_overlay.html">BMKGroundOverlay</a> : <a class="code" href="interface_b_m_k_multi_point.html">BMKMultiPoint</a>&lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">@public</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> zoomLevel;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    CLLocationCoordinate2D _pt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a> _bound;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    CGPoint _anchor;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    UIImage* _icon;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> iconID;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BOOL isCenterPt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> left;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> bottom;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> width;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> height;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">@property</span> (nonatomic,assign) CLLocationCoordinate2D pt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html#a99b7330f6eb896adf663b20cfaf0ff3d">   28</a></span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@property</span> (nonatomic,assign) CGPoint anchor;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html#a2601d9c702749c36f3c693cdf6165c75">   32</a></span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@property</span> (nonatomic,assign) <a class="code" href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a> bound;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html#a2cc42179bfa82c4554f1f95c57013daf">   35</a></span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">@property</span>(nonatomic, strong) UIImage *icon;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html#ac6b3c33960c8ae439c387636a27f23a0">   38</a></span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@property</span>(nonatomic) GLfloat alpha;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="interface_b_m_k_ground_overlay.html#ad179c59ea12b8e9db600387d0c873d47">   41</a></span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;+ (<a class="code" href="interface_b_m_k_ground_overlay.html">BMKGroundOverlay</a> *)groundOverlayWithPosition:(CLLocationCoordinate2D)position</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                zoomLevel:(CGFloat)zoomLevel</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                anchor:(CGPoint)anchor</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                icon:(UIImage*)icon;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;+ (<a class="code" href="interface_b_m_k_ground_overlay.html">BMKGroundOverlay</a> *)groundOverlayWithBounds:(<a class="code" href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a>)bounds</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                icon:(UIImage*)icon;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html">BMKOverlay-p</a></div><div class="ttdoc">该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:13</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_bounds_html"><div class="ttname"><a href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a></div><div class="ttdoc">表示一个经纬度区域 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:82</div></div>
+<div class="ttc" id="interface_b_m_k_ground_overlay_html"><div class="ttname"><a href="interface_b_m_k_ground_overlay.html">BMKGroundOverlay</a></div><div class="ttdoc">该类用于定义一个图片图层 </div><div class="ttdef"><b>Definition:</b> BMKGroundOverlay.h:11</div></div>
+<div class="ttc" id="interface_b_m_k_multi_point_html"><div class="ttname"><a href="interface_b_m_k_multi_point.html">BMKMultiPoint</a></div><div class="ttdoc">该类定义多个点，是个由多个点组成的虚基类, 不能直接实例化对象, 要使用其子类BMKPolyline,BMKPolygon来实例化 </div><div class="ttdef"><b>Definition:</b> BMKMultiPoint.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

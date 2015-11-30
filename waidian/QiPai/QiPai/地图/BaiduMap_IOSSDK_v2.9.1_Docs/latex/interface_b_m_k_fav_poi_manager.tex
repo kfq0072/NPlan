@@ -1,0 +1,126 @@
+\hypertarget{interface_b_m_k_fav_poi_manager}{}\section{B\+M\+K\+Fav\+Poi\+Manager类 参考}
+\label{interface_b_m_k_fav_poi_manager}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+
+
+收藏点管理类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Fav\+Poi\+Manager.\+h$>$}
+
+类 B\+M\+K\+Fav\+Poi\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_fav_poi_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Integer) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_ad34be09541e56b63341787f240c28dca}{add\+Fav\+Poi\+:}
+\item 
+(\hyperlink{interface_b_m_k_fav_poi_info}{B\+M\+K\+Fav\+Poi\+Info} $\ast$) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_af64f90fa939d55cfcbc261f49983ec75}{get\+Fav\+Poi\+:}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_ab27a17d393ca415bd85d6781ecabf98a}{get\+All\+Fav\+Pois}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_af1f647c345a7efa8aff8af009683b57b}{update\+Fav\+Poi\+:fav\+Poi\+Info\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_ac3ab3cb3912e4d1e08a971d4d1a23d7b}{delete\+Fav\+Poi\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_fav_poi_manager_a1560ebc6ff98da5a48ea14bd2eea3f0e}{clear\+All\+Fav\+Pois}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+收藏点管理类 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_fav_poi_manager_ad34be09541e56b63341787f240c28dca}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!add\+Fav\+Poi\+:@{add\+Fav\+Poi\+:}}
+\index{add\+Fav\+Poi\+:@{add\+Fav\+Poi\+:}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{add\+Fav\+Poi\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Integer) add\+Fav\+Poi\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Fav\+Poi\+Info} $\ast$)}]{fav\+Poi\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_ad34be09541e56b63341787f240c28dca}
+添加一个poi点 
+\begin{DoxyParams}{参数}
+{\em fav\+Poi\+Info} & 点信息,in/out，输出包含fav\+Id和添加时间 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+-\/2\+:收藏夹已满，-\/1\+:名称为空，0：添加失败，1：添加成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_fav_poi_manager_a1560ebc6ff98da5a48ea14bd2eea3f0e}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!clear\+All\+Fav\+Pois@{clear\+All\+Fav\+Pois}}
+\index{clear\+All\+Fav\+Pois@{clear\+All\+Fav\+Pois}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{clear\+All\+Fav\+Pois}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) clear\+All\+Fav\+Pois 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_a1560ebc6ff98da5a48ea14bd2eea3f0e}
+清空所有收藏点 \begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，失败返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_fav_poi_manager_ac3ab3cb3912e4d1e08a971d4d1a23d7b}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!delete\+Fav\+Poi\+:@{delete\+Fav\+Poi\+:}}
+\index{delete\+Fav\+Poi\+:@{delete\+Fav\+Poi\+:}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{delete\+Fav\+Poi\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) delete\+Fav\+Poi\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{fav\+Id}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_ac3ab3cb3912e4d1e08a971d4d1a23d7b}
+删除一个收藏点 
+\begin{DoxyParams}{参数}
+{\em fav\+Id} & 添加时返回的fav\+Id，也可通过get\+All\+Fav\+Pois获取的信息中\+B\+M\+K\+Fav\+Poi\+Info的属性fav\+Id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，失败返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_fav_poi_manager_ab27a17d393ca415bd85d6781ecabf98a}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!get\+All\+Fav\+Pois@{get\+All\+Fav\+Pois}}
+\index{get\+All\+Fav\+Pois@{get\+All\+Fav\+Pois}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{get\+All\+Fav\+Pois}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$\ast$) get\+All\+Fav\+Pois 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_ab27a17d393ca415bd85d6781ecabf98a}
+获取所有收藏点信息 \begin{DoxyReturn}{返回}
+点信息数组 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_fav_poi_manager_af64f90fa939d55cfcbc261f49983ec75}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!get\+Fav\+Poi\+:@{get\+Fav\+Poi\+:}}
+\index{get\+Fav\+Poi\+:@{get\+Fav\+Poi\+:}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{get\+Fav\+Poi\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Fav\+Poi\+Info}$\ast$) get\+Fav\+Poi\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{fav\+Id}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_af64f90fa939d55cfcbc261f49983ec75}
+获取一个收藏点信息 
+\begin{DoxyParams}{参数}
+{\em fav\+Id} & 添加时返回的fav\+Id，也可通过get\+All\+Fav\+Pois获取的信息中\+B\+M\+K\+Fav\+Poi\+Info的属性fav\+Id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+收藏点信息,没有返回nil 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_fav_poi_manager_af1f647c345a7efa8aff8af009683b57b}{}\index{B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}!update\+Fav\+Poi\+:fav\+Poi\+Info\+:@{update\+Fav\+Poi\+:fav\+Poi\+Info\+:}}
+\index{update\+Fav\+Poi\+:fav\+Poi\+Info\+:@{update\+Fav\+Poi\+:fav\+Poi\+Info\+:}!B\+M\+K\+Fav\+Poi\+Manager@{B\+M\+K\+Fav\+Poi\+Manager}}
+\subsubsection[{update\+Fav\+Poi\+:fav\+Poi\+Info\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) update\+Fav\+Poi\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{fav\+Id}
+\item[{favPoiInfo:({\bf B\+M\+K\+Fav\+Poi\+Info} $\ast$)}]{fav\+Poi\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_fav_poi_manager_af1f647c345a7efa8aff8af009683b57b}
+更新一个收藏点 
+\begin{DoxyParams}{参数}
+{\em fav\+Id} & 添加时返回的fav\+Id，也可通过get\+All\+Fav\+Pois获取的信息中\+B\+M\+K\+Fav\+Poi\+Info的属性fav\+Id \\
+\hline
+{\em fav\+Poi\+Info} & 点信息,in/out，输出包含修改时间 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，失败返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Fav\+Poi\+Manager.\+h\end{DoxyCompactItemize}

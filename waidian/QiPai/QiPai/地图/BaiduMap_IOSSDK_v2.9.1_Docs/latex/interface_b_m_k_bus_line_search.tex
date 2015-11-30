@@ -1,0 +1,54 @@
+\hypertarget{interface_b_m_k_bus_line_search}{}\section{B\+M\+K\+Bus\+Line\+Search类 参考}
+\label{interface_b_m_k_bus_line_search}\index{B\+M\+K\+Bus\+Line\+Search@{B\+M\+K\+Bus\+Line\+Search}}
+
+
+busline搜索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Bus\+Line\+Search.\+h$>$}
+
+类 B\+M\+K\+Bus\+Line\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_b_m_k_bus_line_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_bus_line_search_a652cac8a9fbaa46ddd7a0b09f5af8644}{bus\+Line\+Search\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_bus_line_search_a87ccf434516c41498d6744f988e748a4}{}id$<$ \hyperlink{protocol_b_m_k_bus_line_search_delegate-p}{B\+M\+K\+Bus\+Line\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_bus_line_search_a87ccf434516c41498d6744f988e748a4}{delegate}\label{interface_b_m_k_bus_line_search_a87ccf434516c41498d6744f988e748a4}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+busline搜索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_bus_line_search_a652cac8a9fbaa46ddd7a0b09f5af8644}{}\index{B\+M\+K\+Bus\+Line\+Search@{B\+M\+K\+Bus\+Line\+Search}!bus\+Line\+Search\+:@{bus\+Line\+Search\+:}}
+\index{bus\+Line\+Search\+:@{bus\+Line\+Search\+:}!B\+M\+K\+Bus\+Line\+Search@{B\+M\+K\+Bus\+Line\+Search}}
+\subsubsection[{bus\+Line\+Search\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) bus\+Line\+Search\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Bus\+Line\+Search\+Option} $\ast$)}]{bus\+Line\+Search\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_bus_line_search_a652cac8a9fbaa46ddd7a0b09f5af8644}
+公交详情检索 异步函数，返回结果在\+B\+M\+K\+Bus\+Line\+Search\+Delegate的on\+Get\+Bus\+Detail\+Result通知 
+\begin{DoxyParams}{参数}
+{\em bus\+Line\+Search\+Option} & 公交线路检索信息类 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Bus\+Line\+Search.\+h\end{DoxyCompactItemize}

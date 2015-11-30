@@ -1,0 +1,114 @@
+\hypertarget{interface_b_m_k_arcline}{}\section{B\+M\+K\+Arcline类 参考}
+\label{interface_b_m_k_arcline}\index{B\+M\+K\+Arcline@{B\+M\+K\+Arcline}}
+
+
+此类用于定义一段圆弧  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Arcline.\+h$>$}
+
+类 B\+M\+K\+Arcline 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_b_m_k_arcline}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_arcline_a9a7d0fa0c45543ae699def3a7099f1e8}{set\+Arcline\+With\+Points\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_arcline_af8435e3075a1d67f6989fd5221d98be0}{set\+Arcline\+With\+Coordinates\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_m_k_arcline}{B\+M\+K\+Arcline} $\ast$) + \hyperlink{interface_b_m_k_arcline_ad439d6682d48b51c0b04e84772a38a79}{arcline\+With\+Points\+:}
+\item 
+(\hyperlink{interface_b_m_k_arcline}{B\+M\+K\+Arcline} $\ast$) + \hyperlink{interface_b_m_k_arcline_a34a5daa9fc480861aa52e2ef5b0ccb3a}{arcline\+With\+Coordinates\+:}
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_arcline_abbb8f0dba8c81ab8bcd8cc8e587d51cf}{}\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect} {\bfseries \+\_\+bounding\+Map\+Rect}\label{interface_b_m_k_arcline_abbb8f0dba8c81ab8bcd8cc8e587d51cf}
+
+\item 
+\hypertarget{interface_b_m_k_arcline_ae74be329c0bfedce99b890f70d3b871e}{}bool {\bfseries is\+You\+Arc}\label{interface_b_m_k_arcline_ae74be329c0bfedce99b890f70d3b871e}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+此类用于定义一段圆弧 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_arcline_a34a5daa9fc480861aa52e2ef5b0ccb3a}{}\index{B\+M\+K\+Arcline@{B\+M\+K\+Arcline}!arcline\+With\+Coordinates\+:@{arcline\+With\+Coordinates\+:}}
+\index{arcline\+With\+Coordinates\+:@{arcline\+With\+Coordinates\+:}!B\+M\+K\+Arcline@{B\+M\+K\+Arcline}}
+\subsubsection[{arcline\+With\+Coordinates\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Arcline} $\ast$) arcline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_arcline_a34a5daa9fc480861aa52e2ef5b0ccb3a}
+根据指定经纬度生成一段圆弧 
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组(需传入3个点) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的圆弧对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_arcline_ad439d6682d48b51c0b04e84772a38a79}{}\index{B\+M\+K\+Arcline@{B\+M\+K\+Arcline}!arcline\+With\+Points\+:@{arcline\+With\+Points\+:}}
+\index{arcline\+With\+Points\+:@{arcline\+With\+Points\+:}!B\+M\+K\+Arcline@{B\+M\+K\+Arcline}}
+\subsubsection[{arcline\+With\+Points\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Arcline} $\ast$) arcline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_arcline_ad439d6682d48b51c0b04e84772a38a79}
+根据指定坐标点生成一段圆弧 
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组(需传入3个点) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的圆弧对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_arcline_af8435e3075a1d67f6989fd5221d98be0}{}\index{B\+M\+K\+Arcline@{B\+M\+K\+Arcline}!set\+Arcline\+With\+Coordinates\+:@{set\+Arcline\+With\+Coordinates\+:}}
+\index{set\+Arcline\+With\+Coordinates\+:@{set\+Arcline\+With\+Coordinates\+:}!B\+M\+K\+Arcline@{B\+M\+K\+Arcline}}
+\subsubsection[{set\+Arcline\+With\+Coordinates\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Arcline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_arcline_af8435e3075a1d67f6989fd5221d98be0}
+重新设置圆弧坐标 
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组(需传入3个点) \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_arcline_a9a7d0fa0c45543ae699def3a7099f1e8}{}\index{B\+M\+K\+Arcline@{B\+M\+K\+Arcline}!set\+Arcline\+With\+Points\+:@{set\+Arcline\+With\+Points\+:}}
+\index{set\+Arcline\+With\+Points\+:@{set\+Arcline\+With\+Points\+:}!B\+M\+K\+Arcline@{B\+M\+K\+Arcline}}
+\subsubsection[{set\+Arcline\+With\+Points\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Arcline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_arcline_a9a7d0fa0c45543ae699def3a7099f1e8}
+重新设置圆弧坐标 
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组(需传入3个点) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Arcline.\+h\end{DoxyCompactItemize}

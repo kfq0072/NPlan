@@ -1,0 +1,221 @@
+\hypertarget{interface_b_m_k_polyline}{}\section{B\+M\+K\+Polyline类 参考}
+\label{interface_b_m_k_polyline}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+
+
+此类用于定义一段折线  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Polyline.\+h$>$}
+
+类 B\+M\+K\+Polyline 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_b_m_k_polyline}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_polyline_a4b85e49e3e543a33c82ba12baa0d42ff}{set\+Polyline\+With\+Points\+:count\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_polyline_a43a8dd5ac4d6a94c8357d333613431e6}{set\+Polyline\+With\+Coordinates\+:count\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_polyline_a4d1087d602695b877e6a358ba1d6c907}{set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_polyline_a1ea5a063cb0ba05b0627a0139fa979a3}{set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_m_k_polyline}{B\+M\+K\+Polyline} $\ast$) + \hyperlink{interface_b_m_k_polyline_aa4f399b9bcc1c33b871b3d8152842eac}{polyline\+With\+Points\+:count\+:}
+\item 
+(\hyperlink{interface_b_m_k_polyline}{B\+M\+K\+Polyline} $\ast$) + \hyperlink{interface_b_m_k_polyline_af43f8ff39d6a8c56f28f3294f9c41681}{polyline\+With\+Coordinates\+:count\+:}
+\item 
+(\hyperlink{interface_b_m_k_polyline}{B\+M\+K\+Polyline} $\ast$) + \hyperlink{interface_b_m_k_polyline_a88f1ef401c4da757e8755290fee9eb8d}{polyline\+With\+Points\+:count\+:texture\+Index\+:}
+\item 
+(\hyperlink{interface_b_m_k_polyline}{B\+M\+K\+Polyline} $\ast$) + \hyperlink{interface_b_m_k_polyline_a37305d1bcdfa974f6a27ee7c851346b7}{polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_polyline_aec0935d96a69970dbf9780f8e35c7702}{}N\+S\+Array $\ast$ \hyperlink{interface_b_m_k_polyline_aec0935d96a69970dbf9780f8e35c7702}{texture\+Index}\label{interface_b_m_k_polyline_aec0935d96a69970dbf9780f8e35c7702}
+
+\begin{DoxyCompactList}\small\item\em 纹理索引数组（颜色索引数组） \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+此类用于定义一段折线 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_polyline_af43f8ff39d6a8c56f28f3294f9c41681}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!polyline\+With\+Coordinates\+:count\+:@{polyline\+With\+Coordinates\+:count\+:}}
+\index{polyline\+With\+Coordinates\+:count\+:@{polyline\+With\+Coordinates\+:count\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{polyline\+With\+Coordinates\+:count\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Polyline} $\ast$) polyline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\item[{count:(N\+S\+U\+Integer)}]{count}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_af43f8ff39d6a8c56f28f3294f9c41681}
+根据指定坐标点生成一段折线 
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的折线对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a37305d1bcdfa974f6a27ee7c851346b7}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!polyline\+With\+Coordinates\+:count\+:texture\+Index\+:@{polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}}
+\index{polyline\+With\+Coordinates\+:count\+:texture\+Index\+:@{polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Polyline} $\ast$) polyline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\item[{count:(N\+S\+U\+Integer)}]{count}
+\item[{textureIndex:(N\+S\+Array $\ast$)}]{texture\+Index}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a37305d1bcdfa974f6a27ee7c851346b7}
+根据指定坐标点生成一段折线
+
+分段纹理绘制：其对应的\+B\+M\+K\+Polyline\+View必须使用 -\/ (B\+O\+O\+L)load\+Stroke\+Texture\+Images\+:(\+N\+S\+Array $\ast$)texture\+Images; 加载纹理图片；否则使用默认的灰色纹理绘制 分段颜色绘制：其对应的\+B\+M\+K\+Polyline\+View必须设置colors属性
+
+
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+{\em texture\+Index} & 纹理索引数组（颜色索引数组），成员为\+N\+S\+Number,且为非负数，负数按0处理 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的折线对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_aa4f399b9bcc1c33b871b3d8152842eac}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!polyline\+With\+Points\+:count\+:@{polyline\+With\+Points\+:count\+:}}
+\index{polyline\+With\+Points\+:count\+:@{polyline\+With\+Points\+:count\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{polyline\+With\+Points\+:count\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Polyline} $\ast$) polyline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{count:(N\+S\+U\+Integer)}]{count}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_aa4f399b9bcc1c33b871b3d8152842eac}
+根据指定坐标点生成一段折线 
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的折线对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a88f1ef401c4da757e8755290fee9eb8d}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!polyline\+With\+Points\+:count\+:texture\+Index\+:@{polyline\+With\+Points\+:count\+:texture\+Index\+:}}
+\index{polyline\+With\+Points\+:count\+:texture\+Index\+:@{polyline\+With\+Points\+:count\+:texture\+Index\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{polyline\+With\+Points\+:count\+:texture\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Polyline} $\ast$) polyline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{count:(N\+S\+U\+Integer)}]{count}
+\item[{textureIndex:(N\+S\+Array $\ast$)}]{texture\+Index}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a88f1ef401c4da757e8755290fee9eb8d}
+分段纹理绘制/分段颜色绘制，根据指定坐标点生成一段折线
+
+分段纹理绘制：其对应的\+B\+M\+K\+Polyline\+View必须使用 -\/ (B\+O\+O\+L)load\+Stroke\+Texture\+Images\+:(\+N\+S\+Array $\ast$)texture\+Images; 加载纹理图片；否则使用默认的灰色纹理绘制 分段颜色绘制：其对应的\+B\+M\+K\+Polyline\+View必须设置colors属性
+
+
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+{\em texture\+Index} & 纹理索引数组（颜色索引数组），成员为\+N\+S\+Number,且为非负数，负数按0处理 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+新生成的折线对象 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a43a8dd5ac4d6a94c8357d333613431e6}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!set\+Polyline\+With\+Coordinates\+:count\+:@{set\+Polyline\+With\+Coordinates\+:count\+:}}
+\index{set\+Polyline\+With\+Coordinates\+:count\+:@{set\+Polyline\+With\+Coordinates\+:count\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{set\+Polyline\+With\+Coordinates\+:count\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Polyline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\item[{count:(N\+S\+Integer)}]{count}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a43a8dd5ac4d6a94c8357d333613431e6}
+重新设置折线坐标点 
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a1ea5a063cb0ba05b0627a0139fa979a3}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:@{set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}}
+\index{set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:@{set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{set\+Polyline\+With\+Coordinates\+:count\+:texture\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Polyline\+With\+Coordinates\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+L\+Location\+Coordinate2\+D $\ast$)}]{coords}
+\item[{count:(N\+S\+Integer)}]{count}
+\item[{textureIndex:(N\+S\+Array $\ast$)}]{texture\+Index}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a1ea5a063cb0ba05b0627a0139fa979a3}
+重新设置折线坐标点 
+\begin{DoxyParams}{参数}
+{\em coords} & 指定的经纬度坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+{\em texture\+Index} & 纹理索引数组（颜色索引数组），成员为\+N\+S\+Number,且为非负数，负数按0处理 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a4b85e49e3e543a33c82ba12baa0d42ff}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!set\+Polyline\+With\+Points\+:count\+:@{set\+Polyline\+With\+Points\+:count\+:}}
+\index{set\+Polyline\+With\+Points\+:count\+:@{set\+Polyline\+With\+Points\+:count\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{set\+Polyline\+With\+Points\+:count\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Polyline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{count:(N\+S\+Integer)}]{count}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a4b85e49e3e543a33c82ba12baa0d42ff}
+重新设置折线坐标点 
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_polyline_a4d1087d602695b877e6a358ba1d6c907}{}\index{B\+M\+K\+Polyline@{B\+M\+K\+Polyline}!set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:@{set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:}}
+\index{set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:@{set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:}!B\+M\+K\+Polyline@{B\+M\+K\+Polyline}}
+\subsubsection[{set\+Polyline\+With\+Points\+:count\+:texture\+Index\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) set\+Polyline\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{count:(N\+S\+Integer)}]{count}
+\item[{textureIndex:(N\+S\+Array $\ast$)}]{texture\+Index}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_polyline_a4d1087d602695b877e6a358ba1d6c907}
+重新设置折线坐标点 和 纹理索引 
+\begin{DoxyParams}{参数}
+{\em points} & 指定的直角坐标点数组 \\
+\hline
+{\em count} & 坐标点的个数 \\
+\hline
+{\em texture\+Index} & 纹理索引数组（颜色索引数组），成员为\+N\+S\+Number,且为非负数，负数按0处理 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否设置成功 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Polyline.\+h\end{DoxyCompactItemize}

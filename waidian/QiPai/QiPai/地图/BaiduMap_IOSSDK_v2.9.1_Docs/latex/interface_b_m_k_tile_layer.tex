@@ -1,0 +1,38 @@
+\hypertarget{interface_b_m_k_tile_layer}{}\section{B\+M\+K\+Tile\+Layer类 参考}
+\label{interface_b_m_k_tile_layer}\index{B\+M\+K\+Tile\+Layer@{B\+M\+K\+Tile\+Layer}}
+
+
+该类是覆盖在球面墨卡托投影上的图片tiles的数据源，是抽象类，不能直接使用该类添加瓦片图，需要使用其子类（\+B\+M\+K\+U\+R\+L\+Tile\+Layer或\+B\+M\+K\+Sync\+Tile\+Layer） 瓦片图片是jpeg或者png格式，size为256x256  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Tile\+Layer.\+h$>$}
+
+类 B\+M\+K\+Tile\+Layer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_b_m_k_tile_layer}
+\end{center}
+\end{figure}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_tile_layer_a31806dcf1e35a53d50fb40f995ea87d9}{}N\+S\+Integer \hyperlink{interface_b_m_k_tile_layer_a31806dcf1e35a53d50fb40f995ea87d9}{min\+Zoom}\label{interface_b_m_k_tile_layer_a31806dcf1e35a53d50fb40f995ea87d9}
+
+\begin{DoxyCompactList}\small\item\em tile\+Layer的可见最小\+Zoom值，默认3 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_tile_layer_aee6919cb7f36d34eeabf788e17e5ff81}{}N\+S\+Integer \hyperlink{interface_b_m_k_tile_layer_aee6919cb7f36d34eeabf788e17e5ff81}{max\+Zoom}\label{interface_b_m_k_tile_layer_aee6919cb7f36d34eeabf788e17e5ff81}
+
+\begin{DoxyCompactList}\small\item\em tile\+Layer的可见最大\+Zoom值，默认20，且不能小于min\+Zoom \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_tile_layer_ae03f9090d6e253640e22d9226714f84c}{}\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect} \hyperlink{interface_b_m_k_tile_layer_ae03f9090d6e253640e22d9226714f84c}{visible\+Map\+Rect}\label{interface_b_m_k_tile_layer_ae03f9090d6e253640e22d9226714f84c}
+
+\begin{DoxyCompactList}\small\item\em tile\+Overlay的可渲染区域，默认世界范围 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+该类是覆盖在球面墨卡托投影上的图片tiles的数据源，是抽象类，不能直接使用该类添加瓦片图，需要使用其子类（\+B\+M\+K\+U\+R\+L\+Tile\+Layer或\+B\+M\+K\+Sync\+Tile\+Layer） 瓦片图片是jpeg或者png格式，size为256x256 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Tile\+Layer.\+h\end{DoxyCompactItemize}

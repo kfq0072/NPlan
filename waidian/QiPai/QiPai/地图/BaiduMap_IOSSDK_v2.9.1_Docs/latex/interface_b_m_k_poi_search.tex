@@ -1,0 +1,107 @@
+\hypertarget{interface_b_m_k_poi_search}{}\section{B\+M\+K\+Poi\+Search类 参考}
+\label{interface_b_m_k_poi_search}\index{B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}}
+
+
+搜索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Poi\+Search.\+h$>$}
+
+类 B\+M\+K\+Poi\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_b_m_k_poi_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_poi_search_afd3f3ed4e5193e71ec0efada3172991e}{poi\+Search\+In\+City\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_poi_search_a6da39f1518d0dba9df8c31a1fd90b44f}{poi\+Search\+Inbounds\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_poi_search_a7abe377e0a0609058d5db2236b33aff1}{poi\+Search\+Near\+By\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_poi_search_aae3c3917b12d0212a78a90d4206b8e17}{poi\+Detail\+Search\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_poi_search_a5cf63a1ba785de9592b81ba28acf90e4}{}id$<$ \hyperlink{protocol_b_m_k_poi_search_delegate-p}{B\+M\+K\+Poi\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_poi_search_a5cf63a1ba785de9592b81ba28acf90e4}{delegate}\label{interface_b_m_k_poi_search_a5cf63a1ba785de9592b81ba28acf90e4}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+搜索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_poi_search_aae3c3917b12d0212a78a90d4206b8e17}{}\index{B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}!poi\+Detail\+Search\+:@{poi\+Detail\+Search\+:}}
+\index{poi\+Detail\+Search\+:@{poi\+Detail\+Search\+:}!B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}}
+\subsubsection[{poi\+Detail\+Search\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) poi\+Detail\+Search\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Poi\+Detail\+Search\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_poi_search_aae3c3917b12d0212a78a90d4206b8e17}
+根据poi uid 发起poi详情检索 异步函数，返回结果在\+B\+M\+K\+Poi\+Search\+Delegate的on\+Get\+Poi\+Detail\+Result通知 
+\begin{DoxyParams}{参数}
+{\em option} & poi详情检索参数类（\+B\+M\+K\+Poi\+Detail\+Search\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_poi_search_a6da39f1518d0dba9df8c31a1fd90b44f}{}\index{B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}!poi\+Search\+Inbounds\+:@{poi\+Search\+Inbounds\+:}}
+\index{poi\+Search\+Inbounds\+:@{poi\+Search\+Inbounds\+:}!B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}}
+\subsubsection[{poi\+Search\+Inbounds\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) poi\+Search\+Inbounds\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Bound\+Search\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_poi_search_a6da39f1518d0dba9df8c31a1fd90b44f}
+根据范围和检索词发起范围检索 异步函数，返回结果在\+B\+M\+K\+Poi\+Search\+Delegate的on\+Get\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em option} & 范围搜索的搜索参数类（\+B\+M\+K\+Bound\+Search\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_poi_search_afd3f3ed4e5193e71ec0efada3172991e}{}\index{B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}!poi\+Search\+In\+City\+:@{poi\+Search\+In\+City\+:}}
+\index{poi\+Search\+In\+City\+:@{poi\+Search\+In\+City\+:}!B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}}
+\subsubsection[{poi\+Search\+In\+City\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) poi\+Search\+In\+City\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+City\+Search\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_poi_search_afd3f3ed4e5193e71ec0efada3172991e}
+城市\+P\+O\+I检索 异步函数，返回结果在\+B\+M\+K\+Poi\+Search\+Delegate的on\+Get\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em option} & 城市内搜索的搜索参数类（\+B\+M\+K\+City\+Search\+Option） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_poi_search_a7abe377e0a0609058d5db2236b33aff1}{}\index{B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}!poi\+Search\+Near\+By\+:@{poi\+Search\+Near\+By\+:}}
+\index{poi\+Search\+Near\+By\+:@{poi\+Search\+Near\+By\+:}!B\+M\+K\+Poi\+Search@{B\+M\+K\+Poi\+Search}}
+\subsubsection[{poi\+Search\+Near\+By\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) poi\+Search\+Near\+By\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Nearby\+Search\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_poi_search_a7abe377e0a0609058d5db2236b33aff1}
+根据中心点、半径和检索词发起周边检索 异步函数，返回结果在\+B\+M\+K\+Poi\+Search\+Delegate的on\+Get\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em option} & 周边搜索的搜索参数类（\+B\+M\+K\+Nearby\+Search\+Option） \\
+\hline
+{\em index} & 页码，如果是第一次发起搜索，填0，根据返回的结果可以去获取第n页的结果，页码从0开始 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Poi\+Search.\+h\end{DoxyCompactItemize}

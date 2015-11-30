@@ -1,0 +1,71 @@
+\hypertarget{interface_b_m_k_geo_code_search}{}\section{B\+M\+K\+Geo\+Code\+Search类 参考}
+\label{interface_b_m_k_geo_code_search}\index{B\+M\+K\+Geo\+Code\+Search@{B\+M\+K\+Geo\+Code\+Search}}
+
+
+geo搜索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Geocode\+Search.\+h$>$}
+
+类 B\+M\+K\+Geo\+Code\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_b_m_k_geo_code_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_geo_code_search_a48248533fdf98ee24679d97716f6d55b}{geo\+Code\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_geo_code_search_a3594336ed6a95074f069b4d0ebc75df2}{reverse\+Geo\+Code\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_geo_code_search_a7a816dcf6d4f679ad3287948ad9427d2}{}id$<$ \hyperlink{protocol_b_m_k_geo_code_search_delegate-p}{B\+M\+K\+Geo\+Code\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_geo_code_search_a7a816dcf6d4f679ad3287948ad9427d2}{delegate}\label{interface_b_m_k_geo_code_search_a7a816dcf6d4f679ad3287948ad9427d2}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+geo搜索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_geo_code_search_a48248533fdf98ee24679d97716f6d55b}{}\index{B\+M\+K\+Geo\+Code\+Search@{B\+M\+K\+Geo\+Code\+Search}!geo\+Code\+:@{geo\+Code\+:}}
+\index{geo\+Code\+:@{geo\+Code\+:}!B\+M\+K\+Geo\+Code\+Search@{B\+M\+K\+Geo\+Code\+Search}}
+\subsubsection[{geo\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) geo\+Code\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Geo\+Code\+Search\+Option} $\ast$)}]{geo\+Code\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_geo_code_search_a48248533fdf98ee24679d97716f6d55b}
+根据地址名称获取地理信息 异步函数，返回结果在\+B\+M\+K\+Geo\+Code\+Search\+Delegate的on\+Get\+Addr\+Result通知 
+\begin{DoxyParams}{参数}
+{\em geo\+Code\+Option} & geo检索信息类 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_geo_code_search_a3594336ed6a95074f069b4d0ebc75df2}{}\index{B\+M\+K\+Geo\+Code\+Search@{B\+M\+K\+Geo\+Code\+Search}!reverse\+Geo\+Code\+:@{reverse\+Geo\+Code\+:}}
+\index{reverse\+Geo\+Code\+:@{reverse\+Geo\+Code\+:}!B\+M\+K\+Geo\+Code\+Search@{B\+M\+K\+Geo\+Code\+Search}}
+\subsubsection[{reverse\+Geo\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) reverse\+Geo\+Code\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Reverse\+Geo\+Code\+Option} $\ast$)}]{reverse\+Geo\+Code\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_geo_code_search_a3594336ed6a95074f069b4d0ebc75df2}
+根据地理坐标获取地址信息 异步函数，返回结果在\+B\+M\+K\+Geo\+Code\+Search\+Delegate的on\+Get\+Addr\+Result通知 
+\begin{DoxyParams}{参数}
+{\em reverse\+Geo\+Code\+Option} & 反geo检索信息类 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Geocode\+Search.\+h\end{DoxyCompactItemize}

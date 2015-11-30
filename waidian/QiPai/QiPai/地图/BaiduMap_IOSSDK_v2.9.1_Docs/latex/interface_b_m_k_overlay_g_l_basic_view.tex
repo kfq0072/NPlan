@@ -1,0 +1,57 @@
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view}{}\section{B\+M\+K\+Overlay\+G\+L\+Basic\+View类 参考}
+\label{interface_b_m_k_overlay_g_l_basic_view}\index{B\+M\+K\+Overlay\+G\+L\+Basic\+View@{B\+M\+K\+Overlay\+G\+L\+Basic\+View}}
+
+
+该类定义了一个用opengl绘制的\+Overlay\+View的基类，如果需要用gdi进行绘制请继承于\+B\+M\+K\+Overlay\+Path\+View类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Overlay\+G\+L\+Basic\+View.\+h$>$}
+
+类 B\+M\+K\+Overlay\+G\+L\+Basic\+View 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.333333cm]{interface_b_m_k_overlay_g_l_basic_view}
+\end{center}
+\end{figure}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_b_m_k_overlay_g_l_basic_view_a8eb0ecfa09f5ab1b71f3ec4cfa9a2c70}{fill\+Color}
+\item 
+U\+I\+Color $\ast$ \hyperlink{interface_b_m_k_overlay_g_l_basic_view_a99dfabd79cc8a845a742f5ee5742c626}{stroke\+Color}
+\item 
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_a230d5991c45f628c98f4ab10de2dd093}{}C\+G\+Float \hyperlink{interface_b_m_k_overlay_g_l_basic_view_a230d5991c45f628c98f4ab10de2dd093}{line\+Width}\label{interface_b_m_k_overlay_g_l_basic_view_a230d5991c45f628c98f4ab10de2dd093}
+
+\begin{DoxyCompactList}\small\item\em 画笔宽度，默认为0 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_a9df6afb206ccd65d94dd223af256d3c2}{}C\+G\+Path\+Ref \hyperlink{interface_b_m_k_overlay_g_l_basic_view_a9df6afb206ccd65d94dd223af256d3c2}{path}\label{interface_b_m_k_overlay_g_l_basic_view_a9df6afb206ccd65d94dd223af256d3c2}
+
+\begin{DoxyCompactList}\small\item\em path对象 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_aaf8c5d04df3104082006af36b4e3f2f3}{}B\+O\+O\+L \hyperlink{interface_b_m_k_overlay_g_l_basic_view_aaf8c5d04df3104082006af36b4e3f2f3}{line\+Dash}\label{interface_b_m_k_overlay_g_l_basic_view_aaf8c5d04df3104082006af36b4e3f2f3}
+
+\begin{DoxyCompactList}\small\item\em 是否为虚线样式，默认\+N\+O \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_af6e439346bda6a39e12af8a2fad77794}{}B\+O\+O\+L \hyperlink{interface_b_m_k_overlay_g_l_basic_view_af6e439346bda6a39e12af8a2fad77794}{tile\+Texture}\label{interface_b_m_k_overlay_g_l_basic_view_af6e439346bda6a39e12af8a2fad77794}
+
+\begin{DoxyCompactList}\small\item\em 是否纹理图片平铺绘制，默认\+N\+O \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_aa795b105b71d2f5bed7855618862324d}{}B\+O\+O\+L \hyperlink{interface_b_m_k_overlay_g_l_basic_view_aa795b105b71d2f5bed7855618862324d}{keep\+Scale}\label{interface_b_m_k_overlay_g_l_basic_view_aa795b105b71d2f5bed7855618862324d}
+
+\begin{DoxyCompactList}\small\item\em 纹理图片是否缩放（tile\+Texture为\+Y\+E\+S时生效），默认\+N\+O \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+该类定义了一个用opengl绘制的\+Overlay\+View的基类，如果需要用gdi进行绘制请继承于\+B\+M\+K\+Overlay\+Path\+View类 
+
+\subsection{属性说明}
+\hypertarget{interface_b_m_k_overlay_g_l_basic_view_a8eb0ecfa09f5ab1b71f3ec4cfa9a2c70}{}\index{B\+M\+K\+Overlay\+G\+L\+Basic\+View@{B\+M\+K\+Overlay\+G\+L\+Basic\+View}!fill\+Color@{fill\+Color}}
+\index{fill\+Color@{fill\+Color}!B\+M\+K\+Overlay\+G\+L\+Basic\+View@{B\+M\+K\+Overlay\+G\+L\+Basic\+View}}
+\subsubsection[{fill\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) fill\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_m_k_overlay_g_l_basic_view_a8eb0ecfa09f5ab1b71f3ec4cfa9a2c70}
+填充颜色 注：请使用 -\/ (U\+I\+Color $\ast$)init\+With\+Red\+:(\+C\+G\+Float)red green\+:(\+C\+G\+Float)green blue\+:(\+C\+G\+Float)blue alpha\+:(\+C\+G\+Float)alpha; 初始化\+U\+I\+Color，使用\mbox{[}U\+I\+Color $\ast$$\ast$$\ast$\+Color\mbox{]}初始化时，个别case转换成\+R\+G\+B后会有问题 \hypertarget{interface_b_m_k_overlay_g_l_basic_view_a99dfabd79cc8a845a742f5ee5742c626}{}\index{B\+M\+K\+Overlay\+G\+L\+Basic\+View@{B\+M\+K\+Overlay\+G\+L\+Basic\+View}!stroke\+Color@{stroke\+Color}}
+\index{stroke\+Color@{stroke\+Color}!B\+M\+K\+Overlay\+G\+L\+Basic\+View@{B\+M\+K\+Overlay\+G\+L\+Basic\+View}}
+\subsubsection[{stroke\+Color}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Color$\ast$) stroke\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_m_k_overlay_g_l_basic_view_a99dfabd79cc8a845a742f5ee5742c626}
+画笔颜色 注：请使用 -\/ (U\+I\+Color $\ast$)init\+With\+Red\+:(\+C\+G\+Float)red green\+:(\+C\+G\+Float)green blue\+:(\+C\+G\+Float)blue alpha\+:(\+C\+G\+Float)alpha; 初始化\+U\+I\+Color，使用\mbox{[}U\+I\+Color $\ast$$\ast$$\ast$\+Color\mbox{]}初始化时，个别case转换成\+R\+G\+B后会有问题 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Overlay\+G\+L\+Basic\+View.\+h\end{DoxyCompactItemize}
