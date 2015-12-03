@@ -1,0 +1,54 @@
+\hypertarget{protocol_b_m_k_bus_line_search_delegate-p}{}\section{$<$B\+M\+K\+Bus\+Line\+Search\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_bus_line_search_delegate-p}\index{$<$\+B\+M\+K\+Bus\+Line\+Search\+Delegate$>$@{$<$\+B\+M\+K\+Bus\+Line\+Search\+Delegate$>$}}
+
+
+搜索delegate，用于获取搜索结果  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Bus\+Line\+Search.\+h$>$}
+
+类 $<$B\+M\+K\+Bus\+Line\+Search\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_bus_line_search_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_bus_line_search_delegate-p_ae1c5bce88d11150d38f8179368f39137}{on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+搜索delegate，用于获取搜索结果 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_bus_line_search_delegate-p_ae1c5bce88d11150d38f8179368f39137}{}\index{B\+M\+K\+Bus\+Line\+Search\+Delegate-\/p@{B\+M\+K\+Bus\+Line\+Search\+Delegate-\/p}!on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:@{on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:}}
+\index{on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:@{on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:}!B\+M\+K\+Bus\+Line\+Search\+Delegate-\/p@{B\+M\+K\+Bus\+Line\+Search\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Bus\+Detail\+Result\+:result\+:error\+Code\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Bus\+Detail\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Bus\+Line\+Search} $\ast$)}]{searcher}
+\item[{result:({\bf B\+M\+K\+Bus\+Line\+Result} $\ast$)}]{bus\+Line\+Result}
+\item[{errorCode:(B\+M\+K\+Search\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_bus_line_search_delegate-p_ae1c5bce88d11150d38f8179368f39137}
+返回busdetail搜索结果 
+\begin{DoxyParams}{参数}
+{\em searcher} & 搜索对象 \\
+\hline
+{\em bus\+Line\+Result} & 搜索结果 \\
+\hline
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Search\+Error\+Code 
+\end{DoxySeeAlso}
+
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Bus\+Line\+Search.\+h\end{DoxyCompactItemize}

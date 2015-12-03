@@ -1,0 +1,105 @@
+\hypertarget{interface_b_m_k_cloud_search}{}\section{B\+M\+K\+Cloud\+Search类 参考}
+\label{interface_b_m_k_cloud_search}\index{B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}}
+
+
+云检索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Cloud\+Search.\+h$>$}
+
+类 B\+M\+K\+Cloud\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_cloud_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_cloud_search_a473c4aeff275be5840ac6cf8010ce1d8}{local\+Search\+With\+Search\+Info\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_cloud_search_abe65e1b2f2b67e1d081c697caae80e4b}{nearby\+Search\+With\+Search\+Info\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_cloud_search_a7b2a5b409e884fb240e94f42cbad5208}{bound\+Search\+With\+Search\+Info\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_cloud_search_aaa7dcb1e49edd705290a3e79d8d22e92}{detail\+Search\+With\+Search\+Info\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_cloud_search_ac35ac10ba735ab371814e2d69c27af23}{}id$<$ \hyperlink{protocol_b_m_k_cloud_search_delegate-p}{B\+M\+K\+Cloud\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_cloud_search_ac35ac10ba735ab371814e2d69c27af23}{delegate}\label{interface_b_m_k_cloud_search_ac35ac10ba735ab371814e2d69c27af23}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+云检索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_cloud_search_a7b2a5b409e884fb240e94f42cbad5208}{}\index{B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}!bound\+Search\+With\+Search\+Info\+:@{bound\+Search\+With\+Search\+Info\+:}}
+\index{bound\+Search\+With\+Search\+Info\+:@{bound\+Search\+With\+Search\+Info\+:}!B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}}
+\subsubsection[{bound\+Search\+With\+Search\+Info\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) bound\+Search\+With\+Search\+Info\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Cloud\+Bound\+Search\+Info} $\ast$)}]{search\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_cloud_search_a7b2a5b409e884fb240e94f42cbad5208}
+矩形云检索 异步函数，返回结果在\+B\+M\+K\+Cloud\+Search\+Delegate的on\+Get\+Cloud\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em search\+Info} & 搜索参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_cloud_search_aaa7dcb1e49edd705290a3e79d8d22e92}{}\index{B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}!detail\+Search\+With\+Search\+Info\+:@{detail\+Search\+With\+Search\+Info\+:}}
+\index{detail\+Search\+With\+Search\+Info\+:@{detail\+Search\+With\+Search\+Info\+:}!B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}}
+\subsubsection[{detail\+Search\+With\+Search\+Info\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) detail\+Search\+With\+Search\+Info\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Cloud\+Detail\+Search\+Info} $\ast$)}]{search\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_cloud_search_aaa7dcb1e49edd705290a3e79d8d22e92}
+详情云检索 异步函数，返回结果在\+B\+M\+K\+Cloud\+Search\+Delegate的on\+Get\+Cloud\+Poi\+Detail\+Result通知 
+\begin{DoxyParams}{参数}
+{\em search\+Info} & 搜索参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_cloud_search_a473c4aeff275be5840ac6cf8010ce1d8}{}\index{B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}!local\+Search\+With\+Search\+Info\+:@{local\+Search\+With\+Search\+Info\+:}}
+\index{local\+Search\+With\+Search\+Info\+:@{local\+Search\+With\+Search\+Info\+:}!B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}}
+\subsubsection[{local\+Search\+With\+Search\+Info\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) local\+Search\+With\+Search\+Info\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Cloud\+Local\+Search\+Info} $\ast$)}]{search\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_cloud_search_a473c4aeff275be5840ac6cf8010ce1d8}
+本地云检索 异步函数，返回结果在\+B\+M\+K\+Cloud\+Search\+Delegate的on\+Get\+Cloud\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em search\+Info} & 搜索参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_cloud_search_abe65e1b2f2b67e1d081c697caae80e4b}{}\index{B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}!nearby\+Search\+With\+Search\+Info\+:@{nearby\+Search\+With\+Search\+Info\+:}}
+\index{nearby\+Search\+With\+Search\+Info\+:@{nearby\+Search\+With\+Search\+Info\+:}!B\+M\+K\+Cloud\+Search@{B\+M\+K\+Cloud\+Search}}
+\subsubsection[{nearby\+Search\+With\+Search\+Info\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) nearby\+Search\+With\+Search\+Info\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Cloud\+Nearby\+Search\+Info} $\ast$)}]{search\+Info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_cloud_search_abe65e1b2f2b67e1d081c697caae80e4b}
+周边云检索 异步函数，返回结果在\+B\+M\+K\+Cloud\+Search\+Delegate的on\+Get\+Cloud\+Poi\+Result通知 
+\begin{DoxyParams}{参数}
+{\em search\+Info} & 搜索参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Cloud\+Search.\+h\end{DoxyCompactItemize}

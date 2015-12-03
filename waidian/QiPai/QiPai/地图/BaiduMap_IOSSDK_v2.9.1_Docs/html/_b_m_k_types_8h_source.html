@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKTypes.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKTypes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  BMKType.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  MapPlatform</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by BaiduMapAPI on 13-3-26.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013年 baidu. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;CoreGraphics/CoreGraphics.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;CoreLocation/CoreLocation.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    BMK_COORDTYPE_GPS = 0, </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BMK_COORDTYPE_COMMON,  </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} BMK_COORD_TYPE;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BMKMapTypeStandard   = 1,               </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BMKMapTypeSatellite  = 2,               </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> NSUInteger BMKMapType;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BMKErrorOk = 0, </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BMKErrorConnect = 2,    </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    BMKErrorData = 3,   </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BMKErrorRouteAddr = 4, </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BMKErrorResultNotFound = 100,   </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    BMKErrorLocationFailed = 200,   </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    BMKErrorPermissionCheckFailure = 300,   </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BMKErrorParse = 310     </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}BMKErrorCode;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//鉴权结果状态码</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    E_PERMISSIONCHECK_CONNECT_ERROR = -300,<span class="comment">//链接服务器错误</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    E_PERMISSIONCHECK_DATA_ERROR = -200,<span class="comment">//服务返回数据异常</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    E_PERMISSIONCHECK_OK = 0,   <span class="comment">// 授权验证通过</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    E_PERMISSIONCHECK_KEY_ERROR = 101,  <span class="comment">//ak不存在</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    E_PERMISSIONCHECK_MCODE_ERROR = 102,    <span class="comment">//mcode签名值不正确</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    E_PERMISSIONCHECK_UID_KEY_ERROR = 200,  <span class="comment">// APP不存在，AK有误请检查再重试</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    E_PERMISSIONCHECK_KEY_FORBIDEN= 201,    <span class="comment">// APP被用户自己禁用，请在控制台解禁</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     *更多鉴权状态码请参考：</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *http://developer.baidu.com/map/index.php?title=lbscloud/api/appendix</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}BMKPermissionCheckResultCode;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//检索结果状态码</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    BMK_SEARCH_NO_ERROR = 0,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    BMK_SEARCH_AMBIGUOUS_KEYWORD,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    BMK_SEARCH_AMBIGUOUS_ROURE_ADDR,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    BMK_SEARCH_NOT_SUPPORT_BUS,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    BMK_SEARCH_NOT_SUPPORT_BUS_2CITY,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    BMK_SEARCH_RESULT_NOT_FOUND,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    BMK_SEARCH_ST_EN_TOO_NEAR,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    BMK_SEARCH_KEY_ERROR,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    BMK_SEARCH_NETWOKR_ERROR,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    BMK_SEARCH_NETWOKR_TIMEOUT,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    BMK_SEARCH_PERMISSION_UNFINISHED,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}BMKSearchErrorCode;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//调起百度地图结果状态码</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    BMK_OPEN_NO_ERROR = 0,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    BMK_OPEN_WEB_MAP,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    BMK_OPEN_OPTION_NULL,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    BMK_OPEN_NOT_SUPPORT,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    BMK_OPEN_POI_DETAIL_UID_NULL,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    BMK_OPEN_POI_NEARBY_KEYWORD_NULL,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    BMK_OPEN_ROUTE_START_ERROR,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    BMK_OPEN_ROUTE_END_ERROR,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}BMKOpenErrorCode;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_span.html">   76</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_span.html#a759543f626366ce4fe599b8896f352a2">   77</a></span>&#160;    CLLocationDegrees <a class="code" href="struct_b_m_k_coordinate_span.html#a759543f626366ce4fe599b8896f352a2">latitudeDelta</a>;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_span.html#ab3bc7d18bbd0fce7c806c51f0e0df447">   78</a></span>&#160;    CLLocationDegrees <a class="code" href="struct_b_m_k_coordinate_span.html#ab3bc7d18bbd0fce7c806c51f0e0df447">longitudeDelta</a>;   </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <a class="code" href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_bounds.html">   82</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_bounds.html#a0ebf42cb8682f2a6990fc7c6e439702e">   83</a></span>&#160;    CLLocationCoordinate2D <a class="code" href="struct_b_m_k_coordinate_bounds.html#a0ebf42cb8682f2a6990fc7c6e439702e">northEast</a>;   </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_bounds.html#afd02c24b2ffe5aba18a125a48cdd1c37">   84</a></span>&#160;    CLLocationCoordinate2D <a class="code" href="struct_b_m_k_coordinate_bounds.html#afd02c24b2ffe5aba18a125a48cdd1c37">southWest</a>;   </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <a class="code" href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_region.html">   88</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_region.html#a298c069df033a5690fdebc3c63f86903">   89</a></span>&#160;    CLLocationCoordinate2D <a class="code" href="struct_b_m_k_coordinate_region.html#a298c069df033a5690fdebc3c63f86903">center</a>;  </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="struct_b_m_k_coordinate_region.html#a75e65758cbbf7cb3ed6007d4ce301292">   90</a></span>&#160;    <a class="code" href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a> <a class="code" href="struct_b_m_k_coordinate_region.html#a75e65758cbbf7cb3ed6007d4ce301292">span</a>;     </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;} <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="struct_b_m_k_geo_point.html">   94</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="struct_b_m_k_geo_point.html#ad6f5b38335cff314e953e9b7eb5c7b39">   95</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_b_m_k_geo_point.html#ad6f5b38335cff314e953e9b7eb5c7b39">latitudeE6</a>;     </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_b_m_k_geo_point.html#aac3f3dc0ae09785e5b70c319b68d4047">   96</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_b_m_k_geo_point.html#aac3f3dc0ae09785e5b70c319b68d4047">longitudeE6</a>;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <a class="code" href="struct_b_m_k_geo_point.html">BMKGeoPoint</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_point.html">  100</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">  101</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a>;   </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">  102</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a>;   </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_size.html">  106</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">  107</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a>;   </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">  108</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a>;  </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_rect.html">  112</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">  113</a></span>&#160;    <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> <a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">  114</a></span>&#160;    <a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> <a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>;    </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">typedef</span> CGFloat BMKZoomScale;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;UIKIT_EXTERN <span class="keyword">const</span> <a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> BMKMapSizeWorld;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;UIKIT_EXTERN <span class="keyword">const</span> <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectWorld;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;UIKIT_EXTERN <span class="keyword">const</span> <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectNull;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="interface_b_m_k_plan_node.html">  128</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a> : NSObject{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    NSString*              _cityName;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    NSString*              _name;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    CLLocationCoordinate2D _pt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="interface_b_m_k_plan_node.html#ae6181a2e46740e8422a0b0820eedd0bb">  135</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* cityName;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="interface_b_m_k_plan_node.html#afe487565841e6361610e53d77af75f65">  137</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* name;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="interface_b_m_k_plan_node.html#a1fa1ff65e104926cc145168df5261136">  139</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CLLocationCoordinate2D pt;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="ttc" id="struct_b_m_k_map_point_html_a9d0aff0bad009459af85d1e51a194341"><div class="ttname"><a href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">BMKMapPoint::y</a></div><div class="ttdeci">double y</div><div class="ttdoc">纵坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:102</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html_a75e65758cbbf7cb3ed6007d4ce301292"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html#a75e65758cbbf7cb3ed6007d4ce301292">BMKCoordinateRegion::span</a></div><div class="ttdeci">BMKCoordinateSpan span</div><div class="ttdoc">经纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:90</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html"><div class="ttname"><a href="struct_b_m_k_map_size.html">BMKMapSize</a></div><div class="ttdoc">矩形大小，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:106</div></div>
+<div class="ttc" id="interface_b_m_k_plan_node_html"><div class="ttname"><a href="interface_b_m_k_plan_node.html">BMKPlanNode</a></div><div class="ttdoc">线路检索节点信息,一个路线检索节点可以通过经纬度坐标或城市名加地名确定 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:128</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html_a759543f626366ce4fe599b8896f352a2"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html#a759543f626366ce4fe599b8896f352a2">BMKCoordinateSpan::latitudeDelta</a></div><div class="ttdeci">CLLocationDegrees latitudeDelta</div><div class="ttdoc">纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:77</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html_aeeee8bcaabf5c65e222f1891009325f1"><div class="ttname"><a href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">BMKMapRect::origin</a></div><div class="ttdeci">BMKMapPoint origin</div><div class="ttdoc">屏幕左上点对应的直角地理坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:113</div></div>
+<div class="ttc" id="struct_b_m_k_geo_point_html"><div class="ttname"><a href="struct_b_m_k_geo_point.html">BMKGeoPoint</a></div><div class="ttdoc">表示一个经纬度坐标点 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:94</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html"><div class="ttname"><a href="struct_b_m_k_map_rect.html">BMKMapRect</a></div><div class="ttdoc">矩形，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html_a8c0ca1c3f0cbb5fe183ae7745781d8fb"><div class="ttname"><a href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">BMKMapPoint::x</a></div><div class="ttdeci">double x</div><div class="ttdoc">横坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:101</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_bounds_html"><div class="ttname"><a href="struct_b_m_k_coordinate_bounds.html">BMKCoordinateBounds</a></div><div class="ttdoc">表示一个经纬度区域 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:82</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html_ab3bc7d18bbd0fce7c806c51f0e0df447"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html#ab3bc7d18bbd0fce7c806c51f0e0df447">BMKCoordinateSpan::longitudeDelta</a></div><div class="ttdeci">CLLocationDegrees longitudeDelta</div><div class="ttdoc">经度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:78</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_bounds_html_a0ebf42cb8682f2a6990fc7c6e439702e"><div class="ttname"><a href="struct_b_m_k_coordinate_bounds.html#a0ebf42cb8682f2a6990fc7c6e439702e">BMKCoordinateBounds::northEast</a></div><div class="ttdeci">CLLocationCoordinate2D northEast</div><div class="ttdoc">东北角点经纬度坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:83</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html_a516baff78187bf8f07ef49f01c7d86fc"><div class="ttname"><a href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">BMKMapSize::height</a></div><div class="ttdeci">double height</div><div class="ttdoc">高度 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:108</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html_ab83b0fb9e6e63b6ab24bdce9ced1e92e"><div class="ttname"><a href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">BMKMapRect::size</a></div><div class="ttdeci">BMKMapSize size</div><div class="ttdoc">坐标范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:114</div></div>
+<div class="ttc" id="struct_b_m_k_geo_point_html_aac3f3dc0ae09785e5b70c319b68d4047"><div class="ttname"><a href="struct_b_m_k_geo_point.html#aac3f3dc0ae09785e5b70c319b68d4047">BMKGeoPoint::longitudeE6</a></div><div class="ttdeci">int longitudeE6</div><div class="ttdoc">经度，乘以1e6之后的值 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:96</div></div>
+<div class="ttc" id="struct_b_m_k_geo_point_html_ad6f5b38335cff314e953e9b7eb5c7b39"><div class="ttname"><a href="struct_b_m_k_geo_point.html#ad6f5b38335cff314e953e9b7eb5c7b39">BMKGeoPoint::latitudeE6</a></div><div class="ttdeci">int latitudeE6</div><div class="ttdoc">纬度，乘以1e6之后的值 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:95</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html_a298c069df033a5690fdebc3c63f86903"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html#a298c069df033a5690fdebc3c63f86903">BMKCoordinateRegion::center</a></div><div class="ttdeci">CLLocationCoordinate2D center</div><div class="ttdoc">中心点经纬度坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:89</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a></div><div class="ttdoc">表示一个经纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:76</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_bounds_html_afd02c24b2ffe5aba18a125a48cdd1c37"><div class="ttname"><a href="struct_b_m_k_coordinate_bounds.html#afd02c24b2ffe5aba18a125a48cdd1c37">BMKCoordinateBounds::southWest</a></div><div class="ttdeci">CLLocationCoordinate2D southWest</div><div class="ttdoc">西南角点经纬度坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:84</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a></div><div class="ttdoc">表示一个经纬度区域 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:88</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html_a1005d7fd59045a80619c024df3156d6a"><div class="ttname"><a href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">BMKMapSize::width</a></div><div class="ttdeci">double width</div><div class="ttdoc">宽度 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:107</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html"><div class="ttname"><a href="struct_b_m_k_map_point.html">BMKMapPoint</a></div><div class="ttdoc">地理坐标点，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

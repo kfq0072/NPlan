@@ -1,0 +1,91 @@
+\hypertarget{protocol_b_m_k_location_service_delegate-p}{}\section{$<$B\+M\+K\+Location\+Service\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_location_service_delegate-p}\index{$<$\+B\+M\+K\+Location\+Service\+Delegate$>$@{$<$\+B\+M\+K\+Location\+Service\+Delegate$>$}}
+
+
+定位服务\+Delegate,调用start\+User\+Location\+Service定位成功后，用此\+Delegate来获取定位数据  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Location\+Service.\+h$>$}
+
+类 $<$B\+M\+K\+Location\+Service\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_location_service_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_location_service_delegate-p_a787a16ba232723b8c9594b468ce6714c}{will\+Start\+Locating\+User}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_location_service_delegate-p_a03d0086502462319e2a007b837dc7e26}{did\+Stop\+Locating\+User}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_location_service_delegate-p_a93b210b6948016039b9286cdb350cf13}{did\+Update\+User\+Heading\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_location_service_delegate-p_a3e9ba0b7fca0295aa46a2ad5a179645d}{did\+Update\+B\+M\+K\+User\+Location\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_location_service_delegate-p_a8653218e26f920bf67513c2c4fffb5be}{did\+Fail\+To\+Locate\+User\+With\+Error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+定位服务\+Delegate,调用start\+User\+Location\+Service定位成功后，用此\+Delegate来获取定位数据 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_location_service_delegate-p_a8653218e26f920bf67513c2c4fffb5be}{}\index{B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}!did\+Fail\+To\+Locate\+User\+With\+Error\+:@{did\+Fail\+To\+Locate\+User\+With\+Error\+:}}
+\index{did\+Fail\+To\+Locate\+User\+With\+Error\+:@{did\+Fail\+To\+Locate\+User\+With\+Error\+:}!B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}}
+\subsubsection[{did\+Fail\+To\+Locate\+User\+With\+Error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Fail\+To\+Locate\+User\+With\+Error\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_location_service_delegate-p_a8653218e26f920bf67513c2c4fffb5be}
+定位失败后，会调用此函数 
+\begin{DoxyParams}{参数}
+{\em error} & 错误号 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_b_m_k_location_service_delegate-p_a03d0086502462319e2a007b837dc7e26}{}\index{B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}!did\+Stop\+Locating\+User@{did\+Stop\+Locating\+User}}
+\index{did\+Stop\+Locating\+User@{did\+Stop\+Locating\+User}!B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}}
+\subsubsection[{did\+Stop\+Locating\+User}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Stop\+Locating\+User 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_location_service_delegate-p_a03d0086502462319e2a007b837dc7e26}
+在停止定位后，会调用此函数 \hypertarget{protocol_b_m_k_location_service_delegate-p_a3e9ba0b7fca0295aa46a2ad5a179645d}{}\index{B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}!did\+Update\+B\+M\+K\+User\+Location\+:@{did\+Update\+B\+M\+K\+User\+Location\+:}}
+\index{did\+Update\+B\+M\+K\+User\+Location\+:@{did\+Update\+B\+M\+K\+User\+Location\+:}!B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}}
+\subsubsection[{did\+Update\+B\+M\+K\+User\+Location\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Update\+B\+M\+K\+User\+Location\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+User\+Location} $\ast$)}]{user\+Location}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_location_service_delegate-p_a3e9ba0b7fca0295aa46a2ad5a179645d}
+用户位置更新后，会调用此函数 
+\begin{DoxyParams}{参数}
+{\em user\+Location} & 新的用户位置 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_b_m_k_location_service_delegate-p_a93b210b6948016039b9286cdb350cf13}{}\index{B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}!did\+Update\+User\+Heading\+:@{did\+Update\+User\+Heading\+:}}
+\index{did\+Update\+User\+Heading\+:@{did\+Update\+User\+Heading\+:}!B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}}
+\subsubsection[{did\+Update\+User\+Heading\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) did\+Update\+User\+Heading\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+User\+Location} $\ast$)}]{user\+Location}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_location_service_delegate-p_a93b210b6948016039b9286cdb350cf13}
+用户方向更新后，会调用此函数 
+\begin{DoxyParams}{参数}
+{\em user\+Location} & 新的用户位置 \\
+\hline
+\end{DoxyParams}
+\hypertarget{protocol_b_m_k_location_service_delegate-p_a787a16ba232723b8c9594b468ce6714c}{}\index{B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}!will\+Start\+Locating\+User@{will\+Start\+Locating\+User}}
+\index{will\+Start\+Locating\+User@{will\+Start\+Locating\+User}!B\+M\+K\+Location\+Service\+Delegate-\/p@{B\+M\+K\+Location\+Service\+Delegate-\/p}}
+\subsubsection[{will\+Start\+Locating\+User}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) will\+Start\+Locating\+User 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_location_service_delegate-p_a787a16ba232723b8c9594b468ce6714c}
+在将要启动定位时，会调用此函数 
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Location\+Service.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,297 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize 生成于 2015年 十一月 10日 星期二 13\+:45\+:32 , 为 百度地图\+S\+D\+K for i\+O\+S v2.\+9.\+1 类参考使用  Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize 生成于 2015年 十一月 10日 星期二 13\+:45\+:32 , 为 百度地图\+S\+D\+K for i\+O\+S v2.\+9.\+1 类参考使用  Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarks=true,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large 百度地图\+S\+D\+K for i\+O\+S v2.9.1 类参考 }\\
+\vspace*{1cm}
+{\large 制作者 Doxygen 1.8.9.1}\\
+\vspace*{0.5cm}
+{\small 2015年 十一月 10日 星期二 13:45:32}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{继承关系索引}
+\input{hierarchy}
+\chapter{类索引}
+\input{annotated}
+\chapter{类说明}
+\input{interface_b_m_k_action_paopao_view}
+\input{interface_b_m_k_address_component}
+\input{protocol_b_m_k_annotation-p}
+\input{interface_b_m_k_annotation_view}
+\input{interface_b_m_k_arcline}
+\input{interface_b_m_k_arcline_view}
+\input{interface_b_m_k_base_cloud_search_info}
+\input{interface_b_m_k_base_poi_search_option}
+\input{interface_b_m_k_base_route_plan_option}
+\input{interface_b_m_k_bound_search_option}
+\input{interface_b_m_k_bus_line_result}
+\input{interface_b_m_k_bus_line_search}
+\input{protocol_b_m_k_bus_line_search_delegate-p}
+\input{interface_b_m_k_bus_line_search_option}
+\input{interface_b_m_k_bus_station}
+\input{interface_b_m_k_bus_step}
+\input{interface_b_m_k_circle}
+\input{interface_b_m_k_circle_view}
+\input{interface_b_m_k_city_list_info}
+\input{interface_b_m_k_city_search_option}
+\input{interface_b_m_k_cloud_bound_search_info}
+\input{interface_b_m_k_cloud_detail_search_info}
+\input{interface_b_m_k_cloud_local_search_info}
+\input{interface_b_m_k_cloud_nearby_search_info}
+\input{interface_b_m_k_cloud_p_o_i_info}
+\input{interface_b_m_k_cloud_p_o_i_list}
+\input{interface_b_m_k_cloud_search}
+\input{protocol_b_m_k_cloud_search_delegate-p}
+\input{interface_b_m_k_cloud_search_info}
+\input{struct_b_m_k_coordinate_bounds}
+\input{struct_b_m_k_coordinate_region}
+\input{struct_b_m_k_coordinate_span}
+\input{interface_b_m_k_date_range}
+\input{interface_b_m_k_driving_route_line}
+\input{interface_b_m_k_driving_route_plan_option}
+\input{interface_b_m_k_driving_route_result}
+\input{interface_b_m_k_driving_step}
+\input{interface_b_m_k_fav_poi_info}
+\input{interface_b_m_k_fav_poi_manager}
+\input{protocol_b_m_k_general_delegate-p}
+\input{interface_b_m_k_geo_code_result}
+\input{interface_b_m_k_geo_code_search}
+\input{protocol_b_m_k_geo_code_search_delegate-p}
+\input{interface_b_m_k_geo_code_search_option}
+\input{struct_b_m_k_geo_point}
+\input{interface_b_m_k_gradient}
+\input{interface_b_m_k_ground_overlay}
+\input{interface_b_m_k_ground_overlay_view}
+\input{interface_b_m_k_heat_map}
+\input{interface_b_m_k_heat_map_node}
+\input{interface_b_m_k_location_service}
+\input{protocol_b_m_k_location_service_delegate-p}
+\input{interface_b_m_k_location_share_u_r_l_option}
+\input{interface_b_m_k_location_view_display_param}
+\input{interface_b_m_k_map_manager}
+\input{interface_b_m_k_map_poi}
+\input{struct_b_m_k_map_point}
+\input{struct_b_m_k_map_rect}
+\input{struct_b_m_k_map_size}
+\input{interface_b_m_k_map_status}
+\input{interface_b_m_k_map_view}
+\input{category_b_m_k_map_view_07_annotation_a_p_i_08}
+\input{category_b_m_k_map_view_07_heat_map_a_p_i_08}
+\input{category_b_m_k_map_view_07_location_view_a_p_i_08}
+\input{category_b_m_k_map_view_07_overlays_a_p_i_08}
+\input{protocol_b_m_k_map_view_delegate-p}
+\input{interface_b_m_k_multi_point}
+\input{interface_b_m_k_navigation}
+\input{interface_b_m_k_navi_para}
+\input{interface_b_m_k_nearby_search_option}
+\input{interface_b_m_k_offline_map}
+\input{protocol_b_m_k_offline_map_delegate-p}
+\input{interface_b_m_k_o_l_search_record}
+\input{interface_b_m_k_o_l_update_element}
+\input{interface_b_m_k_open_driving_route_option}
+\input{interface_b_m_k_open_option}
+\input{interface_b_m_k_open_poi}
+\input{interface_b_m_k_open_poi_detail_option}
+\input{interface_b_m_k_open_poi_nearby_option}
+\input{interface_b_m_k_open_route}
+\input{interface_b_m_k_open_route_option}
+\input{interface_b_m_k_open_transit_route_option}
+\input{interface_b_m_k_open_walking_route_option}
+\input{protocol_b_m_k_overlay-p}
+\input{interface_b_m_k_overlay_g_l_basic_view}
+\input{interface_b_m_k_overlay_path_view}
+\input{interface_b_m_k_overlay_view}
+\input{interface_b_m_k_pin_annotation_view}
+\input{interface_b_m_k_plan_node}
+\input{interface_b_m_k_poi_address_info}
+\input{interface_b_m_k_poi_detail_result}
+\input{interface_b_m_k_poi_detail_search_option}
+\input{interface_b_m_k_poi_detail_share_u_r_l_option}
+\input{interface_b_m_k_poi_info}
+\input{interface_b_m_k_point_annotation}
+\input{interface_b_m_k_poi_result}
+\input{interface_b_m_k_poi_search}
+\input{protocol_b_m_k_poi_search_delegate-p}
+\input{interface_b_m_k_polygon}
+\input{interface_b_m_k_polygon_view}
+\input{interface_b_m_k_polyline}
+\input{interface_b_m_k_polyline_view}
+\input{interface_b_m_k_radar_manager}
+\input{protocol_b_m_k_radar_manager_delegate-p}
+\input{interface_b_m_k_radar_nearby_info}
+\input{interface_b_m_k_radar_nearby_result}
+\input{interface_b_m_k_radar_nearby_search_option}
+\input{interface_b_m_k_radar_upload_info}
+\input{interface_b_m_k_reverse_geo_code_option}
+\input{interface_b_m_k_reverse_geo_code_result}
+\input{interface_b_m_k_route_line}
+\input{interface_b_m_k_route_node}
+\input{interface_b_m_k_route_search}
+\input{protocol_b_m_k_route_search_delegate-p}
+\input{interface_b_m_k_route_step}
+\input{interface_b_m_k_search_base}
+\input{interface_b_m_k_shape}
+\input{interface_b_m_k_share_u_r_l_result}
+\input{interface_b_m_k_share_u_r_l_search}
+\input{protocol_b_m_k_share_u_r_l_search_delegate-p}
+\input{interface_b_m_k_suggest_addr_info}
+\input{interface_b_m_k_suggestion_result}
+\input{interface_b_m_k_suggestion_search}
+\input{protocol_b_m_k_suggestion_search_delegate-p}
+\input{interface_b_m_k_suggestion_search_option}
+\input{interface_b_m_k_sync_tile_layer}
+\input{interface_b_m_k_taxi_info}
+\input{interface_b_m_k_tile_layer}
+\input{interface_b_m_k_tile_layer_view}
+\input{interface_b_m_k_time}
+\input{interface_b_m_k_transit_route_line}
+\input{interface_b_m_k_transit_route_plan_option}
+\input{interface_b_m_k_transit_route_result}
+\input{interface_b_m_k_transit_step}
+\input{interface_b_m_k_u_r_l_tile_layer}
+\input{interface_b_m_k_user_location}
+\input{interface_b_m_k_vehicle_info}
+\input{interface_b_m_k_walking_route_line}
+\input{interface_b_m_k_walking_route_plan_option}
+\input{interface_b_m_k_walking_route_result}
+\input{interface_b_m_k_walking_step}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{索引}
+\printindex
+
+\end{document}

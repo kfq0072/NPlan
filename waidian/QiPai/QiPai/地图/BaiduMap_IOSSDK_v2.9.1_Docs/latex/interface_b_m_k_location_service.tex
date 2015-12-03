@@ -1,0 +1,108 @@
+\hypertarget{interface_b_m_k_location_service}{}\section{B\+M\+K\+Location\+Service类 参考}
+\label{interface_b_m_k_location_service}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+类 B\+M\+K\+Location\+Service 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_location_service}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_location_service_a3b49abd4104d23a114b7a7a632ff3722}{start\+User\+Location\+Service}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_location_service_a1aece8fbe579debdd0984147e036e947}{stop\+User\+Location\+Service}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_b_m_k_location_service_a603b1a38b6a7d57d758a61e5acbbce6d}{set\+Location\+Distance\+Filter\+:}
+\item 
+(\char`\"{}废弃方法（空实现），使用distance\+Filter属性替换\char`\"{}) + \hyperlink{interface_b_m_k_location_service_a978bac65e039cf58117e9a69ea259c59}{\+\_\+\+\_\+deprecated\+\_\+msg}
+\item 
+(void) + \hyperlink{interface_b_m_k_location_service_ae3578982463cddc3c6abac2644e6bfb4}{set\+Location\+Desired\+Accuracy\+:}
+\item 
+(\char`\"{}废弃方法（空实现），使用desired\+Accuracy属性替换\char`\"{}) + \hyperlink{interface_b_m_k_location_service_ad19fcf8c6b43617bd0f8771aafdc744e}{\+\_\+\+\_\+deprecated\+\_\+msg}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_location_service_a19c6477dc79e94c8e20d7ddf1e52b0c2}{}\hyperlink{interface_b_m_k_user_location}{B\+M\+K\+User\+Location} $\ast$ \hyperlink{interface_b_m_k_location_service_a19c6477dc79e94c8e20d7ddf1e52b0c2}{user\+Location}\label{interface_b_m_k_location_service_a19c6477dc79e94c8e20d7ddf1e52b0c2}
+
+\begin{DoxyCompactList}\small\item\em 当前用户位置，返回坐标为百度坐标 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_a6a3767cb278c4dba0a59950586b5e37d}{}id$<$ \hyperlink{protocol_b_m_k_location_service_delegate-p}{B\+M\+K\+Location\+Service\+Delegate} $>$ \hyperlink{interface_b_m_k_location_service_a6a3767cb278c4dba0a59950586b5e37d}{delegate}\label{interface_b_m_k_location_service_a6a3767cb278c4dba0a59950586b5e37d}
+
+\begin{DoxyCompactList}\small\item\em 定位服务\+Delegate,调用start\+User\+Location\+Service定位成功后，用此\+Delegate来获取定位数据 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_acb15b8ebda25899c2859a3d403a3425d}{}C\+L\+Location\+Distance \hyperlink{interface_b_m_k_location_service_acb15b8ebda25899c2859a3d403a3425d}{distance\+Filter}\label{interface_b_m_k_location_service_acb15b8ebda25899c2859a3d403a3425d}
+
+\begin{DoxyCompactList}\small\item\em 设定定位的最小更新距离。默认为k\+C\+L\+Distance\+Filter\+None \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_a2af9a5961b0553dd49e40e1fcc6feb3d}{}C\+L\+Location\+Accuracy \hyperlink{interface_b_m_k_location_service_a2af9a5961b0553dd49e40e1fcc6feb3d}{desired\+Accuracy}\label{interface_b_m_k_location_service_a2af9a5961b0553dd49e40e1fcc6feb3d}
+
+\begin{DoxyCompactList}\small\item\em 设定定位精度。默认为k\+C\+L\+Location\+Accuracy\+Best。 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_af9da37d0c21e23368b0cfb06ea0dddea}{}C\+L\+Location\+Degrees \hyperlink{interface_b_m_k_location_service_af9da37d0c21e23368b0cfb06ea0dddea}{heading\+Filter}\label{interface_b_m_k_location_service_af9da37d0c21e23368b0cfb06ea0dddea}
+
+\begin{DoxyCompactList}\small\item\em 设定最小更新角度。默认为1度，设定为k\+C\+L\+Heading\+Filter\+None会提示任何角度改变。 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_a8d90fc1bb5cc5b96a248d7145beee045}{}B\+O\+O\+L \hyperlink{interface_b_m_k_location_service_a8d90fc1bb5cc5b96a248d7145beee045}{pauses\+Location\+Updates\+Automatically}\label{interface_b_m_k_location_service_a8d90fc1bb5cc5b96a248d7145beee045}
+
+\begin{DoxyCompactList}\small\item\em 指定定位是否会被系统自动暂停。默认为\+Y\+E\+S。只在i\+O\+S 6.\+0之后起作用。 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_location_service_aaa9c73f4cc2d604022cd0dd6b7128921}{}B\+O\+O\+L \hyperlink{interface_b_m_k_location_service_aaa9c73f4cc2d604022cd0dd6b7128921}{allows\+Background\+Location\+Updates}\label{interface_b_m_k_location_service_aaa9c73f4cc2d604022cd0dd6b7128921}
+
+\begin{DoxyCompactList}\small\item\em 指定定位：是否允许后台定位更新。默认为\+N\+O。只在i\+O\+S 9.\+0之后起作用。设为\+Y\+E\+S时，\+Info.\+plist中 U\+I\+Background\+Modes 必须包含 \char`\"{}location\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_location_service_a978bac65e039cf58117e9a69ea259c59}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!\+\_\+\+\_\+deprecated\+\_\+msg@{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\index{\+\_\+\+\_\+deprecated\+\_\+msg@{\+\_\+\+\_\+deprecated\+\_\+msg}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{\+\_\+\+\_\+deprecated\+\_\+msg}]{\setlength{\rightskip}{0pt plus 5cm}+ (\char`\"{}废弃方法（空实现），使用distance\+Filter属性替换\char`\"{}) \+\_\+\+\_\+deprecated\+\_\+msg 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_a978bac65e039cf58117e9a69ea259c59}
+2.\+9.\+0起废弃（使用distance\+Filter属性替换），空实现
+
+获取当前 定位的最小更新距离(米) \hypertarget{interface_b_m_k_location_service_ad19fcf8c6b43617bd0f8771aafdc744e}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!\+\_\+\+\_\+deprecated\+\_\+msg@{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\index{\+\_\+\+\_\+deprecated\+\_\+msg@{\+\_\+\+\_\+deprecated\+\_\+msg}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{\+\_\+\+\_\+deprecated\+\_\+msg}]{\setlength{\rightskip}{0pt plus 5cm}+ (\char`\"{}废弃方法（空实现），使用desired\+Accuracy属性替换\char`\"{}) \+\_\+\+\_\+deprecated\+\_\+msg 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_ad19fcf8c6b43617bd0f8771aafdc744e}
+2.\+9.\+0起废弃（使用desired\+Accuracy属性替换），空实现
+
+获取当前 定位精确度 \hypertarget{interface_b_m_k_location_service_ae3578982463cddc3c6abac2644e6bfb4}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!set\+Location\+Desired\+Accuracy\+:@{set\+Location\+Desired\+Accuracy\+:}}
+\index{set\+Location\+Desired\+Accuracy\+:@{set\+Location\+Desired\+Accuracy\+:}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{set\+Location\+Desired\+Accuracy\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Location\+Desired\+Accuracy\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}废弃方法（空实现），使用desired\+Accuracy属性替换\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_ae3578982463cddc3c6abac2644e6bfb4}
+2.\+9.\+0起废弃（使用desired\+Accuracy属性替换），空实现
+
+在打开定位服务前设置 设置定位精确度，默认：k\+C\+L\+Location\+Accuracy\+Best \hypertarget{interface_b_m_k_location_service_a603b1a38b6a7d57d758a61e5acbbce6d}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!set\+Location\+Distance\+Filter\+:@{set\+Location\+Distance\+Filter\+:}}
+\index{set\+Location\+Distance\+Filter\+:@{set\+Location\+Distance\+Filter\+:}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{set\+Location\+Distance\+Filter\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Location\+Distance\+Filter\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}废弃方法（空实现），使用distance\+Filter属性替换\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_a603b1a38b6a7d57d758a61e5acbbce6d}
+2.\+9.\+0起废弃（使用distance\+Filter属性替换），空实现
+
+在打开定位服务前设置 指定定位的最小更新距离(米)，默认：k\+C\+L\+Distance\+Filter\+None \hypertarget{interface_b_m_k_location_service_a3b49abd4104d23a114b7a7a632ff3722}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!start\+User\+Location\+Service@{start\+User\+Location\+Service}}
+\index{start\+User\+Location\+Service@{start\+User\+Location\+Service}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{start\+User\+Location\+Service}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) start\+User\+Location\+Service 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_a3b49abd4104d23a114b7a7a632ff3722}
+打开定位服务 需要在info.\+plist文件中添加(以下二选一，两个都添加默认使用\+N\+S\+Location\+When\+In\+Use\+Usage\+Description)： N\+S\+Location\+When\+In\+Use\+Usage\+Description 允许在前台使用时获取\+G\+P\+S的描述 N\+S\+Location\+Always\+Usage\+Description 允许永远可获取\+G\+P\+S的描述 \hypertarget{interface_b_m_k_location_service_a1aece8fbe579debdd0984147e036e947}{}\index{B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}!stop\+User\+Location\+Service@{stop\+User\+Location\+Service}}
+\index{stop\+User\+Location\+Service@{stop\+User\+Location\+Service}!B\+M\+K\+Location\+Service@{B\+M\+K\+Location\+Service}}
+\subsubsection[{stop\+User\+Location\+Service}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\+User\+Location\+Service 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_location_service_a1aece8fbe579debdd0984147e036e947}
+关闭定位服务 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Location\+Service.\+h\end{DoxyCompactItemize}

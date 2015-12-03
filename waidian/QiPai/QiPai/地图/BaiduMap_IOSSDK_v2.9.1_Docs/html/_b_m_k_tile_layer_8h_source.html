@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKTileLayer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKTileLayer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  BMKTileLayer.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  MapComponent</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by wzy on 15/8/7.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2015年 baidu. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BMKTileLayer_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BMKTileLayer_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;BMKOverlay.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_b_m_k_tile_layer.html">   17</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_tile_layer.html">BMKTileLayer</a> : NSObject &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_b_m_k_tile_layer.html#a31806dcf1e35a53d50fb40f995ea87d9">   20</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_b_m_k_tile_layer.html#a31806dcf1e35a53d50fb40f995ea87d9">minZoom</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_b_m_k_tile_layer.html#aee6919cb7f36d34eeabf788e17e5ff81">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_b_m_k_tile_layer.html#aee6919cb7f36d34eeabf788e17e5ff81">maxZoom</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interface_b_m_k_tile_layer.html#ae03f9090d6e253640e22d9226714f84c">   26</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> <a class="code" href="interface_b_m_k_tile_layer.html#ae03f9090d6e253640e22d9226714f84c">visibleMapRect</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_b_m_k_u_r_l_tile_layer.html">   34</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_u_r_l_tile_layer.html">BMKURLTileLayer</a> : <a class="code" href="interface_b_m_k_tile_layer.html">BMKTileLayer</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_b_m_k_u_r_l_tile_layer.html#a767a39f93503cfaaef6d46847de61cfc">   37</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *URLTemplate;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (id)initWithURLTemplate:(NSString *)URLTemplate;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (BOOL)cleanTileDataCache;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="interface_b_m_k_sync_tile_layer.html">   57</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_sync_tile_layer.html">BMKSyncTileLayer</a> : <a class="code" href="interface_b_m_k_tile_layer.html">BMKTileLayer</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;- (UIImage *)tileForX:(NSInteger)x y:(NSInteger)y zoom:(NSInteger)zoom;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BMKTileLayer_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="interface_b_m_k_tile_layer_html_a31806dcf1e35a53d50fb40f995ea87d9"><div class="ttname"><a href="interface_b_m_k_tile_layer.html#a31806dcf1e35a53d50fb40f995ea87d9">BMKTileLayer::minZoom</a></div><div class="ttdeci">NSInteger minZoom</div><div class="ttdoc">tileLayer的可见最小Zoom值，默认3 </div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:20</div></div>
+<div class="ttc" id="interface_b_m_k_tile_layer_html_ae03f9090d6e253640e22d9226714f84c"><div class="ttname"><a href="interface_b_m_k_tile_layer.html#ae03f9090d6e253640e22d9226714f84c">BMKTileLayer::visibleMapRect</a></div><div class="ttdeci">BMKMapRect visibleMapRect</div><div class="ttdoc">tileOverlay的可渲染区域，默认世界范围 </div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:26</div></div>
+<div class="ttc" id="interface_b_m_k_tile_layer_html_aee6919cb7f36d34eeabf788e17e5ff81"><div class="ttname"><a href="interface_b_m_k_tile_layer.html#aee6919cb7f36d34eeabf788e17e5ff81">BMKTileLayer::maxZoom</a></div><div class="ttdeci">NSInteger maxZoom</div><div class="ttdoc">tileLayer的可见最大Zoom值，默认20，且不能小于minZoom </div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:23</div></div>
+<div class="ttc" id="interface_b_m_k_u_r_l_tile_layer_html"><div class="ttname"><a href="interface_b_m_k_u_r_l_tile_layer.html">BMKURLTileLayer</a></div><div class="ttdoc">通过提供url模板的方法，提供数据源。不应该继承该类，且必须通过 initWithURLTemplate: 来初始化 瓦片图片�...</div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:34</div></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html">BMKOverlay-p</a></div><div class="ttdoc">该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:13</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html"><div class="ttname"><a href="struct_b_m_k_map_rect.html">BMKMapRect</a></div><div class="ttdoc">矩形，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+<div class="ttc" id="interface_b_m_k_tile_layer_html"><div class="ttname"><a href="interface_b_m_k_tile_layer.html">BMKTileLayer</a></div><div class="ttdoc">该类是覆盖在球面墨卡托投影上的图片tiles的数据源，是抽象类，不能直接使用该类添加瓦片图，需要使用其子类...</div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:17</div></div>
+<div class="ttc" id="interface_b_m_k_sync_tile_layer_html"><div class="ttname"><a href="interface_b_m_k_sync_tile_layer.html">BMKSyncTileLayer</a></div><div class="ttdoc">通过同步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 tileForX:y:zoom: 方法 瓦片图片是jpeg...</div><div class="ttdef"><b>Definition:</b> BMKTileLayer.h:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKRadarResult.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKRadarResult.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  BMKRadarResult.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  RadarComponent</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by wzy on 15/4/22.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2015年 baidu. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef RadarComponent_BMKRadarResult_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define RadarComponent_BMKRadarResult_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;BMKRadarOption.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BMK_RADAR_NO_ERROR = 0,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BMK_RADAR_NO_RESULT,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BMK_RADAR_AK_NOT_BIND,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BMK_RADAR_NETWOKR_ERROR,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BMK_RADAR_NETWOKR_TIMEOUT,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    BMK_RADAR_PERMISSION_UNFINISHED,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    BMK_RADAR_AK_ERROR,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BMK_RADAR_USERID_NOT_EXIST,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BMK_RADAR_FORBID_BY_USER,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    BMK_RADAR_FORBID_BY_ADMIN</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}BMKRadarErrorCode;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html">   29</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_radar_nearby_info.html">BMKRadarNearbyInfo</a> : NSObject</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#af26917b90e51c613d1d7da772506f1c5">   32</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_radar_nearby_info.html#af26917b90e51c613d1d7da772506f1c5">userId</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a7354d132478dd981edf26b68c84408c0">   34</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) CLLocationCoordinate2D <a class="code" href="interface_b_m_k_radar_nearby_info.html#a7354d132478dd981edf26b68c84408c0">pt</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a07c6c0f671c267001d012aa130c3c3f0">   36</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSUInteger <a class="code" href="interface_b_m_k_radar_nearby_info.html#a07c6c0f671c267001d012aa130c3c3f0">distance</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a88c13b035a2ea81206f316b502cdc47f">   38</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_radar_nearby_info.html#a88c13b035a2ea81206f316b502cdc47f">extInfo</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a5d63bea3d2ac95f4ebc10ccb3ca8e5c2">   40</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_radar_nearby_info.html#a5d63bea3d2ac95f4ebc10ccb3ca8e5c2">mobileType</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a4ba3cf9a7739ac5a56dc3bd40b2e39e7">   42</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_radar_nearby_info.html#a4ba3cf9a7739ac5a56dc3bd40b2e39e7">osType</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_info.html#a49ded5de165dd8a31bc5426d4aa4a230">   44</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSTimeInterval <a class="code" href="interface_b_m_k_radar_nearby_info.html#a49ded5de165dd8a31bc5426d4aa4a230">timeStamp</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html">   51</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_radar_nearby_result.html">BMKRadarNearbyResult</a> : NSObject</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html#ad931d84d458739d11084ff0576d0e862">   54</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger totalNum;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html#ab228a70cd50bb53cbe6a9fd596f68699">   56</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger pageNum;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html#a20c81dd39fb2b3138cfbf4515c6a0df6">   58</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger currNum;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html#ac09f7822498a0d2351d231cd939a8cd0">   60</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger pageIndex;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_nearby_result.html#a0ac1ae3a70f81486a70eee896fdbddb4">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray* infoList;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a7354d132478dd981edf26b68c84408c0"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a7354d132478dd981edf26b68c84408c0">BMKRadarNearbyInfo::pt</a></div><div class="ttdeci">CLLocationCoordinate2D pt</div><div class="ttdoc">地址坐标 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:34</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a5d63bea3d2ac95f4ebc10ccb3ca8e5c2"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a5d63bea3d2ac95f4ebc10ccb3ca8e5c2">BMKRadarNearbyInfo::mobileType</a></div><div class="ttdeci">NSString * mobileType</div><div class="ttdoc">设备类型 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:40</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_result_html"><div class="ttname"><a href="interface_b_m_k_radar_nearby_result.html">BMKRadarNearbyResult</a></div><div class="ttdoc">查询周边的用户信息结果类 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:51</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a88c13b035a2ea81206f316b502cdc47f"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a88c13b035a2ea81206f316b502cdc47f">BMKRadarNearbyInfo::extInfo</a></div><div class="ttdeci">NSString * extInfo</div><div class="ttdoc">扩展信息 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:38</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_af26917b90e51c613d1d7da772506f1c5"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#af26917b90e51c613d1d7da772506f1c5">BMKRadarNearbyInfo::userId</a></div><div class="ttdeci">NSString * userId</div><div class="ttdoc">用户id </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:32</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a4ba3cf9a7739ac5a56dc3bd40b2e39e7"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a4ba3cf9a7739ac5a56dc3bd40b2e39e7">BMKRadarNearbyInfo::osType</a></div><div class="ttdeci">NSString * osType</div><div class="ttdoc">设备系统 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:42</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html">BMKRadarNearbyInfo</a></div><div class="ttdoc">周边的用户信息类 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:29</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a07c6c0f671c267001d012aa130c3c3f0"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a07c6c0f671c267001d012aa130c3c3f0">BMKRadarNearbyInfo::distance</a></div><div class="ttdeci">NSUInteger distance</div><div class="ttdoc">距离 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:36</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_info_html_a49ded5de165dd8a31bc5426d4aa4a230"><div class="ttname"><a href="interface_b_m_k_radar_nearby_info.html#a49ded5de165dd8a31bc5426d4aa4a230">BMKRadarNearbyInfo::timeStamp</a></div><div class="ttdeci">NSTimeInterval timeStamp</div><div class="ttdoc">时间戳 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

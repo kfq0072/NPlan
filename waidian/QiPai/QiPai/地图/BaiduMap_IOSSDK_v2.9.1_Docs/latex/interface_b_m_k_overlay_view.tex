@@ -1,0 +1,483 @@
+\hypertarget{interface_b_m_k_overlay_view}{}\section{B\+M\+K\+Overlay\+View类 参考}
+\label{interface_b_m_k_overlay_view}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+
+
+该类是地图覆盖物\+View的基类，提供绘制overlay的接口但本身并无实现，所有地图覆盖物\+View需要继承自此类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Overlay\+View.\+h$>$}
+
+类 B\+M\+K\+Overlay\+View 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.666667cm]{interface_b_m_k_overlay_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a2a9f42799b36989d9f1faac29892026a}{}(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a2a9f42799b36989d9f1faac29892026a}{set\+Geometry\+Delegate\+:}\label{interface_b_m_k_overlay_view_a2a9f42799b36989d9f1faac29892026a}
+
+\begin{DoxyCompactList}\small\item\em 设置该overlay的\+Geometry\+Delegate \end{DoxyCompactList}\item 
+(id) -\/ \hyperlink{interface_b_m_k_overlay_view_a93cdba852e915d6a417b95edabe4af4c}{init\+With\+Overlay\+:}
+\item 
+(C\+G\+Point) -\/ \hyperlink{interface_b_m_k_overlay_view_a211d0d55b1c10b0abca45e83f4fcf05c}{point\+For\+Map\+Point\+:}
+\item 
+(\hyperlink{struct_b_m_k_map_point}{B\+M\+K\+Map\+Point}) -\/ \hyperlink{interface_b_m_k_overlay_view_ab0270107a383cf49fd46d9b624604d53}{map\+Point\+For\+Point\+:}
+\item 
+(C\+G\+Rect) -\/ \hyperlink{interface_b_m_k_overlay_view_a4eb52fd9951bcfc898e9a026ee40e99e}{rect\+For\+Map\+Rect\+:}
+\item 
+(\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect}) -\/ \hyperlink{interface_b_m_k_overlay_view_ae8c0f0415357f281451eaa602b3f388b}{map\+Rect\+For\+Rect\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_overlay_view_ad5c0685243ded79bc6657ebb7df08f87}{can\+Draw\+Map\+Rect\+:zoom\+Scale\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_aad771b4c325461d99b142e79287188dc}{draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_aca005b8bf49d57b404da473fd6f0d534}{set\+Needs\+Display\+In\+Map\+Rect\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a67fcc048446dfa1725aa4a86b241b282}{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a81a56677ce4da3b33a07430793784341}{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a4f1fc6aa6b3dfc3d98469b2221ffabc7}{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_ad3355078f88764aa17df4236f2357623}{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_adf04cf380e1d2dd2367f559f2552bc85}{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a9259f51ece9695514aab8bab5c982229}{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a85a054df49b09373b036e22771138ba2}{render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a9b277a3ef5cfef2ba6737af997c869d5}{render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_overlay_view_a0a851a886a4bb7268ea595d3892ab59f}{gl\+Render}
+\item 
+(G\+Luint) -\/ \hyperlink{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}{load\+Stroke\+Texture\+Image\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_overlay_view_a9c3eec3e72dcce4793b8e0f04c48d656}{load\+Stroke\+Texture\+Images\+:}
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a1221418aafb1e98ab9caf88bb5fea5d7}{}package id$<$ \hyperlink{protocol_b_m_k_overlay-p}{B\+M\+K\+Overlay} $>$ {\bfseries \+\_\+overlay}\label{interface_b_m_k_overlay_view_a1221418aafb1e98ab9caf88bb5fea5d7}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a9c358f158a9d30b23ff8dddce028be61}{}\hyperlink{struct_b_m_k_map_rect}{B\+M\+K\+Map\+Rect} {\bfseries \+\_\+bounding\+Map\+Rect}\label{interface_b_m_k_overlay_view_a9c358f158a9d30b23ff8dddce028be61}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a33718c9269f4aad056f2360a368d65bb}{}C\+G\+Affine\+Transform {\bfseries \+\_\+map\+Transform}\label{interface_b_m_k_overlay_view_a33718c9269f4aad056f2360a368d65bb}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a811bdb8cdb5c83a3e91674eeb35db281}{}id {\bfseries \+\_\+geometry\+Delegate}\label{interface_b_m_k_overlay_view_a811bdb8cdb5c83a3e91674eeb35db281}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_af3de42334db2d56dfe7b9c2674fcd6a2}{}id {\bfseries \+\_\+can\+Draw\+Cache}\label{interface_b_m_k_overlay_view_af3de42334db2d56dfe7b9c2674fcd6a2}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a4f7d62b7dfdc4502a2b95c678e4e0190}{}B\+O\+O\+L {\bfseries keep\+Scale}\label{interface_b_m_k_overlay_view_a4f7d62b7dfdc4502a2b95c678e4e0190}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_ae28114032fc8056e491f11c6e41d9bda}{}C\+F\+Time\+Interval {\bfseries \+\_\+last\+Tile}\label{interface_b_m_k_overlay_view_ae28114032fc8056e491f11c6e41d9bda}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_ae9feb5df6871e3e2cbc3ddd3fcfcefdc}{}C\+F\+Run\+Loop\+Timer\+Ref {\bfseries \+\_\+scheduled\+Scale\+Timer}\label{interface_b_m_k_overlay_view_ae9feb5df6871e3e2cbc3ddd3fcfcefdc}
+
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a1b29250fea696a6c7317fe55b0ffe0f5}{}\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>unsigned int {\bfseries keepAlive}:1\\
+\>unsigned int {\bfseries levelCrossFade}:1\\
+\>unsigned int {\bfseries drawingDisabled}:1\\
+\>unsigned int {\bfseries usesTiledLayer}:1\\
+\} {\bfseries \_flags}\label{interface_b_m_k_overlay_view_a1b29250fea696a6c7317fe55b0ffe0f5}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_overlay_view_a0824b78460b0c199376680c7c335d562}{}id$<$ \hyperlink{protocol_b_m_k_overlay-p}{B\+M\+K\+Overlay} $>$ \hyperlink{interface_b_m_k_overlay_view_a0824b78460b0c199376680c7c335d562}{overlay}\label{interface_b_m_k_overlay_view_a0824b78460b0c199376680c7c335d562}
+
+\begin{DoxyCompactList}\small\item\em 关联的overlay对象 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_overlay_view_a160ee62c460e1fa87ccd588f8024e1a9}{}G\+Luint \hyperlink{interface_b_m_k_overlay_view_a160ee62c460e1fa87ccd588f8024e1a9}{stroke\+Texture\+I\+D}\label{interface_b_m_k_overlay_view_a160ee62c460e1fa87ccd588f8024e1a9}
+
+\begin{DoxyCompactList}\small\item\em 关联的纹理对象\+I\+D \end{DoxyCompactList}\item 
+N\+S\+Array $\ast$ \hyperlink{interface_b_m_k_overlay_view_ac52154ebab33c7f35362a1734eecbaee}{colors}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+该类是地图覆盖物\+View的基类，提供绘制overlay的接口但本身并无实现，所有地图覆盖物\+View需要继承自此类 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_overlay_view_ad5c0685243ded79bc6657ebb7df08f87}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!can\+Draw\+Map\+Rect\+:zoom\+Scale\+:@{can\+Draw\+Map\+Rect\+:zoom\+Scale\+:}}
+\index{can\+Draw\+Map\+Rect\+:zoom\+Scale\+:@{can\+Draw\+Map\+Rect\+:zoom\+Scale\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{can\+Draw\+Map\+Rect\+:zoom\+Scale\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) can\+Draw\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{zoomScale:(B\+M\+K\+Zoom\+Scale)}]{zoom\+Scale}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_ad5c0685243ded79bc6657ebb7df08f87}
+判断ovlerlay view是否准备绘制内容 默认返回\+Y\+E\+S，如果用户设为\+N\+O，当需要绘制内容时要显示调用set\+Needs\+Display\+In\+Map\+Rect\+:zoom\+Scale\+:方法 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 需要更新的地图矩形区域 \\
+\hline
+{\em zoom\+Scale} & 当前的缩放因子 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+如果view准备好绘制内容，返回\+Y\+E\+S,否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_aad771b4c325461d99b142e79287188dc}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:@{draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:}}
+\index{draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:@{draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{draw\+Map\+Rect\+:zoom\+Scale\+:in\+Context\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) draw\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\item[{zoomScale:(B\+M\+K\+Zoom\+Scale)}]{zoom\+Scale}
+\item[{inContext:(C\+G\+Context\+Ref)}]{context}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_aad771b4c325461d99b142e79287188dc}
+绘制overlay view内容 该方法默认不做任何事，子类需要重载该方法来绘制view的内容 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 需要更新的地图矩形区域 \\
+\hline
+{\em zoom\+Scale} & 当前的缩放因子 \\
+\hline
+{\em context} & 使用的graphics context \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a0a851a886a4bb7268ea595d3892ab59f}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!gl\+Render@{gl\+Render}}
+\index{gl\+Render@{gl\+Render}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{gl\+Render}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) gl\+Render 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a0a851a886a4bb7268ea595d3892ab59f}
+绘制函数(子类需要重载来实现) \hypertarget{interface_b_m_k_overlay_view_a93cdba852e915d6a417b95edabe4af4c}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!init\+With\+Overlay\+:@{init\+With\+Overlay\+:}}
+\index{init\+With\+Overlay\+:@{init\+With\+Overlay\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{init\+With\+Overlay\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+Overlay\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Overlay} $>$)}]{overlay}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a93cdba852e915d6a417b95edabe4af4c}
+初始化并返回一个overlay view 
+\begin{DoxyParams}{参数}
+{\em overlay} & 关联的overlay对象 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+初始化成功则返回overlay view,否则返回nil 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!load\+Stroke\+Texture\+Image\+:@{load\+Stroke\+Texture\+Image\+:}}
+\index{load\+Stroke\+Texture\+Image\+:@{load\+Stroke\+Texture\+Image\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{load\+Stroke\+Texture\+Image\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (G\+Luint) load\+Stroke\+Texture\+Image\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Image $\ast$)}]{texture\+Image}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}
+加载纹理图片 
+\begin{DoxyParams}{参数}
+{\em texture\+Image} & 图片对象，opengl要求图片宽高必须是2的n次幂，如果图片对象为nil，则清空原有纹理 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+open\+G\+L纹理\+I\+D, 若纹理加载失败返回0 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_a9c3eec3e72dcce4793b8e0f04c48d656}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!load\+Stroke\+Texture\+Images\+:@{load\+Stroke\+Texture\+Images\+:}}
+\index{load\+Stroke\+Texture\+Images\+:@{load\+Stroke\+Texture\+Images\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{load\+Stroke\+Texture\+Images\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) load\+Stroke\+Texture\+Images\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{texture\+Images}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a9c3eec3e72dcce4793b8e0f04c48d656}
+加载分段纹理绘制 所需的纹理图片 
+\begin{DoxyParams}{参数}
+{\em texture\+Images} & 必须\+U\+I\+Image数组，opengl要求图片宽高必须是2的n次幂，否则，返回\+N\+O，无法分段纹理绘制 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否成功 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_ab0270107a383cf49fd46d9b624604d53}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!map\+Point\+For\+Point\+:@{map\+Point\+For\+Point\+:}}
+\index{map\+Point\+For\+Point\+:@{map\+Point\+For\+Point\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{map\+Point\+For\+Point\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Point}) map\+Point\+For\+Point\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Point)}]{point}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_ab0270107a383cf49fd46d9b624604d53}
+将overlay view坐标转为直角坐标 
+\begin{DoxyParams}{参数}
+{\em point} & view坐标 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+对应的直角坐标 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_ae8c0f0415357f281451eaa602b3f388b}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!map\+Rect\+For\+Rect\+:@{map\+Rect\+For\+Rect\+:}}
+\index{map\+Rect\+For\+Rect\+:@{map\+Rect\+For\+Rect\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{map\+Rect\+For\+Rect\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Map\+Rect}) map\+Rect\+For\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{(C\+G\+Rect)}]{rect}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_ae8c0f0415357f281451eaa602b3f388b}
+将overlay view区域转为二维地图投影区域 
+\begin{DoxyParams}{参数}
+{\em rect} & 指定的view矩形 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+对应的二维地图投影矩形 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_a211d0d55b1c10b0abca45e83f4fcf05c}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!point\+For\+Map\+Point\+:@{point\+For\+Map\+Point\+:}}
+\index{point\+For\+Map\+Point\+:@{point\+For\+Map\+Point\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{point\+For\+Map\+Point\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Point) point\+For\+Map\+Point\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point})}]{map\+Point}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a211d0d55b1c10b0abca45e83f4fcf05c}
+将直角坐标转为overlay view坐标 
+\begin{DoxyParams}{参数}
+{\em map\+Point} & 直角坐标 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+对应的view坐标 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_a4eb52fd9951bcfc898e9a026ee40e99e}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!rect\+For\+Map\+Rect\+:@{rect\+For\+Map\+Rect\+:}}
+\index{rect\+For\+Map\+Rect\+:@{rect\+For\+Map\+Rect\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{rect\+For\+Map\+Rect\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\+G\+Rect) rect\+For\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a4eb52fd9951bcfc898e9a026ee40e99e}
+将二维地图投影矩形转为overlay view矩形 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 二维地图投影矩形 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+对应的view矩形 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_overlay_view_a9b277a3ef5cfef2ba6737af997c869d5}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:@{render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}}
+\index{render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:@{render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+A\+T\+Region\+With\+Point\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+A\+T\+Region\+With\+Point\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{fillColor:(U\+I\+Color $\ast$)}]{fill\+Color}
+\item[{usingTriangleFan:(B\+O\+O\+L)}]{using\+Triangle\+Fan}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a9b277a3ef5cfef2ba6737af997c869d5}
+使用\+Open\+G\+L\+E\+S 绘制区域（支持凹多边形） 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em fill\+Color} & 填充颜色 \\
+\hline
+{\em using\+Triangle\+Fan} & Y\+E\+S对应\+G\+L\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+A\+N, N\+O对应\+G\+L\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+S \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a67fcc048446dfa1725aa4a86b241b282}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:@{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:}}
+\index{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:@{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Lines\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{strokeColor:(U\+I\+Color $\ast$)}]{stroke\+Color}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{looped:(B\+O\+O\+L)}]{looped}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a67fcc048446dfa1725aa4a86b241b282}
+使用\+Open\+G\+L\+E\+S 绘制线 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em stroke\+Color} & 线颜色 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em looped} & 是否闭合, 如polyline会设置\+N\+O, polygon会设置\+Y\+E\+S. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a81a56677ce4da3b33a07430793784341}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:@{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:}}
+\index{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:@{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Lines\+With\+Points\+:point\+Count\+:stroke\+Color\+:line\+Width\+:looped\+:line\+Dash\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Lines\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{strokeColor:(U\+I\+Color $\ast$)}]{stroke\+Color}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{looped:(B\+O\+O\+L)}]{looped}
+\item[{lineDash:(B\+O\+O\+L)}]{line\+Dash}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a81a56677ce4da3b33a07430793784341}
+使用\+Open\+G\+L\+E\+S 绘制线 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em stroke\+Color} & 线颜色 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em looped} & 是否闭合, 如polyline会设置\+N\+O, polygon会设置\+Y\+E\+S. \\
+\hline
+{\em line\+Dash} & 是否虚线样式 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a85a054df49b09373b036e22771138ba2}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:@{render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}}
+\index{render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:@{render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Region\+With\+Points\+:point\+Count\+:fill\+Color\+:using\+Triangle\+Fan\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Region\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{fillColor:(U\+I\+Color $\ast$)}]{fill\+Color}
+\item[{usingTriangleFan:(B\+O\+O\+L)}]{using\+Triangle\+Fan}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a85a054df49b09373b036e22771138ba2}
+使用\+Open\+G\+L\+E\+S 绘制区域 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em fill\+Color} & 填充颜色 \\
+\hline
+{\em using\+Triangle\+Fan} & Y\+E\+S对应\+G\+L\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+\_\+\+F\+A\+N, N\+O对应\+G\+L\+\_\+\+T\+R\+I\+A\+N\+G\+L\+E\+S \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_adf04cf380e1d2dd2367f559f2552bc85}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:@{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:}}
+\index{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:@{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Textured\+Lines\+With\+Part\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{part\+Pt}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{textureIndexs:(N\+S\+Array $\ast$)}]{texture\+Indexs}
+\item[{isFocus:(B\+O\+O\+L)}]{is\+Foucs}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_adf04cf380e1d2dd2367f559f2552bc85}
+使用\+Open\+G\+L\+E\+S 分段纹理绘制线 
+\begin{DoxyParams}{参数}
+{\em part\+Pt} & 分段直角坐标点 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em texture\+Indexs} & 分段纹理索引,使用-\/ (void)\hyperlink{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}{load\+Stroke\+Texture\+Image\+:}texture\+Image;加载 \\
+\hline
+{\em is\+Foucs} & 是否使用分段纹理绘制 \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a9259f51ece9695514aab8bab5c982229}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:@{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:}}
+\index{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:@{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Textured\+Lines\+With\+Part\+Points\+:line\+Width\+:texture\+Indexs\+:is\+Focus\+:tile\+Texture\+:keep\+Scale\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Textured\+Lines\+With\+Part\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{part\+Pt}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{textureIndexs:(N\+S\+Array $\ast$)}]{texture\+Indexs}
+\item[{isFocus:(B\+O\+O\+L)}]{is\+Foucs}
+\item[{tileTexture:(B\+O\+O\+L)}]{tile\+Texture}
+\item[{keepScale:(B\+O\+O\+L)}]{keep\+Scale}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a9259f51ece9695514aab8bab5c982229}
+使用\+Open\+G\+L\+E\+S 分段纹理绘制线/分段颜色绘制线 
+\begin{DoxyParams}{参数}
+{\em part\+Pt} & 分段直角坐标点 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em texture\+Indexs} & 分段纹理索引,使用-\/ (B\+O\+O\+L)load\+Stroke\+Texture\+Images\+:(\+U\+I\+Image $\ast$)texture\+Image;加载 \\
+\hline
+{\em is\+Foucs} & 是否使用分段纹理绘制 \\
+\hline
+{\em tile\+Texture} & 是否纹理图片平铺绘制 \\
+\hline
+{\em keep\+Scale} & 纹理图片是否缩放（tile\+Texture为\+Y\+E\+S时生效） \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_a4f1fc6aa6b3dfc3d98469b2221ffabc7}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:@{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:}}
+\index{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:@{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:looped\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Textured\+Lines\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{textureID:(G\+Luint)}]{texture\+I\+D}
+\item[{looped:(B\+O\+O\+L)}]{looped}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_a4f1fc6aa6b3dfc3d98469b2221ffabc7}
+使用\+Open\+G\+L\+E\+S 按指定纹理绘制线 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em texture\+I\+D} & 纹理\+I\+D,使用-\/ (void)\hyperlink{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}{load\+Stroke\+Texture\+Image\+:}texture\+Image;加载 \\
+\hline
+{\em looped} & 是否闭合, 如polyline会设置\+N\+O, polygon会设置\+Y\+E\+S. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_ad3355078f88764aa17df4236f2357623}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:@{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:}}
+\index{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:@{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{render\+Textured\+Lines\+With\+Points\+:point\+Count\+:line\+Width\+:texture\+I\+D\+:stroke\+Color\+:looped\+:tile\+Texture\+:keep\+Scale\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) render\+Textured\+Lines\+With\+Points\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Point} $\ast$)}]{points}
+\item[{pointCount:(N\+S\+U\+Integer)}]{point\+Count}
+\item[{lineWidth:(C\+G\+Float)}]{line\+Width}
+\item[{textureID:(G\+Luint)}]{texture\+I\+D}
+\item[{strokeColor:(U\+I\+Color $\ast$)}]{stroke\+Color}
+\item[{looped:(B\+O\+O\+L)}]{looped}
+\item[{tileTexture:(B\+O\+O\+L)}]{tile\+Texture}
+\item[{keepScale:(B\+O\+O\+L)}]{keep\+Scale}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_ad3355078f88764aa17df4236f2357623}
+使用\+Open\+G\+L\+E\+S 按指定纹理绘制线 
+\begin{DoxyParams}{参数}
+{\em points} & 直角坐标点 \\
+\hline
+{\em point\+Count} & 点个数 \\
+\hline
+{\em line\+Width} & Open\+G\+L\+E\+S支持线宽尺寸 \\
+\hline
+{\em texture\+I\+D} & 纹理\+I\+D,使用-\/ (void)\hyperlink{interface_b_m_k_overlay_view_aa6768a6f3648c99f7fde290623be0b24}{load\+Stroke\+Texture\+Image\+:}texture\+Image;加载 \\
+\hline
+{\em looped} & 是否闭合, 如polyline会设置\+N\+O, polygon会设置\+Y\+E\+S. \\
+\hline
+{\em tile\+Texture} & 是否纹理图片平铺绘制 \\
+\hline
+{\em keep\+Scale} & 纹理图片是否缩放（tile\+Texture为\+Y\+E\+S时生效） \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_overlay_view_aca005b8bf49d57b404da473fd6f0d534}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!set\+Needs\+Display\+In\+Map\+Rect\+:@{set\+Needs\+Display\+In\+Map\+Rect\+:}}
+\index{set\+Needs\+Display\+In\+Map\+Rect\+:@{set\+Needs\+Display\+In\+Map\+Rect\+:}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{set\+Needs\+Display\+In\+Map\+Rect\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Needs\+Display\+In\+Map\+Rect\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Map\+Rect})}]{map\+Rect}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_overlay_view_aca005b8bf49d57b404da473fd6f0d534}
+使view在给定矩形的区域无效,系统将重绘该区域 
+\begin{DoxyParams}{参数}
+{\em map\+Rect} & 需要更新的区域 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{属性说明}
+\hypertarget{interface_b_m_k_overlay_view_ac52154ebab33c7f35362a1734eecbaee}{}\index{B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}!colors@{colors}}
+\index{colors@{colors}!B\+M\+K\+Overlay\+View@{B\+M\+K\+Overlay\+View}}
+\subsubsection[{colors}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$\ast$) colors\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_m_k_overlay_view_ac52154ebab33c7f35362a1734eecbaee}
+使用分段颜色绘制时，必须设置（内容必须为\+U\+I\+Color） 注：请使用 -\/ (U\+I\+Color $\ast$)init\+With\+Red\+:(\+C\+G\+Float)red green\+:(\+C\+G\+Float)green blue\+:(\+C\+G\+Float)blue alpha\+:(\+C\+G\+Float)alpha; 初始化\+U\+I\+Color。使用\mbox{[}U\+I\+Color $\ast$$\ast$$\ast$\+Color\mbox{]}初始化时，个别case转换成\+R\+G\+B后会有问题 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Overlay\+View.\+h\end{DoxyCompactItemize}

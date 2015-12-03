@@ -1,0 +1,71 @@
+\hypertarget{interface_b_m_k_share_u_r_l_search}{}\section{B\+M\+K\+Share\+U\+R\+L\+Search类 参考}
+\label{interface_b_m_k_share_u_r_l_search}\index{B\+M\+K\+Share\+U\+R\+L\+Search@{B\+M\+K\+Share\+U\+R\+L\+Search}}
+
+
+短串搜索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Share\+U\+R\+L\+Search.\+h$>$}
+
+类 B\+M\+K\+Share\+U\+R\+L\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_b_m_k_share_u_r_l_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_share_u_r_l_search_a91351e2591a3918fc233ba8ca42c83be}{request\+Poi\+Detail\+Share\+U\+R\+L\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_share_u_r_l_search_a42ece3de1f45f2fd3be760f78e37b9b2}{request\+Location\+Share\+U\+R\+L\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_share_u_r_l_search_af3d6d7b5ecf6c9b09b292c1684dad3db}{}id$<$ \hyperlink{protocol_b_m_k_share_u_r_l_search_delegate-p}{B\+M\+K\+Share\+U\+R\+L\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_share_u_r_l_search_af3d6d7b5ecf6c9b09b292c1684dad3db}{delegate}\label{interface_b_m_k_share_u_r_l_search_af3d6d7b5ecf6c9b09b292c1684dad3db}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+短串搜索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_share_u_r_l_search_a42ece3de1f45f2fd3be760f78e37b9b2}{}\index{B\+M\+K\+Share\+U\+R\+L\+Search@{B\+M\+K\+Share\+U\+R\+L\+Search}!request\+Location\+Share\+U\+R\+L\+:@{request\+Location\+Share\+U\+R\+L\+:}}
+\index{request\+Location\+Share\+U\+R\+L\+:@{request\+Location\+Share\+U\+R\+L\+:}!B\+M\+K\+Share\+U\+R\+L\+Search@{B\+M\+K\+Share\+U\+R\+L\+Search}}
+\subsubsection[{request\+Location\+Share\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) request\+Location\+Share\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Location\+Share\+U\+R\+L\+Option} $\ast$)}]{reverse\+Geo\+Share\+Url\+Search\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_share_u_r_l_search_a42ece3de1f45f2fd3be760f78e37b9b2}
+获取反geo短串分享url 异步函数，返回结果在\+B\+M\+K\+Share\+Url\+Search\+Delegate的on\+Get\+Location\+Share\+U\+R\+L\+Result通知 
+\begin{DoxyParams}{参数}
+{\em reverse\+Geo\+Share\+Url\+Search\+Option} & 反geo短串分享检索信息类 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+\hypertarget{interface_b_m_k_share_u_r_l_search_a91351e2591a3918fc233ba8ca42c83be}{}\index{B\+M\+K\+Share\+U\+R\+L\+Search@{B\+M\+K\+Share\+U\+R\+L\+Search}!request\+Poi\+Detail\+Share\+U\+R\+L\+:@{request\+Poi\+Detail\+Share\+U\+R\+L\+:}}
+\index{request\+Poi\+Detail\+Share\+U\+R\+L\+:@{request\+Poi\+Detail\+Share\+U\+R\+L\+:}!B\+M\+K\+Share\+U\+R\+L\+Search@{B\+M\+K\+Share\+U\+R\+L\+Search}}
+\subsubsection[{request\+Poi\+Detail\+Share\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) request\+Poi\+Detail\+Share\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Poi\+Detail\+Share\+U\+R\+L\+Option} $\ast$)}]{poi\+Detail\+Share\+Url\+Search\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_share_u_r_l_search_a91351e2591a3918fc233ba8ca42c83be}
+获取poi详情短串分享url 异步函数，返回结果在\+B\+M\+K\+Share\+Url\+Search\+Delegate的on\+Get\+Poi\+Detail\+Share\+U\+R\+L\+Result通知 
+\begin{DoxyParams}{参数}
+{\em poi\+Detail\+Share\+Url\+Search\+Option} & poi详情短串分享检索信息类 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Share\+U\+R\+L\+Search.\+h\end{DoxyCompactItemize}

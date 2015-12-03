@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKNavigation.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKNavigation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKNavigation.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKTypes.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//定义调起导航的两种类型</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//注：自2.8.0开始废弃，只支持调起客户端导航，在调起客户端导航时，才会调起web导航</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    BMK_NAVI_TYPE_NATIVE = 0,<span class="comment">//客户端导航</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    BMK_NAVI_TYPE_WEB,<span class="comment">//web导航</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} BMK_NAVI_TYPE;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html">   19</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_navi_para.html">BMKNaviPara</a> : NSObject</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>* _startPoint;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>* _endPoint;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BMK_NAVI_TYPE _naviType;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    NSString* _appScheme;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    NSString* _appName;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#aafbed621fc51d1fe9a24b007f06635fb">   28</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>* startPoint;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#a6c47b9b500a1361c81843dde65b79928">   30</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_b_m_k_plan_node.html">BMKPlanNode</a>* endPoint;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#abbc3ff6ed83b98d211205ebf2153fe2b">   32</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BMK_NAVI_TYPE naviType;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#aa6d336d0e092b0624c49cacf73141bee">   34</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* appScheme;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#a4c98f8aca9d18fd287e345aaffff4f1c">   36</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* appName;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_b_m_k_navi_para.html#a6c6138ab343647778afd21a6fb42c685">   38</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL isSupportWeb;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_b_m_k_navigation.html">   43</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_navigation.html">BMKNavigation</a> : NSObject</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;+ (BMKOpenErrorCode)openBaiduMapNavigation:(<a class="code" href="interface_b_m_k_navi_para.html">BMKNaviPara</a>*)para;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="ttc" id="interface_b_m_k_plan_node_html"><div class="ttname"><a href="interface_b_m_k_plan_node.html">BMKPlanNode</a></div><div class="ttdoc">线路检索节点信息,一个路线检索节点可以通过经纬度坐标或城市名加地名确定 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:128</div></div>
+<div class="ttc" id="interface_b_m_k_navigation_html"><div class="ttname"><a href="interface_b_m_k_navigation.html">BMKNavigation</a></div><div class="ttdoc">主引擎类 </div><div class="ttdef"><b>Definition:</b> BMKNavigation.h:43</div></div>
+<div class="ttc" id="interface_b_m_k_navi_para_html"><div class="ttname"><a href="interface_b_m_k_navi_para.html">BMKNaviPara</a></div><div class="ttdoc">此类管理调起导航时传入的参数 </div><div class="ttdef"><b>Definition:</b> BMKNavigation.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

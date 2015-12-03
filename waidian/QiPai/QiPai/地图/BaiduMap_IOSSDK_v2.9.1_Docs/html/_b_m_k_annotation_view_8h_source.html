@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKAnnotationView.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKAnnotationView.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKAnnotationView.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKActionPaopaoView.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if __IPHONE_3_2 &lt;= __IPHONE_OS_VERSION_MAX_ALLOWED</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    BMKAnnotationViewDragStateNone = 0,      </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    BMKAnnotationViewDragStateStarting,      </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    BMKAnnotationViewDragStateDragging,      </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    BMKAnnotationViewDragStateCanceling,     </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    BMKAnnotationViewDragStateEnding         </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> NSUInteger BMKAnnotationViewDragState;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@class</span> BMKAnnotationViewInternal;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@class</span> BMKMapViewInternal;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html">   33</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> : UIView</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">@private</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BMKAnnotationViewInternal *_internal;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    BOOL _enabled3D;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    CGPoint _originPt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    CGPoint startPoint;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;- (id)initWithAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation reuseIdentifier:(NSString *)reuseIdentifier;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#aba3efdbef49c0301af03ce0d47348358">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSString *reuseIdentifier;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#af351c55cfa4b90f2e5090f0503ff699c">   54</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong)<a class="code" href="interface_b_m_k_action_paopao_view.html">BMKActionPaopaoView</a>* paopaoView;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;- (void)prepareForReuse;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a466f040671f2235667a4034aba879bb5">   63</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) id &lt;BMKAnnotation&gt; annotation;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a3186f78dcb098002e39fd226cbc1c9b6">   66</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) UIImage *image;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a12a4f32e8adc7732c80d772eb403cd61">   69</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint centerOffset;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#aacdcb492cbbc469803ba50def87f44e5">   72</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint calloutOffset;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a18cef771d9b9feeb74a4bc4dd7fba526">   75</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL enabled3D;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#ad768885a75146458b4efd168885478fe">   78</a></span>&#160;<span class="keyword">@property</span> (nonatomic, getter=isEnabled) BOOL enabled;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a09799664ef861651bd7996f0fbab6483">   81</a></span>&#160;<span class="keyword">@property</span> (nonatomic, getter=isSelected) BOOL selected;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)setSelected:(BOOL)selected animated:(BOOL)animated;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#adef94e946f5b152c59be1cdb5eccfb74">   92</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL canShowCallout;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#ae182c0fb7dc1898c4941a123def7f926">   95</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic) UIView *leftCalloutAccessoryView;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="interface_b_m_k_annotation_view.html#a65793288845c27e23233373b3e6b6216">   98</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic) UIView *rightCalloutAccessoryView;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">@property</span> (nonatomic, getter=isDraggable) BOOL draggable __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">@property</span> (nonatomic) BMKAnnotationViewDragState dragState __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_2);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="ttc" id="protocol_b_m_k_annotation-p_html"><div class="ttname"><a href="protocol_b_m_k_annotation-p.html">BMKAnnotation-p</a></div><div class="ttdoc">该类为标注点的protocol，提供了标注类的基本信息函数 </div><div class="ttdef"><b>Definition:</b> BMKAnnotation.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_action_paopao_view_html"><div class="ttname"><a href="interface_b_m_k_action_paopao_view.html">BMKActionPaopaoView</a></div><div class="ttdoc">该类用于定义一个PaopaoView </div><div class="ttdef"><b>Definition:</b> BMKActionPaopaoView.h:11</div></div>
+<div class="ttc" id="interface_b_m_k_annotation_view_html"><div class="ttname"><a href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a></div><div class="ttdoc">标注view </div><div class="ttdef"><b>Definition:</b> BMKAnnotationView.h:33</div></div>
+<div class="ttc" id="interface_b_m_k_map_view_html"><div class="ttname"><a href="interface_b_m_k_map_view.html">BMKMapView</a></div><div class="ttdoc">地图View类，使用此View可以显示地图窗口，并且对地图进行相关的操作 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:29 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

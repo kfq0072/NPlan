@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKOverlay.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKOverlay.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKOverlay.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;BMKAnnotation.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKTypes.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="protocol_b_m_k_overlay-p.html">   13</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="protocol_b_m_k_overlay-p.html#a7a10d9dde65c9611e3b5279179a9d480">   17</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) CLLocationCoordinate2D <a class="code" href="protocol_b_m_k_overlay-p.html#a7a10d9dde65c9611e3b5279179a9d480">coordinate</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="protocol_b_m_k_overlay-p.html#a77465daa9e52be51cc5aa15591ab74f0">   20</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> <a class="code" href="protocol_b_m_k_overlay-p.html#a77465daa9e52be51cc5aa15591ab74f0">boundingMapRect</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (BOOL)intersectsMapRect:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="ttc" id="protocol_b_m_k_annotation-p_html"><div class="ttname"><a href="protocol_b_m_k_annotation-p.html">BMKAnnotation-p</a></div><div class="ttdoc">该类为标注点的protocol，提供了标注类的基本信息函数 </div><div class="ttdef"><b>Definition:</b> BMKAnnotation.h:13</div></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html">BMKOverlay-p</a></div><div class="ttdoc">该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:13</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html"><div class="ttname"><a href="struct_b_m_k_map_rect.html">BMKMapRect</a></div><div class="ttdoc">矩形，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html_a7a10d9dde65c9611e3b5279179a9d480"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html#a7a10d9dde65c9611e3b5279179a9d480">BMKOverlay-p::coordinate</a></div><div class="ttdeci">CLLocationCoordinate2D coordinate</div><div class="ttdoc">返回区域中心坐标. </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:17</div></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html_a77465daa9e52be51cc5aa15591ab74f0"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html#a77465daa9e52be51cc5aa15591ab74f0">BMKOverlay-p::boundingMapRect</a></div><div class="ttdeci">BMKMapRect boundingMapRect</div><div class="ttdoc">返回区域外接矩形 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

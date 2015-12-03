@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKGeometry.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKGeometry.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  BMKGeometry.h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKTypes.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;UIKIT_STATIC_INLINE <a class="code" href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a> BMKCoordinateSpanMake(CLLocationDegrees latitudeDelta, CLLocationDegrees longitudeDelta)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a> span;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    span.<a class="code" href="struct_b_m_k_coordinate_span.html#a759543f626366ce4fe599b8896f352a2">latitudeDelta</a> = latitudeDelta;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    span.<a class="code" href="struct_b_m_k_coordinate_span.html#ab3bc7d18bbd0fce7c806c51f0e0df447">longitudeDelta</a> = longitudeDelta;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> span;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;UIKIT_STATIC_INLINE <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a> BMKCoordinateRegionMake(CLLocationCoordinate2D centerCoordinate, <a class="code" href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a> span)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a> region;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    region.<a class="code" href="struct_b_m_k_coordinate_region.html#a298c069df033a5690fdebc3c63f86903">center</a> = centerCoordinate;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    region.<a class="code" href="struct_b_m_k_coordinate_region.html#a75e65758cbbf7cb3ed6007d4ce301292">span</a> = span;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> region;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a> BMKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, CLLocationDistance latitudinalMeters, CLLocationDistance longitudinalMeters);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> BMKMapPointForCoordinate(CLLocationCoordinate2D coordinate);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;UIKIT_EXTERN CLLocationCoordinate2D BMKCoordinateForMapPoint(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> mapPoint);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;UIKIT_EXTERN CLLocationDistance BMKMetersPerMapPointAtLatitude(CLLocationDegrees latitude);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;UIKIT_EXTERN <span class="keywordtype">double</span> BMKMapPointsPerMeterAtLatitude(CLLocationDegrees latitude);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;UIKIT_EXTERN CLLocationDistance BMKMetersBetweenMapPoints(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> a, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> b);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;UIKIT_STATIC_INLINE <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> BMKMapPointMake(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>){x, y};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;UIKIT_STATIC_INLINE <a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> BMKMapSizeMake(<span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a>){width, height};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;UIKIT_STATIC_INLINE <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectMake(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>){ BMKMapPointMake(x, y), BMKMapSizeMake(width, height)};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMinX(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMinY(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMidX(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a> + rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a> / 2.0;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMidY(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a> + rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a> / 2.0;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMaxX(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a> + rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetMaxY(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a> + rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetWidth(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;UIKIT_STATIC_INLINE <span class="keywordtype">double</span> BMKMapRectGetHeight(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;UIKIT_STATIC_INLINE BOOL BMKMapPointEqualToPoint(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point1, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point2) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> point1.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a> == point2.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a> &amp;&amp; point1.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a> == point2.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;UIKIT_STATIC_INLINE BOOL BMKMapSizeEqualToSize(<a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> size1, <a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> size2) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">return</span> size1.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a> == size2.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a> &amp;&amp; size1.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a> == size2.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;UIKIT_STATIC_INLINE BOOL BMKMapRectEqualToRect(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect1, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect2) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    BMKMapPointEqualToPoint(rect1.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>, rect2.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>) &amp;&amp;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    BMKMapSizeEqualToSize(rect1.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>, rect2.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;UIKIT_STATIC_INLINE BOOL BMKMapRectIsNull(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> isinf(rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a>) || isinf(rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;UIKIT_STATIC_INLINE BOOL BMKMapRectIsEmpty(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> BMKMapRectIsNull(rect) || (rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a> == 0.0 &amp;&amp; rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a> == 0.0);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;UIKIT_STATIC_INLINE NSString *BMKStringFromMapPoint(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">return</span> [NSString stringWithFormat:<span class="stringliteral">@&quot;{%.1f, %.1f}&quot;</span>, point.<a class="code" href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">x</a>, point.<a class="code" href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">y</a>];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;UIKIT_STATIC_INLINE NSString *BMKStringFromMapSize(<a class="code" href="struct_b_m_k_map_size.html">BMKMapSize</a> size) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> [NSString stringWithFormat:<span class="stringliteral">@&quot;{%.1f, %.1f}&quot;</span>, size.<a class="code" href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">width</a>, size.<a class="code" href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">height</a>];</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;UIKIT_STATIC_INLINE NSString *BMKStringFromMapRect(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> [NSString stringWithFormat:<span class="stringliteral">@&quot;{%@, %@}&quot;</span>, BMKStringFromMapPoint(rect.<a class="code" href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">origin</a>), BMKStringFromMapSize(rect.<a class="code" href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">size</a>)];</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectUnion(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect1, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect2);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectIntersection(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect1, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect2);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectInset(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect, <span class="keywordtype">double</span> dx, <span class="keywordtype">double</span> dy);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectOffset(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect, <span class="keywordtype">double</span> dx, <span class="keywordtype">double</span> dy);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;UIKIT_EXTERN <span class="keywordtype">void</span> BMKMapRectDivide(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> *slice, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> *remainder, <span class="keywordtype">double</span> amount, CGRectEdge edge);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;UIKIT_EXTERN BOOL BMKMapRectContainsPoint(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;UIKIT_EXTERN BOOL BMKMapRectContainsRect(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect1, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect2);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;UIKIT_EXTERN BOOL BMKMapRectIntersectsRect(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect1, <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect2);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a> BMKCoordinateRegionForMapRect(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;UIKIT_EXTERN BOOL BMKMapRectSpans180thMeridian(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> BMKMapRectRemainder(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> rect);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;UIKIT_EXTERN BOOL BMKCircleContainsPoint(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> center, <span class="keywordtype">double</span> radius);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;UIKIT_EXTERN BOOL BMKCircleContainsCoordinate(CLLocationCoordinate2D point, CLLocationCoordinate2D center, <span class="keywordtype">double</span> radius);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;UIKIT_EXTERN BOOL BMKPolygonContainsPoint(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *polygon, NSUInteger count);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;UIKIT_EXTERN BOOL BMKPolygonContainsCoordinate(CLLocationCoordinate2D point, CLLocationCoordinate2D *polygon, NSUInteger count);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;UIKIT_EXTERN <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> BMKGetNearestMapPointFromPolyline(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> point, <a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>* polyline, NSUInteger count);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;UIKIT_EXTERN <span class="keywordtype">double</span> BMKAreaBetweenCoordinates(CLLocationCoordinate2D leftTop, CLLocationCoordinate2D rightBottom);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;UIKIT_EXTERN NSDictionary* BMKConvertBaiduCoorFrom(CLLocationCoordinate2D coordinate,BMK_COORD_TYPE type);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;UIKIT_EXTERN CLLocationCoordinate2D BMKCoorDictionaryDecode(NSDictionary* dictionary);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="ttc" id="struct_b_m_k_map_point_html_a9d0aff0bad009459af85d1e51a194341"><div class="ttname"><a href="struct_b_m_k_map_point.html#a9d0aff0bad009459af85d1e51a194341">BMKMapPoint::y</a></div><div class="ttdeci">double y</div><div class="ttdoc">纵坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:102</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html_a75e65758cbbf7cb3ed6007d4ce301292"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html#a75e65758cbbf7cb3ed6007d4ce301292">BMKCoordinateRegion::span</a></div><div class="ttdeci">BMKCoordinateSpan span</div><div class="ttdoc">经纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:90</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html"><div class="ttname"><a href="struct_b_m_k_map_size.html">BMKMapSize</a></div><div class="ttdoc">矩形大小，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:106</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html_a759543f626366ce4fe599b8896f352a2"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html#a759543f626366ce4fe599b8896f352a2">BMKCoordinateSpan::latitudeDelta</a></div><div class="ttdeci">CLLocationDegrees latitudeDelta</div><div class="ttdoc">纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:77</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html_aeeee8bcaabf5c65e222f1891009325f1"><div class="ttname"><a href="struct_b_m_k_map_rect.html#aeeee8bcaabf5c65e222f1891009325f1">BMKMapRect::origin</a></div><div class="ttdeci">BMKMapPoint origin</div><div class="ttdoc">屏幕左上点对应的直角地理坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:113</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html"><div class="ttname"><a href="struct_b_m_k_map_rect.html">BMKMapRect</a></div><div class="ttdoc">矩形，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html_a8c0ca1c3f0cbb5fe183ae7745781d8fb"><div class="ttname"><a href="struct_b_m_k_map_point.html#a8c0ca1c3f0cbb5fe183ae7745781d8fb">BMKMapPoint::x</a></div><div class="ttdeci">double x</div><div class="ttdoc">横坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:101</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html_ab3bc7d18bbd0fce7c806c51f0e0df447"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html#ab3bc7d18bbd0fce7c806c51f0e0df447">BMKCoordinateSpan::longitudeDelta</a></div><div class="ttdeci">CLLocationDegrees longitudeDelta</div><div class="ttdoc">经度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:78</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html_a516baff78187bf8f07ef49f01c7d86fc"><div class="ttname"><a href="struct_b_m_k_map_size.html#a516baff78187bf8f07ef49f01c7d86fc">BMKMapSize::height</a></div><div class="ttdeci">double height</div><div class="ttdoc">高度 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:108</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html_ab83b0fb9e6e63b6ab24bdce9ced1e92e"><div class="ttname"><a href="struct_b_m_k_map_rect.html#ab83b0fb9e6e63b6ab24bdce9ced1e92e">BMKMapRect::size</a></div><div class="ttdeci">BMKMapSize size</div><div class="ttdoc">坐标范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:114</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html_a298c069df033a5690fdebc3c63f86903"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html#a298c069df033a5690fdebc3c63f86903">BMKCoordinateRegion::center</a></div><div class="ttdeci">CLLocationCoordinate2D center</div><div class="ttdoc">中心点经纬度坐标 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:89</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_span_html"><div class="ttname"><a href="struct_b_m_k_coordinate_span.html">BMKCoordinateSpan</a></div><div class="ttdoc">表示一个经纬度范围 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:76</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a></div><div class="ttdoc">表示一个经纬度区域 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:88</div></div>
+<div class="ttc" id="struct_b_m_k_map_size_html_a1005d7fd59045a80619c024df3156d6a"><div class="ttname"><a href="struct_b_m_k_map_size.html#a1005d7fd59045a80619c024df3156d6a">BMKMapSize::width</a></div><div class="ttdeci">double width</div><div class="ttdoc">宽度 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:107</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html"><div class="ttname"><a href="struct_b_m_k_map_point.html">BMKMapPoint</a></div><div class="ttdoc">地理坐标点，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

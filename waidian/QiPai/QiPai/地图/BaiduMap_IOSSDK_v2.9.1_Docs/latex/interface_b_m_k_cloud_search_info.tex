@@ -1,0 +1,82 @@
+\hypertarget{interface_b_m_k_cloud_search_info}{}\section{B\+M\+K\+Cloud\+Search\+Info类 参考}
+\label{interface_b_m_k_cloud_search_info}\index{B\+M\+K\+Cloud\+Search\+Info@{B\+M\+K\+Cloud\+Search\+Info}}
+
+
+本地,周边,矩形云检索基础信息类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Cloud\+Search\+Info.\+h$>$}
+
+类 B\+M\+K\+Cloud\+Search\+Info 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_b_m_k_cloud_search_info}
+\end{center}
+\end{figure}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_a5422fe46667de549c2b294ceb921a78b}{}N\+S\+String $\ast$ {\bfseries \+\_\+keyword}\label{interface_b_m_k_cloud_search_info_a5422fe46667de549c2b294ceb921a78b}
+
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_a40b12c1fbccf0956451838cd83f82be0}{}N\+S\+String $\ast$ {\bfseries \+\_\+tags}\label{interface_b_m_k_cloud_search_info_a40b12c1fbccf0956451838cd83f82be0}
+
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_a263c562ad6526d87421ec56a7ea55ea0}{}N\+S\+String $\ast$ {\bfseries \+\_\+sortby}\label{interface_b_m_k_cloud_search_info_a263c562ad6526d87421ec56a7ea55ea0}
+
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_a03b41d160bf2aaec634b34296dc5f0c5}{}N\+S\+String $\ast$ {\bfseries \+\_\+filter}\label{interface_b_m_k_cloud_search_info_a03b41d160bf2aaec634b34296dc5f0c5}
+
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_ac0e87c49e04dc123eb147ff4bf1e8cb6}{}N\+S\+Integer {\bfseries \+\_\+page\+Index}\label{interface_b_m_k_cloud_search_info_ac0e87c49e04dc123eb147ff4bf1e8cb6}
+
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_aca814c9ad2df72058f20575244e64ec3}{}N\+S\+Integer {\bfseries \+\_\+page\+Size}\label{interface_b_m_k_cloud_search_info_aca814c9ad2df72058f20575244e64ec3}
+
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_cloud_search_info_a90f2d3ef36a31112ca8fdb6d70fabea6}{}N\+S\+String $\ast$ \hyperlink{interface_b_m_k_cloud_search_info_a90f2d3ef36a31112ca8fdb6d70fabea6}{keyword}\label{interface_b_m_k_cloud_search_info_a90f2d3ef36a31112ca8fdb6d70fabea6}
+
+\begin{DoxyCompactList}\small\item\em 检索关键字，必选。最长45个字符 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_cloud_search_info_ae2c16f1281195d1fbf738ac23552d8f7}{}N\+S\+String $\ast$ \hyperlink{interface_b_m_k_cloud_search_info_ae2c16f1281195d1fbf738ac23552d8f7}{tags}\label{interface_b_m_k_cloud_search_info_ae2c16f1281195d1fbf738ac23552d8f7}
+
+\begin{DoxyCompactList}\small\item\em 标签，可选，空格分隔的多字符串，最长45个字符，样例：美食 小吃 \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_b_m_k_cloud_search_info_ab0d42d1b9e841c5e538e457e819a07f7}{sortby}
+\begin{DoxyCompactList}\small\item\em 排序字段，可选： sortby=\{keyname\}\+:1 升序；sortby=\{keyname\}\+:-\/1 降序 \end{DoxyCompactList}\item 
+N\+S\+String $\ast$ \hyperlink{interface_b_m_k_cloud_search_info_a65d91501d19f2a6aa027de6f9e5bc837}{filter}
+\begin{DoxyCompactList}\small\item\em 过滤条件，可选\+:\textquotesingle{}$\vert$\textquotesingle{}竖线分隔的多个key-\/value对,price\+:9.\+99,19.\+99$\vert$time\+:2012,2012 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_cloud_search_info_aeea99c3907cafe38def8105839ad4c8a}{}N\+S\+Integer \hyperlink{interface_b_m_k_cloud_search_info_aeea99c3907cafe38def8105839ad4c8a}{page\+Index}\label{interface_b_m_k_cloud_search_info_aeea99c3907cafe38def8105839ad4c8a}
+
+\begin{DoxyCompactList}\small\item\em 分页索引，可选，默认为0 \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_cloud_search_info_ab625992f8620205a6b24a1490a999fde}{}N\+S\+Integer \hyperlink{interface_b_m_k_cloud_search_info_ab625992f8620205a6b24a1490a999fde}{page\+Size}\label{interface_b_m_k_cloud_search_info_ab625992f8620205a6b24a1490a999fde}
+
+\begin{DoxyCompactList}\small\item\em 分页数量，可选，默认为10，最多为50 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+本地,周边,矩形云检索基础信息类 
+
+\subsection{属性说明}
+\hypertarget{interface_b_m_k_cloud_search_info_a65d91501d19f2a6aa027de6f9e5bc837}{}\index{B\+M\+K\+Cloud\+Search\+Info@{B\+M\+K\+Cloud\+Search\+Info}!filter@{filter}}
+\index{filter@{filter}!B\+M\+K\+Cloud\+Search\+Info@{B\+M\+K\+Cloud\+Search\+Info}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) filter\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_m_k_cloud_search_info_a65d91501d19f2a6aa027de6f9e5bc837}
+
+
+过滤条件，可选\+:\textquotesingle{}$\vert$\textquotesingle{}竖线分隔的多个key-\/value对,price\+:9.\+99,19.\+99$\vert$time\+:2012,2012 
+
+过滤条件，可选 \textquotesingle{}$\vert$\textquotesingle{}竖线分隔的多个key-\/value对 key为筛选字段的名称(存储服务中定义) value可以是整形或者浮点数的一个区间：格式为“small,big”逗号分隔的2个数字 样例：筛选价格为9.99到19.99并且生产时间为2013年的项：price\+:9.\+99,19.\+99$\vert$time\+:2012,2012 \hypertarget{interface_b_m_k_cloud_search_info_ab0d42d1b9e841c5e538e457e819a07f7}{}\index{B\+M\+K\+Cloud\+Search\+Info@{B\+M\+K\+Cloud\+Search\+Info}!sortby@{sortby}}
+\index{sortby@{sortby}!B\+M\+K\+Cloud\+Search\+Info@{B\+M\+K\+Cloud\+Search\+Info}}
+\subsubsection[{sortby}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) sortby\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_b_m_k_cloud_search_info_ab0d42d1b9e841c5e538e457e819a07f7}
+
+
+排序字段，可选： sortby=\{keyname\}\+:1 升序；sortby=\{keyname\}\+:-\/1 降序 
+
+排序字段，可选： sortby=\{keyname\}\+:1 升序；sortby=\{keyname\}\+:-\/1 降序。 以下keyname为系统预定义的： 1.\+distance 距离排序 2.\+weight 权重排序 默认为按weight排序 如果需要自定义排序则指定排序字段 样例：按照价格由便宜到贵排序sortby=price\+:1 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Cloud\+Search\+Info.\+h\end{DoxyCompactItemize}

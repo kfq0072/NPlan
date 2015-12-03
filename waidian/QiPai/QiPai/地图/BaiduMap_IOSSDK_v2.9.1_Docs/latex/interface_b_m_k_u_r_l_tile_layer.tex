@@ -1,0 +1,61 @@
+\hypertarget{interface_b_m_k_u_r_l_tile_layer}{}\section{B\+M\+K\+U\+R\+L\+Tile\+Layer类 参考}
+\label{interface_b_m_k_u_r_l_tile_layer}\index{B\+M\+K\+U\+R\+L\+Tile\+Layer@{B\+M\+K\+U\+R\+L\+Tile\+Layer}}
+
+
+通过提供url模板的方法，提供数据源。不应该继承该类，且必须通过 init\+With\+U\+R\+L\+Template\+: 来初始化 瓦片图片是jpeg或者png格式，size为256x256  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Tile\+Layer.\+h$>$}
+
+类 B\+M\+K\+U\+R\+L\+Tile\+Layer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_b_m_k_u_r_l_tile_layer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_b_m_k_u_r_l_tile_layer_aff24eb2049f6b8027dd4c67b58abb80e}{init\+With\+U\+R\+L\+Template\+:}
+\begin{DoxyCompactList}\small\item\em 根据指定的\+U\+R\+L\+Template生成tile\+Overlay \end{DoxyCompactList}\item 
+\hypertarget{interface_b_m_k_u_r_l_tile_layer_a1c6f118ead416779e63872fab2fce71a}{}(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_u_r_l_tile_layer_a1c6f118ead416779e63872fab2fce71a}{clean\+Tile\+Data\+Cache}\label{interface_b_m_k_u_r_l_tile_layer_a1c6f118ead416779e63872fab2fce71a}
+
+\begin{DoxyCompactList}\small\item\em 清除当前瓦片图层缓存图片 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_u_r_l_tile_layer_a767a39f93503cfaaef6d46847de61cfc}{}N\+S\+String $\ast$ \hyperlink{interface_b_m_k_u_r_l_tile_layer_a767a39f93503cfaaef6d46847de61cfc}{U\+R\+L\+Template}\label{interface_b_m_k_u_r_l_tile_layer_a767a39f93503cfaaef6d46847de61cfc}
+
+\begin{DoxyCompactList}\small\item\em 同init\+With\+U\+R\+L\+Template\+:中的\+U\+R\+L\+Template \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+通过提供url模板的方法，提供数据源。不应该继承该类，且必须通过 init\+With\+U\+R\+L\+Template\+: 来初始化 瓦片图片是jpeg或者png格式，size为256x256 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_u_r_l_tile_layer_aff24eb2049f6b8027dd4c67b58abb80e}{}\index{B\+M\+K\+U\+R\+L\+Tile\+Layer@{B\+M\+K\+U\+R\+L\+Tile\+Layer}!init\+With\+U\+R\+L\+Template\+:@{init\+With\+U\+R\+L\+Template\+:}}
+\index{init\+With\+U\+R\+L\+Template\+:@{init\+With\+U\+R\+L\+Template\+:}!B\+M\+K\+U\+R\+L\+Tile\+Layer@{B\+M\+K\+U\+R\+L\+Tile\+Layer}}
+\subsubsection[{init\+With\+U\+R\+L\+Template\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\+With\+U\+R\+L\+Template\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{U\+R\+L\+Template}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_u_r_l_tile_layer_aff24eb2049f6b8027dd4c67b58abb80e}
+
+
+根据指定的\+U\+R\+L\+Template生成tile\+Overlay 
+
+
+\begin{DoxyParams}{参数}
+{\em U\+R\+L\+Template是一个包含\char`\"{}\{x\}\char`\"{},\{y\},\char`\"{}\{z\}\char`\"{}的字符串,\{x\},\char`\"{}\{y\}\char`\"{}表示tile的坐标，\char`\"{}\{z\}\char`\"{}表示当tile显示的级别。\char`\"{}\{x\}\char`\"{},\{y\},\char`\"{}\{z\}\char`\"{}会被tile的坐标值所替换，并生成用来加载tile图片数据的\+U\+R\+L} & 。例如： \href{http://server/path?x={x}&y={y}&z={z}}{\tt http\+://server/path?x=\{x\}\&y=\{y\}\&z=\{z\}}。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+以指定的\+U\+R\+L\+Template字符串生成tile\+Overlay 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Tile\+Layer.\+h\end{DoxyCompactItemize}

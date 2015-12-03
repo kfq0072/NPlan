@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKPolyline.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKPolyline.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKPolyline.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;BMKMultiPoint.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKOverlay.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="interface_b_m_k_polyline.html">   13</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_polyline.html">BMKPolyline</a> : <a class="code" href="interface_b_m_k_multi_point.html">BMKMultiPoint</a> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;+ (<a class="code" href="interface_b_m_k_polyline.html">BMKPolyline</a> *)polylineWithPoints:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *)points count:(NSUInteger)count;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;+ (<a class="code" href="interface_b_m_k_polyline.html">BMKPolyline</a> *)polylineWithCoordinates:(CLLocationCoordinate2D *)coords count:(NSUInteger)count;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;- (BOOL)setPolylineWithPoints:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *)points count:(NSInteger) count;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;- (BOOL)setPolylineWithCoordinates:(CLLocationCoordinate2D *)coords count:(NSInteger) count;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#pragma mark - 以下方法和属性只适用于分段纹理绘制和分段颜色绘制</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="interface_b_m_k_polyline.html#aec0935d96a69970dbf9780f8e35c7702">   51</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray *<a class="code" href="interface_b_m_k_polyline.html#aec0935d96a69970dbf9780f8e35c7702">textureIndex</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;+ (<a class="code" href="interface_b_m_k_polyline.html">BMKPolyline</a> *)polylineWithPoints:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *)points count:(NSUInteger)count textureIndex:(NSArray*) textureIndex;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;+ (<a class="code" href="interface_b_m_k_polyline.html">BMKPolyline</a> *)polylineWithCoordinates:(CLLocationCoordinate2D *)coords count:(NSUInteger)count textureIndex:(NSArray*) textureIndex;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (BOOL)setPolylineWithPoints:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *)points count:(NSInteger) count textureIndex:(NSArray*) textureIndex;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (BOOL)setPolylineWithCoordinates:(CLLocationCoordinate2D *)coords count:(NSInteger) count textureIndex:(NSArray*) textureIndex;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html">BMKOverlay-p</a></div><div class="ttdoc">该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_polyline_html"><div class="ttname"><a href="interface_b_m_k_polyline.html">BMKPolyline</a></div><div class="ttdoc">此类用于定义一段折线 </div><div class="ttdef"><b>Definition:</b> BMKPolyline.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_polyline_html_aec0935d96a69970dbf9780f8e35c7702"><div class="ttname"><a href="interface_b_m_k_polyline.html#aec0935d96a69970dbf9780f8e35c7702">BMKPolyline::textureIndex</a></div><div class="ttdeci">NSArray * textureIndex</div><div class="ttdoc">纹理索引数组（颜色索引数组） </div><div class="ttdef"><b>Definition:</b> BMKPolyline.h:51</div></div>
+<div class="ttc" id="interface_b_m_k_multi_point_html"><div class="ttname"><a href="interface_b_m_k_multi_point.html">BMKMultiPoint</a></div><div class="ttdoc">该类定义多个点，是个由多个点组成的虚基类, 不能直接实例化对象, 要使用其子类BMKPolyline,BMKPolygon来实例化 </div><div class="ttdef"><b>Definition:</b> BMKMultiPoint.h:14</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html"><div class="ttname"><a href="struct_b_m_k_map_point.html">BMKMapPoint</a></div><div class="ttdoc">地理坐标点，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

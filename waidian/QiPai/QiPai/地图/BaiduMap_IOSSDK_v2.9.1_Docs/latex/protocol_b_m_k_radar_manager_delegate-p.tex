@@ -1,0 +1,94 @@
+\hypertarget{protocol_b_m_k_radar_manager_delegate-p}{}\section{$<$B\+M\+K\+Radar\+Manager\+Delegate$>$协议 参考}
+\label{protocol_b_m_k_radar_manager_delegate-p}\index{$<$\+B\+M\+K\+Radar\+Manager\+Delegate$>$@{$<$\+B\+M\+K\+Radar\+Manager\+Delegate$>$}}
+
+
+雷达delegate  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Radar\+Manager.\+h$>$}
+
+类 $<$B\+M\+K\+Radar\+Manager\+Delegate$>$ 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_b_m_k_radar_manager_delegate-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{protocol_b_m_k_radar_manager_delegate-p_a766c634d7b4dd2cba0364851f785161a}{}(\hyperlink{interface_b_m_k_radar_upload_info}{B\+M\+K\+Radar\+Upload\+Info} $\ast$) -\/ {\bfseries get\+Radar\+Auto\+Upload\+Info}\label{protocol_b_m_k_radar_manager_delegate-p_a766c634d7b4dd2cba0364851f785161a}
+
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_radar_manager_delegate-p_adccea74fc80820223eccfd9ad9384a59}{on\+Get\+Radar\+Upload\+Result\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_radar_manager_delegate-p_ab5fddaa20a0f6c6e59e6bd78b51037ac}{on\+Get\+Radar\+Clear\+My\+Info\+Result\+:}
+\item 
+(void) -\/ \hyperlink{protocol_b_m_k_radar_manager_delegate-p_a1721eff2d9f2407dede1dac2b2afc379}{on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+雷达delegate 
+
+\subsection{Method Documentation}
+\hypertarget{protocol_b_m_k_radar_manager_delegate-p_ab5fddaa20a0f6c6e59e6bd78b51037ac}{}\index{B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}!on\+Get\+Radar\+Clear\+My\+Info\+Result\+:@{on\+Get\+Radar\+Clear\+My\+Info\+Result\+:}}
+\index{on\+Get\+Radar\+Clear\+My\+Info\+Result\+:@{on\+Get\+Radar\+Clear\+My\+Info\+Result\+:}!B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Radar\+Clear\+My\+Info\+Result\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Radar\+Clear\+My\+Info\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+M\+K\+Radar\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_radar_manager_delegate-p_ab5fddaa20a0f6c6e59e6bd78b51037ac}
+返回雷达 清除我的信息结果 
+\begin{DoxyParams}{参数}
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Radar\+Error\+Code 
+\end{DoxySeeAlso}
+\hypertarget{protocol_b_m_k_radar_manager_delegate-p_a1721eff2d9f2407dede1dac2b2afc379}{}\index{B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}!on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:@{on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:}}
+\index{on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:@{on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:}!B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Radar\+Nearby\+Search\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Radar\+Nearby\+Result} $\ast$)}]{result}
+\item[{error:(B\+M\+K\+Radar\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_radar_manager_delegate-p_a1721eff2d9f2407dede1dac2b2afc379}
+返回雷达 查询周边的用户信息结果 
+\begin{DoxyParams}{参数}
+{\em result} & 结果，类型为\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{interface_b_m_k_radar_nearby_result}{B\+M\+K\+Radar\+Nearby\+Result} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Radar\+Error\+Code 
+\end{DoxySeeAlso}
+\hypertarget{protocol_b_m_k_radar_manager_delegate-p_adccea74fc80820223eccfd9ad9384a59}{}\index{B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}!on\+Get\+Radar\+Upload\+Result\+:@{on\+Get\+Radar\+Upload\+Result\+:}}
+\index{on\+Get\+Radar\+Upload\+Result\+:@{on\+Get\+Radar\+Upload\+Result\+:}!B\+M\+K\+Radar\+Manager\+Delegate-\/p@{B\+M\+K\+Radar\+Manager\+Delegate-\/p}}
+\subsubsection[{on\+Get\+Radar\+Upload\+Result\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) on\+Get\+Radar\+Upload\+Result\+: 
+\begin{DoxyParamCaption}
+\item[{(B\+M\+K\+Radar\+Error\+Code)}]{error}
+\end{DoxyParamCaption}
+\hspace{0.3cm}{\ttfamily [optional]}}\label{protocol_b_m_k_radar_manager_delegate-p_adccea74fc80820223eccfd9ad9384a59}
+返回雷达 上传结果 
+\begin{DoxyParams}{参数}
+{\em error} & 错误号，\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+B\+M\+K\+Radar\+Error\+Code 
+\end{DoxySeeAlso}
+
+
+该协议的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Radar\+Manager.\+h\end{DoxyCompactItemize}

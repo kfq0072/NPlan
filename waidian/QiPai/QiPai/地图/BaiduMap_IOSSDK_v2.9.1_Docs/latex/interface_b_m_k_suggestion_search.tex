@@ -1,0 +1,54 @@
+\hypertarget{interface_b_m_k_suggestion_search}{}\section{B\+M\+K\+Suggestion\+Search类 参考}
+\label{interface_b_m_k_suggestion_search}\index{B\+M\+K\+Suggestion\+Search@{B\+M\+K\+Suggestion\+Search}}
+
+
+sug搜索服务  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Suggestion\+Search.\+h$>$}
+
+类 B\+M\+K\+Suggestion\+Search 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_suggestion_search}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_suggestion_search_a86144cad8ce80290cb6c352f5b68cbdc}{suggestion\+Search\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_suggestion_search_a37cc038d39539458fe7071154b2ddaaa}{}id$<$ \hyperlink{protocol_b_m_k_suggestion_search_delegate-p}{B\+M\+K\+Suggestion\+Search\+Delegate} $>$ \hyperlink{interface_b_m_k_suggestion_search_a37cc038d39539458fe7071154b2ddaaa}{delegate}\label{interface_b_m_k_suggestion_search_a37cc038d39539458fe7071154b2ddaaa}
+
+\begin{DoxyCompactList}\small\item\em 检索模块的\+Delegate，此处记得不用的时候需要置nil，否则影响内存的释放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+sug搜索服务 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_suggestion_search_a86144cad8ce80290cb6c352f5b68cbdc}{}\index{B\+M\+K\+Suggestion\+Search@{B\+M\+K\+Suggestion\+Search}!suggestion\+Search\+:@{suggestion\+Search\+:}}
+\index{suggestion\+Search\+:@{suggestion\+Search\+:}!B\+M\+K\+Suggestion\+Search@{B\+M\+K\+Suggestion\+Search}}
+\subsubsection[{suggestion\+Search\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) suggestion\+Search\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Suggestion\+Search\+Option} $\ast$)}]{suggestion\+Search\+Option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_suggestion_search_a86144cad8ce80290cb6c352f5b68cbdc}
+搜索建议检索 
+\begin{DoxyParams}{参数}
+{\em suggestion\+Search\+Option} & sug检索信息类 异步函数，返回结果在\+B\+M\+K\+Suggestion\+Search\+Delegate的on\+Get\+Suggestion\+Result通知 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+成功返回\+Y\+E\+S，否则返回\+N\+O 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Suggestion\+Search.\+h\end{DoxyCompactItemize}

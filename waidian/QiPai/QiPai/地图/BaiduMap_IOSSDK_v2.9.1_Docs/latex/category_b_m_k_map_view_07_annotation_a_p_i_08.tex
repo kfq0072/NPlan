@@ -1,0 +1,199 @@
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08}{}\section{B\+M\+K\+Map\+View(Annotation\+A\+P\+I)分类 参考}
+\label{category_b_m_k_map_view_07_annotation_a_p_i_08}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a2af9ed45c3a7fd530dd414dc573327b3}{add\+Annotation\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_affd032313c55ae27814430b760e4aea0}{add\+Annotations\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a6b6b75a5bf8b02854767f782a38d2009}{remove\+Annotation\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a37fbe2b5db750affb4e0234cbf24a3c7}{remove\+Annotations\+:}
+\item 
+(\hyperlink{interface_b_m_k_annotation_view}{B\+M\+K\+Annotation\+View} $\ast$) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a0fb885234188aef28df944d5f636c70c}{view\+For\+Annotation\+:}
+\item 
+(\hyperlink{interface_b_m_k_annotation_view}{B\+M\+K\+Annotation\+View} $\ast$) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a4d4aa7a171876f3f66add8f86cca1e8c}{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a92dbf00c3eff2ede4d4ffd485c4059e0}{select\+Annotation\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a3d6bbc91bc3b66463ee97b3c909e4999}{deselect\+Annotation\+:animated\+:}
+\item 
+(void) -\/ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a62093e51bd52b357d909b75b4447b415}{show\+Annotations\+:animated\+:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a61bc5de820abcf06bf3792c933f3e618}{}N\+S\+Array $\ast$ \hyperlink{category_b_m_k_map_view_07_annotation_a_p_i_08_a61bc5de820abcf06bf3792c933f3e618}{annotations}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a61bc5de820abcf06bf3792c933f3e618}
+
+\begin{DoxyCompactList}\small\item\em 当前地图\+View的已经添加的标注数组 \end{DoxyCompactList}\item 
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a5907ada55d984353e2af6c510a334810}{}B\+O\+O\+L {\bfseries is\+Selected\+Annotation\+View\+Front}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a5907ada55d984353e2af6c510a334810}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a2af9ed45c3a7fd530dd414dc573327b3}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!add\+Annotation\+:@{add\+Annotation\+:}}
+\index{add\+Annotation\+:@{add\+Annotation\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{add\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a2af9ed45c3a7fd530dd414dc573327b3}
+向地图窗口添加标注，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Annotation\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要添加的标注 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a2af9ed45c3a7fd530dd414dc573327b3}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_affd032313c55ae27814430b760e4aea0}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!add\+Annotations\+:@{add\+Annotations\+:}}
+\index{add\+Annotations\+:@{add\+Annotations\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{add\+Annotations\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_affd032313c55ae27814430b760e4aea0}
+向地图窗口添加一组标注，需要实现\+B\+M\+K\+Map\+View\+Delegate的-\/map\+View\+:view\+For\+Annotation\+:函数来生成标注对应的\+View 
+\begin{DoxyParams}{参数}
+{\em annotations} & 要添加的标注数组 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_affd032313c55ae27814430b760e4aea0}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a4d4aa7a171876f3f66add8f86cca1e8c}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:@{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}}
+\index{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:@{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Annotation\+View} $\ast$) dequeue\+Reusable\+Annotation\+View\+With\+Identifier\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{identifier}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a4d4aa7a171876f3f66add8f86cca1e8c}
+根据指定标识查找一个可被复用的标注\+View，一般在delegate中使用，用此函数来代替新申请一个\+View 
+\begin{DoxyParams}{参数}
+{\em identifier} & 指定标识 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回可被复用的标注\+View 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a4d4aa7a171876f3f66add8f86cca1e8c}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a3d6bbc91bc3b66463ee97b3c909e4999}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!deselect\+Annotation\+:animated\+:@{deselect\+Annotation\+:animated\+:}}
+\index{deselect\+Annotation\+:animated\+:@{deselect\+Annotation\+:animated\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{deselect\+Annotation\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) deselect\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a3d6bbc91bc3b66463ee97b3c909e4999}
+取消指定的标注的选中状态，本版暂不支持animate效果 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 本版暂不支持 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a3d6bbc91bc3b66463ee97b3c909e4999}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a6b6b75a5bf8b02854767f782a38d2009}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!remove\+Annotation\+:@{remove\+Annotation\+:}}
+\index{remove\+Annotation\+:@{remove\+Annotation\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{remove\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a6b6b75a5bf8b02854767f782a38d2009}
+移除标注 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要移除的标注 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a6b6b75a5bf8b02854767f782a38d2009}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a37fbe2b5db750affb4e0234cbf24a3c7}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!remove\+Annotations\+:@{remove\+Annotations\+:}}
+\index{remove\+Annotations\+:@{remove\+Annotations\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{remove\+Annotations\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a37fbe2b5db750affb4e0234cbf24a3c7}
+移除一组标注 
+\begin{DoxyParams}{参数}
+{\em annotation} & 要移除的标注数组 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a37fbe2b5db750affb4e0234cbf24a3c7}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a92dbf00c3eff2ede4d4ffd485c4059e0}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!select\+Annotation\+:animated\+:@{select\+Annotation\+:animated\+:}}
+\index{select\+Annotation\+:animated\+:@{select\+Annotation\+:animated\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{select\+Annotation\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) select\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a92dbf00c3eff2ede4d4ffd485c4059e0}
+选中指定的标注，本版暂不支持animate效果 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 本版暂不支持 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a92dbf00c3eff2ede4d4ffd485c4059e0}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a62093e51bd52b357d909b75b4447b415}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!show\+Annotations\+:animated\+:@{show\+Annotations\+:animated\+:}}
+\index{show\+Annotations\+:animated\+:@{show\+Annotations\+:animated\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{show\+Annotations\+:animated\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\+Annotations\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{annotations}
+\item[{animated:(B\+O\+O\+L)}]{animated}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a62093e51bd52b357d909b75b4447b415}
+设置地图使显示区域显示所有annotations 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+{\em animated} & 是否启动动画 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a62093e51bd52b357d909b75b4447b415}{B\+M\+K\+Map\+View}.
+
+\hypertarget{category_b_m_k_map_view_07_annotation_a_p_i_08_a0fb885234188aef28df944d5f636c70c}{}\index{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}!view\+For\+Annotation\+:@{view\+For\+Annotation\+:}}
+\index{view\+For\+Annotation\+:@{view\+For\+Annotation\+:}!B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)@{B\+M\+K\+Map\+View(\+Annotation\+A\+P\+I)}}
+\subsubsection[{view\+For\+Annotation\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+M\+K\+Annotation\+View} $\ast$) view\+For\+Annotation\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Annotation} $>$)}]{annotation}
+\end{DoxyParamCaption}
+}\label{category_b_m_k_map_view_07_annotation_a_p_i_08_a0fb885234188aef28df944d5f636c70c}
+查找指定标注对应的\+View，如果该标注尚未显示，返回nil 
+\begin{DoxyParams}{参数}
+{\em annotation} & 指定的标注 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+指定标注对应的\+View 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_b_m_k_map_view_a0fb885234188aef28df944d5f636c70c}{B\+M\+K\+Map\+View}.
+
+
+
+该分类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Map\+View.\+h\end{DoxyCompactItemize}

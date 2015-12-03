@@ -1,0 +1,163 @@
+\hypertarget{interface_b_m_k_radar_manager}{}\section{B\+M\+K\+Radar\+Manager类 参考}
+\label{interface_b_m_k_radar_manager}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+
+
+周边雷达管理类  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Radar\+Manager.\+h$>$}
+
+类 B\+M\+K\+Radar\+Manager 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_b_m_k_radar_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_radar_manager_a82396fd5134572b965e2afb39c592a48}{add\+Radar\+Manager\+Delegate\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_radar_manager_ab51759bad027336663405007a3e94270}{remove\+Radar\+Manager\+Delegate\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_radar_manager_a8cb06af226279c61db227d5bce3dc556}{start\+Auto\+Upload\+:}
+\item 
+(void) -\/ \hyperlink{interface_b_m_k_radar_manager_ac395c3231883b88ac71a2b04966a6957}{stop\+Auto\+Upload}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_radar_manager_ab541d1e8b6d5cc2dcb49edd6458907c1}{upload\+Info\+Request\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_radar_manager_a42a4b96b039cea3c1f527298b4088996}{clear\+My\+Info\+Request}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_b_m_k_radar_manager_adc64446a16d2f878c94a6a7b3606af12}{get\+Radar\+Nearby\+Search\+Request\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_m_k_radar_manager}{B\+M\+K\+Radar\+Manager} $\ast$) + \hyperlink{interface_b_m_k_radar_manager_a2f2a861863cc493c4ff5f4927d27dcee}{get\+Radar\+Manager\+Instance}
+\item 
+(void) + \hyperlink{interface_b_m_k_radar_manager_a506871b092ea0eb52516f26f0346a9e9}{release\+Radar\+Manager\+Instance}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_b_m_k_radar_manager_ac80937e0e16c44a7ff7a99fb4f4cddca}{}N\+S\+String $\ast$ \hyperlink{interface_b_m_k_radar_manager_ac80937e0e16c44a7ff7a99fb4f4cddca}{user\+Id}\label{interface_b_m_k_radar_manager_ac80937e0e16c44a7ff7a99fb4f4cddca}
+
+\begin{DoxyCompactList}\small\item\em 上传时用，上传前需设置，不设置自动生成user\+Id；切换用户时，需手动清除原先用户的位置信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+周边雷达管理类 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_radar_manager_a82396fd5134572b965e2afb39c592a48}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!add\+Radar\+Manager\+Delegate\+:@{add\+Radar\+Manager\+Delegate\+:}}
+\index{add\+Radar\+Manager\+Delegate\+:@{add\+Radar\+Manager\+Delegate\+:}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{add\+Radar\+Manager\+Delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Radar\+Manager\+Delegate\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Radar\+Manager\+Delegate} $>$)}]{delegate}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_a82396fd5134572b965e2afb39c592a48}
+添加周边雷达delegate，用于结果回调 不需要时，需要使用remove\+Radar\+Manager\+Delegate\+:移除，否则影响内存释放 
+\begin{DoxyParams}{参数}
+{\em delegate,添加的id$<$\+B\+M\+K\+Radar\+Manager\+Delegate$>$对象} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_radar_manager_a42a4b96b039cea3c1f527298b4088996}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!clear\+My\+Info\+Request@{clear\+My\+Info\+Request}}
+\index{clear\+My\+Info\+Request@{clear\+My\+Info\+Request}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{clear\+My\+Info\+Request}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) clear\+My\+Info\+Request 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_a42a4b96b039cea3c1f527298b4088996}
+清除我的位置信息 返回结果回调：\begin{DoxySeeAlso}{参见}
+on\+Get\+Radar\+Clear\+My\+Info\+Result\+: 
+\end{DoxySeeAlso}
+\hypertarget{interface_b_m_k_radar_manager_a2f2a861863cc493c4ff5f4927d27dcee}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!get\+Radar\+Manager\+Instance@{get\+Radar\+Manager\+Instance}}
+\index{get\+Radar\+Manager\+Instance@{get\+Radar\+Manager\+Instance}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{get\+Radar\+Manager\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+M\+K\+Radar\+Manager}$\ast$) get\+Radar\+Manager\+Instance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_a2f2a861863cc493c4ff5f4927d27dcee}
+获取周边雷达实例，使用引用计数管理该实例内存 \hypertarget{interface_b_m_k_radar_manager_adc64446a16d2f878c94a6a7b3606af12}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!get\+Radar\+Nearby\+Search\+Request\+:@{get\+Radar\+Nearby\+Search\+Request\+:}}
+\index{get\+Radar\+Nearby\+Search\+Request\+:@{get\+Radar\+Nearby\+Search\+Request\+:}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{get\+Radar\+Nearby\+Search\+Request\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) get\+Radar\+Nearby\+Search\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Radar\+Nearby\+Search\+Option} $\ast$)}]{option}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_adc64446a16d2f878c94a6a7b3606af12}
+查询周边的用户信息 返回结果回调：\begin{DoxySeeAlso}{参见}
+on\+Get\+Radar\+Nearby\+Search\+Result\+:error\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em option} & 查询参数\+: 类型为\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{interface_b_m_k_radar_nearby_search_option}{B\+M\+K\+Radar\+Nearby\+Search\+Option} 
+\end{DoxySeeAlso}
+\hypertarget{interface_b_m_k_radar_manager_a506871b092ea0eb52516f26f0346a9e9}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!release\+Radar\+Manager\+Instance@{release\+Radar\+Manager\+Instance}}
+\index{release\+Radar\+Manager\+Instance@{release\+Radar\+Manager\+Instance}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{release\+Radar\+Manager\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) release\+Radar\+Manager\+Instance 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_a506871b092ea0eb52516f26f0346a9e9}
+release周边雷达实例，使用引用计数管理该实例内存 \hypertarget{interface_b_m_k_radar_manager_ab51759bad027336663405007a3e94270}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!remove\+Radar\+Manager\+Delegate\+:@{remove\+Radar\+Manager\+Delegate\+:}}
+\index{remove\+Radar\+Manager\+Delegate\+:@{remove\+Radar\+Manager\+Delegate\+:}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{remove\+Radar\+Manager\+Delegate\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Radar\+Manager\+Delegate\+: 
+\begin{DoxyParamCaption}
+\item[{(id$<$ {\bf B\+M\+K\+Radar\+Manager\+Delegate} $>$)}]{delegate}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_ab51759bad027336663405007a3e94270}
+移除周边雷达delegate，取消结果回调 
+\begin{DoxyParams}{参数}
+{\em delegate,需要移除的id$<$\+B\+M\+K\+Radar\+Manager\+Delegate$>$对象} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_radar_manager_a8cb06af226279c61db227d5bce3dc556}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!start\+Auto\+Upload\+:@{start\+Auto\+Upload\+:}}
+\index{start\+Auto\+Upload\+:@{start\+Auto\+Upload\+:}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{start\+Auto\+Upload\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) start\+Auto\+Upload\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Time\+Interval)}]{interval}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_a8cb06af226279c61db227d5bce3dc556}
+启动自动上传用户位置信息 必须实现回调方法\begin{DoxySeeAlso}{参见}
+get\+Radar\+Auto\+Upload\+Info，获取
+
+\hyperlink{interface_b_m_k_radar_upload_info}{B\+M\+K\+Radar\+Upload\+Info} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em interval} & 时间间隔，不小于5s（小于强制设为5s） \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_b_m_k_radar_manager_ac395c3231883b88ac71a2b04966a6957}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!stop\+Auto\+Upload@{stop\+Auto\+Upload}}
+\index{stop\+Auto\+Upload@{stop\+Auto\+Upload}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{stop\+Auto\+Upload}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\+Auto\+Upload 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_ac395c3231883b88ac71a2b04966a6957}
+停止自动上传用户位置信息 \hypertarget{interface_b_m_k_radar_manager_ab541d1e8b6d5cc2dcb49edd6458907c1}{}\index{B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}!upload\+Info\+Request\+:@{upload\+Info\+Request\+:}}
+\index{upload\+Info\+Request\+:@{upload\+Info\+Request\+:}!B\+M\+K\+Radar\+Manager@{B\+M\+K\+Radar\+Manager}}
+\subsubsection[{upload\+Info\+Request\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) upload\+Info\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf B\+M\+K\+Radar\+Upload\+Info} $\ast$)}]{info}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_radar_manager_ab541d1e8b6d5cc2dcb49edd6458907c1}
+单次上传用户位置信息 上传时间间隔不小于5s，否则return N\+O 返回结果回调：\begin{DoxySeeAlso}{参见}
+on\+Get\+Radar\+Upload\+Result\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{参数}
+{\em info} & 位置信息 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Radar\+Manager.\+h\end{DoxyCompactItemize}

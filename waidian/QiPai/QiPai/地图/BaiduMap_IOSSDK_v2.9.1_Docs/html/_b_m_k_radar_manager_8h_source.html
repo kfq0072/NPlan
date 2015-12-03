@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKRadarManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKRadarManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  BMKRadarManager.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  RadarComponent</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by wzy on 15/4/22.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2015年 baidu. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef RadarComponent_BMKRadarManager_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define RadarComponent_BMKRadarManager_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;BMKRadarOption.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#import &quot;BMKRadarResult.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="protocol_b_m_k_radar_manager_delegate-p.html">   16</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_radar_manager_delegate-p.html">BMKRadarManagerDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *开启自动上传，需实现该回调</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;- (<a class="code" href="interface_b_m_k_radar_upload_info.html">BMKRadarUploadInfo</a>*)getRadarAutoUploadInfo;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- (void)onGetRadarUploadResult:(BMKRadarErrorCode) error;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (void)onGetRadarClearMyInfoResult:(BMKRadarErrorCode) error;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (void)onGetRadarNearbySearchResult:(<a class="code" href="interface_b_m_k_radar_nearby_result.html">BMKRadarNearbyResult</a>*) result error:(BMKRadarErrorCode) error;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_manager.html">   47</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_radar_manager.html">BMKRadarManager</a> : NSObject</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="interface_b_m_k_radar_manager.html#ac80937e0e16c44a7ff7a99fb4f4cddca">   50</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString* <a class="code" href="interface_b_m_k_radar_manager.html#ac80937e0e16c44a7ff7a99fb4f4cddca">userId</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;+ (<a class="code" href="interface_b_m_k_radar_manager.html">BMKRadarManager</a>*)<a class="code" href="interface_b_m_k_radar_manager.html#a2f2a861863cc493c4ff5f4927d27dcee">getRadarManagerInstance</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;+ (void)<a class="code" href="interface_b_m_k_radar_manager.html#a506871b092ea0eb52516f26f0346a9e9">releaseRadarManagerInstance</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;- (void)addRadarManagerDelegate:(id&lt;BMKRadarManagerDelegate&gt;) delegate;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (void)removeRadarManagerDelegate:(id&lt;BMKRadarManagerDelegate&gt;) delegate;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (void)startAutoUpload:(NSTimeInterval) interval;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;- (void)<a class="code" href="interface_b_m_k_radar_manager.html#ac395c3231883b88ac71a2b04966a6957">stopAutoUpload</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- (BOOL)uploadInfoRequest:(<a class="code" href="interface_b_m_k_radar_upload_info.html">BMKRadarUploadInfo</a>*) info;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (BOOL)<a class="code" href="interface_b_m_k_radar_manager.html#a42a4b96b039cea3c1f527298b4088996">clearMyInfoRequest</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;- (BOOL)getRadarNearbySearchRequest:(<a class="code" href="interface_b_m_k_radar_nearby_search_option.html">BMKRadarNearbySearchOption</a>*) option;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_search_option_html"><div class="ttname"><a href="interface_b_m_k_radar_nearby_search_option.html">BMKRadarNearbySearchOption</a></div><div class="ttdoc">查询周边的用户信息参数类 </div><div class="ttdef"><b>Definition:</b> BMKRadarOption.h:43</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html_ac395c3231883b88ac71a2b04966a6957"><div class="ttname"><a href="interface_b_m_k_radar_manager.html#ac395c3231883b88ac71a2b04966a6957">-[BMKRadarManager stopAutoUpload]</a></div><div class="ttdeci">void stopAutoUpload()</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html_a42a4b96b039cea3c1f527298b4088996"><div class="ttname"><a href="interface_b_m_k_radar_manager.html#a42a4b96b039cea3c1f527298b4088996">-[BMKRadarManager clearMyInfoRequest]</a></div><div class="ttdeci">BOOL clearMyInfoRequest()</div></div>
+<div class="ttc" id="interface_b_m_k_radar_nearby_result_html"><div class="ttname"><a href="interface_b_m_k_radar_nearby_result.html">BMKRadarNearbyResult</a></div><div class="ttdoc">查询周边的用户信息结果类 </div><div class="ttdef"><b>Definition:</b> BMKRadarResult.h:51</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html_a2f2a861863cc493c4ff5f4927d27dcee"><div class="ttname"><a href="interface_b_m_k_radar_manager.html#a2f2a861863cc493c4ff5f4927d27dcee">+[BMKRadarManager getRadarManagerInstance]</a></div><div class="ttdeci">BMKRadarManager * getRadarManagerInstance()</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html_ac80937e0e16c44a7ff7a99fb4f4cddca"><div class="ttname"><a href="interface_b_m_k_radar_manager.html#ac80937e0e16c44a7ff7a99fb4f4cddca">BMKRadarManager::userId</a></div><div class="ttdeci">NSString * userId</div><div class="ttdoc">上传时用，上传前需设置，不设置自动生成userId；切换用户时，需手动清除原先用户的位置信息 ...</div><div class="ttdef"><b>Definition:</b> BMKRadarManager.h:50</div></div>
+<div class="ttc" id="protocol_b_m_k_radar_manager_delegate-p_html"><div class="ttname"><a href="protocol_b_m_k_radar_manager_delegate-p.html">BMKRadarManagerDelegate-p</a></div><div class="ttdoc">雷达delegate </div><div class="ttdef"><b>Definition:</b> BMKRadarManager.h:16</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html"><div class="ttname"><a href="interface_b_m_k_radar_manager.html">BMKRadarManager</a></div><div class="ttdoc">周边雷达管理类 </div><div class="ttdef"><b>Definition:</b> BMKRadarManager.h:47</div></div>
+<div class="ttc" id="interface_b_m_k_radar_upload_info_html"><div class="ttname"><a href="interface_b_m_k_radar_upload_info.html">BMKRadarUploadInfo</a></div><div class="ttdoc">用户信息类 </div><div class="ttdef"><b>Definition:</b> BMKRadarOption.h:15</div></div>
+<div class="ttc" id="interface_b_m_k_radar_manager_html_a506871b092ea0eb52516f26f0346a9e9"><div class="ttname"><a href="interface_b_m_k_radar_manager.html#a506871b092ea0eb52516f26f0346a9e9">+[BMKRadarManager releaseRadarManagerInstance]</a></div><div class="ttdeci">void releaseRadarManagerInstance()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: BMKSyncTileLayer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="class_b_m_k_sync_tile_layer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">BMKSyncTileLayer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>通过同步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 tileForX:y:zoom: 方法 瓦片图片是jpeg或者png格式，size为256x256  
+ <a href="interface_b_m_k_sync_tile_layer.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_b_m_k_tile_layer_8h_source.html">BMKTileLayer.h</a>&gt;</code></p>
+<div class="dynheader">
+类 BMKSyncTileLayer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_b_m_k_sync_tile_layer.png" usemap="#BMKSyncTileLayer_map" alt=""/>
+  <map id="BMKSyncTileLayer_map" name="BMKSyncTileLayer_map">
+<area href="interface_b_m_k_tile_layer.html" title="该类是覆盖在球面墨卡托投影上的图片tiles的数据源，是抽象类，不能直接使用该类添加瓦片图，需要使用其子类..." alt="BMKTileLayer" shape="rect" coords="65,168,186,192"/>
+<area href="protocol_b_m_k_overlay-p.html" title="该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 " alt="&lt;BMKOverlay&gt;" shape="rect" coords="131,112,252,136"/>
+<area href="protocol_b_m_k_annotation-p.html" title="该类为标注点的protocol，提供了标注类的基本信息函数 " alt="&lt;BMKAnnotation&gt;" shape="rect" coords="131,56,252,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a069104d16e12a3bd4ea7838f1ce538f5"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_b_m_k_sync_tile_layer.html#a069104d16e12a3bd4ea7838f1ce538f5">tileForX:y:zoom:</a></td></tr>
+<tr class="memdesc:a069104d16e12a3bd4ea7838f1ce538f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过同步方法获取瓦片数据，子类必须实现该方法 这个方法会在多个线程中调用，需要考虑线程安全  <a href="#a069104d16e12a3bd4ea7838f1ce538f5">更多...</a><br /></td></tr>
+<tr class="separator:a069104d16e12a3bd4ea7838f1ce538f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_protocol_b_m_k_overlay-p"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_protocol_b_m_k_overlay-p')"><img src="closed.png" alt="-"/>&#160;Instance Methods 继承自 <a class="el" href="protocol_b_m_k_overlay-p.html">&lt;BMKOverlay&gt;</a></td></tr>
+<tr class="memitem:ad89c522da656c2a977b87bdc1cc4bf21 inherit pub_methods_protocol_b_m_k_overlay-p"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_b_m_k_overlay-p.html#ad89c522da656c2a977b87bdc1cc4bf21">intersectsMapRect:</a></td></tr>
+<tr class="separator:ad89c522da656c2a977b87bdc1cc4bf21 inherit pub_methods_protocol_b_m_k_overlay-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_protocol_b_m_k_annotation-p"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_protocol_b_m_k_annotation-p')"><img src="closed.png" alt="-"/>&#160;Instance Methods 继承自 <a class="el" href="protocol_b_m_k_annotation-p.html">&lt;BMKAnnotation&gt;</a></td></tr>
+<tr class="memitem:a249e1b880f8ded8541a0fe59ef4abb12 inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_b_m_k_annotation-p.html#a249e1b880f8ded8541a0fe59ef4abb12">title</a></td></tr>
+<tr class="separator:a249e1b880f8ded8541a0fe59ef4abb12 inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62aea71f4631251330e8a6fc3d3bdf11 inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_b_m_k_annotation-p.html#a62aea71f4631251330e8a6fc3d3bdf11">subtitle</a></td></tr>
+<tr class="separator:a62aea71f4631251330e8a6fc3d3bdf11 inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86db1788af78d273e1e155d3aa3d978f inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_b_m_k_annotation-p.html#a86db1788af78d273e1e155d3aa3d978f">setCoordinate:</a></td></tr>
+<tr class="separator:a86db1788af78d273e1e155d3aa3d978f inherit pub_methods_protocol_b_m_k_annotation-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header properties_interface_b_m_k_tile_layer"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_b_m_k_tile_layer')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_b_m_k_tile_layer.html">BMKTileLayer</a></td></tr>
+<tr class="memitem:a31806dcf1e35a53d50fb40f995ea87d9 inherit properties_interface_b_m_k_tile_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31806dcf1e35a53d50fb40f995ea87d9"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_m_k_tile_layer.html#a31806dcf1e35a53d50fb40f995ea87d9">minZoom</a></td></tr>
+<tr class="memdesc:a31806dcf1e35a53d50fb40f995ea87d9 inherit properties_interface_b_m_k_tile_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">tileLayer的可见最小Zoom值，默认3 <br /></td></tr>
+<tr class="separator:a31806dcf1e35a53d50fb40f995ea87d9 inherit properties_interface_b_m_k_tile_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6919cb7f36d34eeabf788e17e5ff81 inherit properties_interface_b_m_k_tile_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee6919cb7f36d34eeabf788e17e5ff81"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_m_k_tile_layer.html#aee6919cb7f36d34eeabf788e17e5ff81">maxZoom</a></td></tr>
+<tr class="memdesc:aee6919cb7f36d34eeabf788e17e5ff81 inherit properties_interface_b_m_k_tile_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">tileLayer的可见最大Zoom值，默认20，且不能小于minZoom <br /></td></tr>
+<tr class="separator:aee6919cb7f36d34eeabf788e17e5ff81 inherit properties_interface_b_m_k_tile_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03f9090d6e253640e22d9226714f84c inherit properties_interface_b_m_k_tile_layer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae03f9090d6e253640e22d9226714f84c"></a>
+<a class="el" href="struct_b_m_k_map_rect.html">BMKMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_b_m_k_tile_layer.html#ae03f9090d6e253640e22d9226714f84c">visibleMapRect</a></td></tr>
+<tr class="memdesc:ae03f9090d6e253640e22d9226714f84c inherit properties_interface_b_m_k_tile_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">tileOverlay的可渲染区域，默认世界范围 <br /></td></tr>
+<tr class="separator:ae03f9090d6e253640e22d9226714f84c inherit properties_interface_b_m_k_tile_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_protocol_b_m_k_overlay-p"><td colspan="2" onclick="javascript:toggleInherit('properties_protocol_b_m_k_overlay-p')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="protocol_b_m_k_overlay-p.html">&lt;BMKOverlay&gt;</a></td></tr>
+<tr class="memitem:a7a10d9dde65c9611e3b5279179a9d480 inherit properties_protocol_b_m_k_overlay-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a10d9dde65c9611e3b5279179a9d480"></a>
+CLLocationCoordinate2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_b_m_k_overlay-p.html#a7a10d9dde65c9611e3b5279179a9d480">coordinate</a></td></tr>
+<tr class="memdesc:a7a10d9dde65c9611e3b5279179a9d480 inherit properties_protocol_b_m_k_overlay-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回区域中心坐标. <br /></td></tr>
+<tr class="separator:a7a10d9dde65c9611e3b5279179a9d480 inherit properties_protocol_b_m_k_overlay-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77465daa9e52be51cc5aa15591ab74f0 inherit properties_protocol_b_m_k_overlay-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77465daa9e52be51cc5aa15591ab74f0"></a>
+<a class="el" href="struct_b_m_k_map_rect.html">BMKMapRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_b_m_k_overlay-p.html#a77465daa9e52be51cc5aa15591ab74f0">boundingMapRect</a></td></tr>
+<tr class="memdesc:a77465daa9e52be51cc5aa15591ab74f0 inherit properties_protocol_b_m_k_overlay-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回区域外接矩形 <br /></td></tr>
+<tr class="separator:a77465daa9e52be51cc5aa15591ab74f0 inherit properties_protocol_b_m_k_overlay-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_protocol_b_m_k_annotation-p"><td colspan="2" onclick="javascript:toggleInherit('properties_protocol_b_m_k_annotation-p')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="protocol_b_m_k_annotation-p.html">&lt;BMKAnnotation&gt;</a></td></tr>
+<tr class="memitem:ab7ed7fd80fc518acf82cf0048490f9be inherit properties_protocol_b_m_k_annotation-p"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7ed7fd80fc518acf82cf0048490f9be"></a>
+CLLocationCoordinate2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_b_m_k_annotation-p.html#ab7ed7fd80fc518acf82cf0048490f9be">coordinate</a></td></tr>
+<tr class="memdesc:ab7ed7fd80fc518acf82cf0048490f9be inherit properties_protocol_b_m_k_annotation-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">标注view中心坐标. <br /></td></tr>
+<tr class="separator:ab7ed7fd80fc518acf82cf0048490f9be inherit properties_protocol_b_m_k_annotation-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>通过同步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 tileForX:y:zoom: 方法 瓦片图片是jpeg或者png格式，size为256x256 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a069104d16e12a3bd4ea7838f1ce538f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) tileForX: </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>x</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">y:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>y</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">zoom:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>zoom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通过同步方法获取瓦片数据，子类必须实现该方法 这个方法会在多个线程中调用，需要考虑线程安全 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(x,y,zoom)瓦片坐标</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>(x, y, zoom)所对应瓦片的UIImage对象 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>output/headers/<a class="el" href="_b_m_k_tile_layer_8h_source.html">BMKTileLayer.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:32 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

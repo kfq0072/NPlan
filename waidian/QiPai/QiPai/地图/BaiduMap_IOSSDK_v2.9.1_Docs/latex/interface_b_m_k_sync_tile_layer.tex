@@ -1,0 +1,55 @@
+\hypertarget{interface_b_m_k_sync_tile_layer}{}\section{B\+M\+K\+Sync\+Tile\+Layer类 参考}
+\label{interface_b_m_k_sync_tile_layer}\index{B\+M\+K\+Sync\+Tile\+Layer@{B\+M\+K\+Sync\+Tile\+Layer}}
+
+
+通过同步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 tile\+For\+X\+:y\+:zoom\+: 方法 瓦片图片是jpeg或者png格式，size为256x256  
+
+
+
+
+{\ttfamily \#import $<$B\+M\+K\+Tile\+Layer.\+h$>$}
+
+类 B\+M\+K\+Sync\+Tile\+Layer 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_b_m_k_sync_tile_layer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Image $\ast$) -\/ \hyperlink{interface_b_m_k_sync_tile_layer_a069104d16e12a3bd4ea7838f1ce538f5}{tile\+For\+X\+:y\+:zoom\+:}
+\begin{DoxyCompactList}\small\item\em 通过同步方法获取瓦片数据，子类必须实现该方法 这个方法会在多个线程中调用，需要考虑线程安全 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+通过同步方法获取瓦片数据，是一个抽象类，需要通过继承该类，并重载 tile\+For\+X\+:y\+:zoom\+: 方法 瓦片图片是jpeg或者png格式，size为256x256 
+
+\subsection{Method Documentation}
+\hypertarget{interface_b_m_k_sync_tile_layer_a069104d16e12a3bd4ea7838f1ce538f5}{}\index{B\+M\+K\+Sync\+Tile\+Layer@{B\+M\+K\+Sync\+Tile\+Layer}!tile\+For\+X\+:y\+:zoom\+:@{tile\+For\+X\+:y\+:zoom\+:}}
+\index{tile\+For\+X\+:y\+:zoom\+:@{tile\+For\+X\+:y\+:zoom\+:}!B\+M\+K\+Sync\+Tile\+Layer@{B\+M\+K\+Sync\+Tile\+Layer}}
+\subsubsection[{tile\+For\+X\+:y\+:zoom\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\+I\+Image $\ast$) tile\+For\+X\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Integer)}]{x}
+\item[{y:(N\+S\+Integer)}]{y}
+\item[{zoom:(N\+S\+Integer)}]{zoom}
+\end{DoxyParamCaption}
+}\label{interface_b_m_k_sync_tile_layer_a069104d16e12a3bd4ea7838f1ce538f5}
+
+
+通过同步方法获取瓦片数据，子类必须实现该方法 这个方法会在多个线程中调用，需要考虑线程安全 
+
+
+\begin{DoxyParams}{参数}
+{\em (x,y,zoom)瓦片坐标} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+(x, y, zoom)所对应瓦片的\+U\+I\+Image对象 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+output/headers/B\+M\+K\+Tile\+Layer.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>百度地图SDK for iOS v2.9.1 类参考: output/headers/BMKMapView.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">百度地图SDK for iOS v2.9.1 类参考
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_7fc73646e57bbb3ed2c69bed3af557d7.html">headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BMKMapView.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  BMKMapView.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *  BMapKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Copyright 2011 Baidu Inc. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;BaiduMapAPI_Base/BMKBaseComponent.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;BMKAnnotation.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;BMKAnnotationView.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;BMKOverlayView.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;UIKit/UIKit.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#import &quot;BMKMapStatus.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#import &quot;BMKLocationViewDisplayParam.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#import &quot;BMKHeatMap.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_map_view_delegate-p.html">BMKMapViewDelegate</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_poi.html">   20</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_map_poi.html">BMKMapPoi</a> : NSObject</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_poi.html#a5d5c19bd352dcab43167d97aa47ea38d">   22</a></span>&#160;<span class="keyword">@property</span> (nonatomic,strong) NSString* <a class="code" href="interface_b_m_k_map_poi.html#a5d5c19bd352dcab43167d97aa47ea38d">text</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_poi.html#a771c0672bbe2dd1dc526003717bbcec1">   24</a></span>&#160;<span class="keyword">@property</span> (nonatomic,assign) CLLocationCoordinate2D <a class="code" href="interface_b_m_k_map_poi.html#a771c0672bbe2dd1dc526003717bbcec1">pt</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BMKUserTrackingModeNone = 0,             </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    BMKUserTrackingModeFollow,               </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    BMKUserTrackingModeFollowWithHeading,    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} BMKUserTrackingMode;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html">   34</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> : UIView</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a80806d05b9f82dcf5630110b5d20dc2c">   37</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;BMKMapViewDelegate&gt; delegate;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#add5778e2d3c080b0ae2ce63538082fea">   40</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKMapType mapType;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#ae54e847bb82b4e087ced8dc399a2d020">   43</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a> region;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#adad44db2dcfaa2d92e5eabef40f32bd8">   46</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint compassPosition;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#aa19c4d034a7861589044326107985632">   49</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CLLocationCoordinate2D centerCoordinate;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a5e6c1e21fddd4d6a24194be53f14c27e">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">float</span> zoomLevel;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#ab504b39a0a908c811a258e058be7eeb9">   54</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">float</span> minZoomLevel;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#ae9fce90bc3332cdf0dc477c3959e5e79">   56</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">float</span> maxZoomLevel;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a344d3d4be5d00adfc22feaa2ab6869c4">   59</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> rotation;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a8ae6f6cf221ea4f14923150d8974f997">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">int</span> overlooking;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#abccbae8b8f7182769b8e0b69a4383ceb">   64</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isBuildingsEnabled) BOOL buildingsEnabled;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a26be634d93e06efd2d7268a99bcca52f">   66</a></span>&#160;<span class="keyword">@property</span>(nonatomic, assign) BOOL showMapPoi;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a513d0877fb66681b10ad7a4ed1346cb7">   68</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isTrafficEnabled) BOOL trafficEnabled;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a9bc2c71421081064f9dbbd2a656172ff">   70</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isBaiduHeatMapEnabled) BOOL baiduHeatMapEnabled;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#acf8472da994b76cef21a40673a41f774">   73</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isZoomEnabled) BOOL zoomEnabled;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a11368ac9a8b66b2bc1c3e552e368939e">   75</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isZoomEnabledWithTap) BOOL zoomEnabledWithTap;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#adc7ae3120b0edf096ac0eb42f13ed93a">   77</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a8ab1315eb7dadb7db33f2ac568340dec">   79</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isOverlookEnabled) BOOL overlookEnabled;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#acfd7b4dc9bb05e46ffe477b527c61ce0">   81</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isRotateEnabled) BOOL rotateEnabled;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#ad8768aef899c970e88a4cba6f4f7a1bd">   84</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL showMapScaleBar;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a5eeee2f88682636f7e6f891246b03730">   87</a></span>&#160;<span class="keyword">@property</span> (nonatomic) CGPoint mapScaleBarPosition;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a35576ab39592ef50d1190c2b672c0923">   90</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a> visibleMapRect;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#aa1868ea167edc68fe4b15ad982968ade">   93</a></span>&#160;<span class="keyword">@property</span>(nonatomic, getter=isChangeWithTouchPointCenterEnabled) BOOL ChangeWithTouchPointCenterEnabled;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;+(void)willBackGround;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;+(void)didForeGround;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;-(void)viewWillAppear;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;-(void)viewWillDisappear;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (void)mapForceRefresh;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;- (BOOL)zoomIn;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;- (BOOL)zoomOut;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;- (<a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>)regionThatFits:(<a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>)region;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;- (void)setRegion:(<a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>)region animated:(BOOL)animated;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;- (void)setCenterCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;-(UIImage*) takeSnapshot;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;-(UIImage*) takeSnapshot:(CGRect)rect;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;- (void)setVisibleMapRect:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect animated:(BOOL)animate;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;- (<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRectThatFits:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;- (void)setVisibleMapRect:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect edgePadding:(UIEdgeInsets)insets animated:(BOOL)animate;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;- (<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRectThatFits:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect edgePadding:(UIEdgeInsets)insets;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;- (CGPoint)convertCoordinate:(CLLocationCoordinate2D)coordinate toPointToView:(UIView *)view;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;- (CLLocationCoordinate2D)convertPoint:(CGPoint)point toCoordinateFromView:(UIView *)view;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;- (CGRect)convertRegion:(<a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>)region toRectToView:(UIView *)view;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;- (<a class="code" href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a>)convertRect:(CGRect)rect toRegionFromView:(UIView *)view;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;- (CGRect)convertMapRect:(<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)mapRect toRectToView:(UIView *)view;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;- (<a class="code" href="struct_b_m_k_map_rect.html">BMKMapRect</a>)convertRect:(CGRect)rect toMapRectFromView:(UIView *)view;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;- (CGPoint)glPointForMapPoint:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a>)mapPoint;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;- (CGPoint *)glPointsForMapPoints:(<a class="code" href="struct_b_m_k_map_point.html">BMKMapPoint</a> *)mapPoints count:(NSUInteger)count;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;- (void)setMapCenterToScreenPt:(CGPoint)ptInScreen;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;- (<a class="code" href="interface_b_m_k_map_status.html">BMKMapStatus</a>*)getMapStatus;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;- (void)setMapStatus:(<a class="code" href="interface_b_m_k_map_status.html">BMKMapStatus</a>*)mapStatus;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;- (void)setMapStatus:(<a class="code" href="interface_b_m_k_map_status.html">BMKMapStatus</a>*)mapStatus withAnimation:(BOOL)bAnimation;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;- (void)setMapStatus:(<a class="code" href="interface_b_m_k_map_status.html">BMKMapStatus</a>*)mapStatus withAnimation:(BOOL)bAnimation withAnimationTime:(<span class="keywordtype">int</span>)ulDuration;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;- (BOOL)isSurpportBaiduHeatMap;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="category_b_m_k_map_view_07_location_view_a_p_i_08.html">  296</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_b_m_k_map_view_07_location_view_a_p_i_08.html">BMKMapView (LocationViewAPI)</a></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a6e18e9532c42e940eca7739378348af4">  299</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL showsUserLocation;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#aac0adfff30441312452cef6844ef818b">  302</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BMKUserTrackingMode userTrackingMode;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#ada9feb9e53eb9611b57a596c572bb280">  305</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;- (void)updateLocationViewWithParam:(<a class="code" href="interface_b_m_k_location_view_display_param.html">BMKLocationViewDisplayParam</a>*)locationViewDisplayParam;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;-(void)updateLocationData:(<a class="code" href="interface_b_m_k_user_location.html">BMKUserLocation</a>*)userLocation;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="category_b_m_k_map_view_07_annotation_a_p_i_08.html">  320</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_b_m_k_map_view_07_annotation_a_p_i_08.html">BMKMapView (AnnotationAPI)</a></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a61bc5de820abcf06bf3792c933f3e618">  323</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *annotations;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">//设定是否总让选中的annotaion置于最前面</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL isSelectedAnnotationViewFront;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;- (void)addAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;- (void)addAnnotations:(NSArray *)annotations;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;- (void)removeAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;- (void)removeAnnotations:(NSArray *)annotations;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;- (<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)viewForAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;- (<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)dequeueReusableAnnotationViewWithIdentifier:(NSString *)identifier;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;- (void)selectAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation animated:(BOOL)animated;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;- (void)deselectAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation animated:(BOOL)animated;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;- (void)showAnnotations:(NSArray *)annotations animated:(BOOL)animated;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="category_b_m_k_map_view_07_overlays_a_p_i_08.html">  389</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_b_m_k_map_view_07_overlays_a_p_i_08.html">BMKMapView (OverlaysAPI)</a></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;- (void)addOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;- (void)addOverlays:(NSArray *)overlays;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;- (void)removeOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;- (void)removeOverlays:(NSArray *)overlays;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay atIndex:(NSUInteger)index;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;- (void)exchangeOverlayAtIndex:(NSUInteger)index1 withOverlayAtIndex:(NSUInteger)index2;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay aboveOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)sibling;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;- (void)insertOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay belowOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)sibling;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="interface_b_m_k_map_view.html#a6c673c46ad9f146f80e48d82ebcf934b">  444</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *overlays;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;- (<a class="code" href="interface_b_m_k_overlay_view.html">BMKOverlayView</a> *)viewForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="category_b_m_k_map_view_07_heat_map_a_p_i_08.html">  454</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_b_m_k_map_view_07_heat_map_a_p_i_08.html">BMKMapView (HeatMapAPI)</a></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;- (void)addHeatMap:(<a class="code" href="interface_b_m_k_heat_map.html">BMKHeatMap</a>*)heatMap;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;- (void)removeHeatMap;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno"><a class="line" href="protocol_b_m_k_map_view_delegate-p.html">  470</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_b_m_k_map_view_delegate-p.html">BMKMapViewDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;- (void)mapViewDidFinishLoading:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onDrawMapFrame:(<a class="code" href="interface_b_m_k_map_status.html">BMKMapStatus</a>*)status;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView regionWillChangeAnimated:(BOOL)animated;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView regionDidChangeAnimated:(BOOL)animated;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;- (<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView viewForAnnotation:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_annotation-p.html">BMKAnnotation</a>&gt;)annotation;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView didAddAnnotationViews:(NSArray *)views;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView didSelectAnnotationView:(<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView didDeselectAnnotationView:(<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView annotationView:(<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)view didChangeDragState:(BMKAnnotationViewDragState)newState</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;   fromOldState:(BMKAnnotationViewDragState)oldState;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView annotationViewForBubble:(<a class="code" href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a> *)view;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;- (<a class="code" href="interface_b_m_k_overlay_view.html">BMKOverlayView</a> *)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView viewForOverlay:(<span class="keywordtype">id</span> &lt;<a class="code" href="protocol_b_m_k_overlay-p.html">BMKOverlay</a>&gt;)overlay;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView didAddOverlayViews:(NSArray *)overlayViews;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onClickedBMKOverlayView:(<a class="code" href="interface_b_m_k_overlay_view.html">BMKOverlayView</a> *)overlayView;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onClickedMapPoi:(<a class="code" href="interface_b_m_k_map_poi.html">BMKMapPoi</a>*)mapPoi;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;- (void)mapView:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onClickedMapBlank:(CLLocationCoordinate2D)coordinate;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;- (void)mapview:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onDoubleClick:(CLLocationCoordinate2D)coordinate;</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;- (void)mapview:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView onLongClick:(CLLocationCoordinate2D)coordinate;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;- (void)mapStatusDidChanged:(<a class="code" href="interface_b_m_k_map_view.html">BMKMapView</a> *)mapView;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="protocol_b_m_k_annotation-p_html"><div class="ttname"><a href="protocol_b_m_k_annotation-p.html">BMKAnnotation-p</a></div><div class="ttdoc">该类为标注点的protocol，提供了标注类的基本信息函数 </div><div class="ttdef"><b>Definition:</b> BMKAnnotation.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_map_status_html"><div class="ttname"><a href="interface_b_m_k_map_status.html">BMKMapStatus</a></div><div class="ttdoc">此类表示地图状态信息 </div><div class="ttdef"><b>Definition:</b> BMKMapStatus.h:15</div></div>
+<div class="ttc" id="interface_b_m_k_overlay_view_html"><div class="ttname"><a href="interface_b_m_k_overlay_view.html">BMKOverlayView</a></div><div class="ttdoc">该类是地图覆盖物View的基类，提供绘制overlay的接口但本身并无实现，所有地图覆盖物View需要继承自此类 ...</div><div class="ttdef"><b>Definition:</b> BMKOverlayView.h:12</div></div>
+<div class="ttc" id="interface_b_m_k_map_poi_html_a5d5c19bd352dcab43167d97aa47ea38d"><div class="ttname"><a href="interface_b_m_k_map_poi.html#a5d5c19bd352dcab43167d97aa47ea38d">BMKMapPoi::text</a></div><div class="ttdeci">NSString * text</div><div class="ttdoc">点标注的名称 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:22</div></div>
+<div class="ttc" id="protocol_b_m_k_overlay-p_html"><div class="ttname"><a href="protocol_b_m_k_overlay-p.html">BMKOverlay-p</a></div><div class="ttdoc">该类是地图覆盖物的基类，所有地图的覆盖物需要继承自此类 </div><div class="ttdef"><b>Definition:</b> BMKOverlay.h:13</div></div>
+<div class="ttc" id="struct_b_m_k_map_rect_html"><div class="ttname"><a href="struct_b_m_k_map_rect.html">BMKMapRect</a></div><div class="ttdoc">矩形，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:112</div></div>
+<div class="ttc" id="interface_b_m_k_location_view_display_param_html"><div class="ttname"><a href="interface_b_m_k_location_view_display_param.html">BMKLocationViewDisplayParam</a></div><div class="ttdoc">此类表示定位图层自定义样式参数 </div><div class="ttdef"><b>Definition:</b> BMKLocationViewDisplayParam.h:13</div></div>
+<div class="ttc" id="interface_b_m_k_heat_map_html"><div class="ttname"><a href="interface_b_m_k_heat_map.html">BMKHeatMap</a></div><div class="ttdoc">热力图的绘制数据和显示样式类 </div><div class="ttdef"><b>Definition:</b> BMKHeatMap.h:28</div></div>
+<div class="ttc" id="interface_b_m_k_map_poi_html"><div class="ttname"><a href="interface_b_m_k_map_poi.html">BMKMapPoi</a></div><div class="ttdoc">点击地图标注返回数据结构 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:20</div></div>
+<div class="ttc" id="interface_b_m_k_annotation_view_html"><div class="ttname"><a href="interface_b_m_k_annotation_view.html">BMKAnnotationView</a></div><div class="ttdoc">标注view </div><div class="ttdef"><b>Definition:</b> BMKAnnotationView.h:33</div></div>
+<div class="ttc" id="interface_b_m_k_map_view_html"><div class="ttname"><a href="interface_b_m_k_map_view.html">BMKMapView</a></div><div class="ttdoc">地图View类，使用此View可以显示地图窗口，并且对地图进行相关的操作 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:34</div></div>
+<div class="ttc" id="protocol_b_m_k_map_view_delegate-p_html"><div class="ttname"><a href="protocol_b_m_k_map_view_delegate-p.html">BMKMapViewDelegate-p</a></div><div class="ttdoc">MapView的Delegate，mapView通过此类来通知用户对应的事件 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:470</div></div>
+<div class="ttc" id="category_b_m_k_map_view_07_location_view_a_p_i_08_html"><div class="ttname"><a href="category_b_m_k_map_view_07_location_view_a_p_i_08.html">BMKMapView(LocationViewAPI)</a></div><div class="ttdef"><b>Definition:</b> BMKMapView.h:296</div></div>
+<div class="ttc" id="category_b_m_k_map_view_07_overlays_a_p_i_08_html"><div class="ttname"><a href="category_b_m_k_map_view_07_overlays_a_p_i_08.html">BMKMapView(OverlaysAPI)</a></div><div class="ttdoc">地图View类(和Overlay操作相关的接口) </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:389</div></div>
+<div class="ttc" id="interface_b_m_k_map_poi_html_a771c0672bbe2dd1dc526003717bbcec1"><div class="ttname"><a href="interface_b_m_k_map_poi.html#a771c0672bbe2dd1dc526003717bbcec1">BMKMapPoi::pt</a></div><div class="ttdeci">CLLocationCoordinate2D pt</div><div class="ttdoc">点标注的经纬度坐标 </div><div class="ttdef"><b>Definition:</b> BMKMapView.h:24</div></div>
+<div class="ttc" id="category_b_m_k_map_view_07_heat_map_a_p_i_08_html"><div class="ttname"><a href="category_b_m_k_map_view_07_heat_map_a_p_i_08.html">BMKMapView(HeatMapAPI)</a></div><div class="ttdef"><b>Definition:</b> BMKMapView.h:454</div></div>
+<div class="ttc" id="interface_b_m_k_user_location_html"><div class="ttname"><a href="interface_b_m_k_user_location.html">BMKUserLocation</a></div><div class="ttdef"><b>Definition:</b> BMKUserLocation.h:13</div></div>
+<div class="ttc" id="category_b_m_k_map_view_07_annotation_a_p_i_08_html"><div class="ttname"><a href="category_b_m_k_map_view_07_annotation_a_p_i_08.html">BMKMapView(AnnotationAPI)</a></div><div class="ttdef"><b>Definition:</b> BMKMapView.h:320</div></div>
+<div class="ttc" id="struct_b_m_k_coordinate_region_html"><div class="ttname"><a href="struct_b_m_k_coordinate_region.html">BMKCoordinateRegion</a></div><div class="ttdoc">表示一个经纬度区域 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:88</div></div>
+<div class="ttc" id="struct_b_m_k_map_point_html"><div class="ttname"><a href="struct_b_m_k_map_point.html">BMKMapPoint</a></div><div class="ttdoc">地理坐标点，用直角地理坐标表示 </div><div class="ttdef"><b>Definition:</b> BMKTypes.h:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2015年 十一月 10日 星期二 13:45:30 , 为 百度地图SDK for iOS v2.9.1 类参考使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>
