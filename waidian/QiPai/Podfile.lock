@@ -1,0 +1,10 @@
+PODS:
+  - AMap2DMap (3.2.0)
+
+DEPENDENCIES:
+  - AMap2DMap
+
+SPEC CHECKSUMS:
+  AMap2DMap: 02c73a3e55ac033e3b0b8ec35d3d21ffcac5aae3
+
+COCOAPODS: 0.39.0

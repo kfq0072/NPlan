@@ -1,0 +1,2 @@
+platform :ios, '7.0' #手机的系统
+pod 'AMap2DMap' #2D地图SDK
